@@ -1,0 +1,2074 @@
+[
+  {
+    "id": "450125YSD01-0-P01",
+    "name": "野生稻监测点 01",
+    "areaId": "450125YSD01",
+    "featureId": "450125YSD01-0",
+    "longitude": 108.619331,
+    "latitude": 23.431935,
+    "species": [
+      "野生稻"
+    ],
+    "plantingAreaHa": 1.2,
+    "plantCount": 149,
+    "growthStatus": "normal",
+    "surveyDate": "2025-08-18",
+    "source": "mock"
+  },
+  {
+    "id": "450125YSD01-0-P02",
+    "name": "野生稻监测点 02",
+    "areaId": "450125YSD01",
+    "featureId": "450125YSD01-0",
+    "longitude": 108.620629,
+    "latitude": 23.433084,
+    "species": [
+      "野生稻"
+    ],
+    "plantingAreaHa": 1.15,
+    "plantCount": 208,
+    "growthStatus": "attention",
+    "surveyDate": "2026-04-27",
+    "source": "mock"
+  },
+  {
+    "id": "450125YSD01-0-P03",
+    "name": "野生稻监测点 03",
+    "areaId": "450125YSD01",
+    "featureId": "450125YSD01-0",
+    "longitude": 108.623045,
+    "latitude": 23.428864,
+    "species": [
+      "野生稻"
+    ],
+    "plantingAreaHa": 1.74,
+    "plantCount": 640,
+    "growthStatus": "good",
+    "surveyDate": "2025-06-22",
+    "source": "mock"
+  },
+  {
+    "id": "450125YSD01-1-P01",
+    "name": "野生稻监测点 04",
+    "areaId": "450125YSD01",
+    "featureId": "450125YSD01-1",
+    "longitude": 108.62018,
+    "latitude": 23.430259,
+    "species": [
+      "野生稻"
+    ],
+    "plantingAreaHa": 1.81,
+    "plantCount": 1056,
+    "growthStatus": "good",
+    "surveyDate": "2025-07-21",
+    "source": "mock"
+  },
+  {
+    "id": "450125YSD01-1-P02",
+    "name": "野生稻监测点 05",
+    "areaId": "450125YSD01",
+    "featureId": "450125YSD01-1",
+    "longitude": 108.618939,
+    "latitude": 23.430997,
+    "species": [
+      "野生稻"
+    ],
+    "plantingAreaHa": 1.64,
+    "plantCount": 289,
+    "growthStatus": "normal",
+    "surveyDate": "2026-06-10",
+    "source": "mock"
+  },
+  {
+    "id": "450328YSMHT01-2-P01",
+    "name": "野生猕猴桃监测点 01",
+    "areaId": "450328YSMHT01",
+    "featureId": "450328YSMHT01-2",
+    "longitude": 110.008544,
+    "latitude": 25.800833,
+    "species": [
+      "野生猕猴桃"
+    ],
+    "plantingAreaHa": 1.95,
+    "plantCount": 529,
+    "growthStatus": "normal",
+    "surveyDate": "2026-01-31",
+    "source": "mock"
+  },
+  {
+    "id": "450328YSMHT01-2-P02",
+    "name": "野生猕猴桃监测点 02",
+    "areaId": "450328YSMHT01",
+    "featureId": "450328YSMHT01-2",
+    "longitude": 110.009354,
+    "latitude": 25.800193,
+    "species": [
+      "野生猕猴桃"
+    ],
+    "plantingAreaHa": 1.87,
+    "plantCount": 770,
+    "growthStatus": "good",
+    "surveyDate": "2025-09-04",
+    "source": "mock"
+  },
+  {
+    "id": "450328YSMHT01-3-P01",
+    "name": "野生猕猴桃监测点 03",
+    "areaId": "450328YSMHT01",
+    "featureId": "450328YSMHT01-3",
+    "longitude": 110.008245,
+    "latitude": 25.798654,
+    "species": [
+      "野生猕猴桃"
+    ],
+    "plantingAreaHa": 0.81,
+    "plantCount": 247,
+    "growthStatus": "attention",
+    "surveyDate": "2025-10-14",
+    "source": "mock"
+  },
+  {
+    "id": "450328YSMHT01-3-P02",
+    "name": "野生猕猴桃监测点 04",
+    "areaId": "450328YSMHT01",
+    "featureId": "450328YSMHT01-3",
+    "longitude": 110.009148,
+    "latitude": 25.797874,
+    "species": [
+      "野生猕猴桃"
+    ],
+    "plantingAreaHa": 0.61,
+    "plantCount": 255,
+    "growthStatus": "normal",
+    "surveyDate": "2025-11-24",
+    "source": "mock"
+  },
+  {
+    "id": "450329YSLH01-4-P01",
+    "name": "野生兰花监测点 01",
+    "areaId": "450329YSLH01",
+    "featureId": "450329YSLH01-4",
+    "longitude": 110.649897,
+    "latitude": 26.050053,
+    "species": [
+      "野生兰花"
+    ],
+    "plantingAreaHa": 0.82,
+    "plantCount": 473,
+    "growthStatus": "attention",
+    "surveyDate": "2026-02-21",
+    "source": "mock"
+  },
+  {
+    "id": "450329YSLH01-4-P02",
+    "name": "野生兰花监测点 02",
+    "areaId": "450329YSLH01",
+    "featureId": "450329YSLH01-4",
+    "longitude": 110.650683,
+    "latitude": 26.048383,
+    "species": [
+      "野生兰花"
+    ],
+    "plantingAreaHa": 0.76,
+    "plantCount": 419,
+    "growthStatus": "normal",
+    "surveyDate": "2025-05-03",
+    "source": "mock"
+  },
+  {
+    "id": "450329YSLH01-5-P01",
+    "name": "野生兰花监测点 03",
+    "areaId": "450329YSLH01",
+    "featureId": "450329YSLH01-5",
+    "longitude": 110.652454,
+    "latitude": 26.051056,
+    "species": [
+      "野生兰花"
+    ],
+    "plantingAreaHa": 1.46,
+    "plantCount": 254,
+    "growthStatus": "normal",
+    "surveyDate": "2025-07-31",
+    "source": "mock"
+  },
+  {
+    "id": "450329YSLH01-5-P02",
+    "name": "野生兰花监测点 04",
+    "areaId": "450329YSLH01",
+    "featureId": "450329YSLH01-5",
+    "longitude": 110.65075,
+    "latitude": 26.047454,
+    "species": [
+      "野生兰花"
+    ],
+    "plantingAreaHa": 1.1,
+    "plantCount": 432,
+    "growthStatus": "good",
+    "surveyDate": "2026-05-24",
+    "source": "mock"
+  },
+  {
+    "id": "450329YSLH01-5-P03",
+    "name": "野生兰花监测点 05",
+    "areaId": "450329YSLH01",
+    "featureId": "450329YSLH01-5",
+    "longitude": 110.650314,
+    "latitude": 26.048166,
+    "species": [
+      "野生兰花"
+    ],
+    "plantingAreaHa": 1.51,
+    "plantCount": 350,
+    "growthStatus": "good",
+    "surveyDate": "2025-03-10",
+    "source": "mock"
+  },
+  {
+    "id": "450225YSGJ01-6-P01",
+    "name": "野生柑橘监测点 01",
+    "areaId": "450225YSGJ01",
+    "featureId": "450225YSGJ01-6",
+    "longitude": 109.1482,
+    "latitude": 25.071192,
+    "species": [
+      "野生柑橘"
+    ],
+    "plantingAreaHa": 2.67,
+    "plantCount": 1040,
+    "growthStatus": "good",
+    "surveyDate": "2025-03-05",
+    "source": "mock"
+  },
+  {
+    "id": "450225YSGJ01-6-P02",
+    "name": "野生柑橘监测点 02",
+    "areaId": "450225YSGJ01",
+    "featureId": "450225YSGJ01-6",
+    "longitude": 109.152428,
+    "latitude": 25.070017,
+    "species": [
+      "野生柑橘"
+    ],
+    "plantingAreaHa": 2.86,
+    "plantCount": 1162,
+    "growthStatus": "good",
+    "surveyDate": "2026-04-18",
+    "source": "mock"
+  },
+  {
+    "id": "450225YSGJ01-7-P01",
+    "name": "野生柑橘监测点 03",
+    "areaId": "450225YSGJ01",
+    "featureId": "450225YSGJ01-7",
+    "longitude": 109.151408,
+    "latitude": 25.069961,
+    "species": [
+      "野生柑橘"
+    ],
+    "plantingAreaHa": 0.72,
+    "plantCount": 354,
+    "growthStatus": "good",
+    "surveyDate": "2026-04-01",
+    "source": "mock"
+  },
+  {
+    "id": "450225YSGJ01-7-P02",
+    "name": "野生柑橘监测点 04",
+    "areaId": "450225YSGJ01",
+    "featureId": "450225YSGJ01-7",
+    "longitude": 109.149557,
+    "latitude": 25.069338,
+    "species": [
+      "野生柑橘"
+    ],
+    "plantingAreaHa": 0.62,
+    "plantCount": 219,
+    "growthStatus": "normal",
+    "surveyDate": "2025-05-27",
+    "source": "mock"
+  },
+  {
+    "id": "450226YSDD01-8-P01",
+    "name": "野生大豆监测点 01",
+    "areaId": "450226YSDD01",
+    "featureId": "450226YSDD01-8",
+    "longitude": 109.612888,
+    "latitude": 25.790304,
+    "species": [
+      "野生大豆"
+    ],
+    "plantingAreaHa": 1.71,
+    "plantCount": 493,
+    "growthStatus": "good",
+    "surveyDate": "2025-11-12",
+    "source": "mock"
+  },
+  {
+    "id": "450226YSDD01-8-P02",
+    "name": "野生大豆监测点 02",
+    "areaId": "450226YSDD01",
+    "featureId": "450226YSDD01-8",
+    "longitude": 109.607429,
+    "latitude": 25.790573,
+    "species": [
+      "野生大豆"
+    ],
+    "plantingAreaHa": 1.94,
+    "plantCount": 309,
+    "growthStatus": "good",
+    "surveyDate": "2025-05-12",
+    "source": "mock"
+  },
+  {
+    "id": "450226YSDD01-8-P03",
+    "name": "野生大豆监测点 03",
+    "areaId": "450226YSDD01",
+    "featureId": "450226YSDD01-8",
+    "longitude": 109.612633,
+    "latitude": 25.791133,
+    "species": [
+      "野生大豆"
+    ],
+    "plantingAreaHa": 2.02,
+    "plantCount": 319,
+    "growthStatus": "good",
+    "surveyDate": "2025-07-28",
+    "source": "mock"
+  },
+  {
+    "id": "450226YSDD01-9-P01",
+    "name": "野生大豆监测点 04",
+    "areaId": "450226YSDD01",
+    "featureId": "450226YSDD01-9",
+    "longitude": 109.609598,
+    "latitude": 25.788377,
+    "species": [
+      "野生大豆"
+    ],
+    "plantingAreaHa": 0.91,
+    "plantCount": 411,
+    "growthStatus": "normal",
+    "surveyDate": "2025-10-13",
+    "source": "mock"
+  },
+  {
+    "id": "450226YSDD01-9-P02",
+    "name": "野生大豆监测点 05",
+    "areaId": "450226YSDD01",
+    "featureId": "450226YSDD01-9",
+    "longitude": 109.610644,
+    "latitude": 25.790109,
+    "species": [
+      "野生大豆"
+    ],
+    "plantingAreaHa": 0.65,
+    "plantCount": 293,
+    "growthStatus": "good",
+    "surveyDate": "2025-06-09",
+    "source": "mock"
+  },
+  {
+    "id": "450881YL01-10-P01",
+    "name": "野莲监测点 01",
+    "areaId": "450881YL01",
+    "featureId": "450881YL01-10",
+    "longitude": 110.08125,
+    "latitude": 23.393884,
+    "species": [
+      "野莲"
+    ],
+    "plantingAreaHa": 1.68,
+    "plantCount": 773,
+    "growthStatus": "good",
+    "surveyDate": "2025-06-23",
+    "source": "mock"
+  },
+  {
+    "id": "450881YL01-10-P02",
+    "name": "野莲监测点 02",
+    "areaId": "450881YL01",
+    "featureId": "450881YL01-10",
+    "longitude": 110.079904,
+    "latitude": 23.386917,
+    "species": [
+      "野莲"
+    ],
+    "plantingAreaHa": 1.76,
+    "plantCount": 855,
+    "growthStatus": "normal",
+    "surveyDate": "2026-06-29",
+    "source": "mock"
+  },
+  {
+    "id": "450881YL01-11-P01",
+    "name": "野莲监测点 03",
+    "areaId": "450881YL01",
+    "featureId": "450881YL01-11",
+    "longitude": 110.077017,
+    "latitude": 23.388168,
+    "species": [
+      "野莲"
+    ],
+    "plantingAreaHa": 2.58,
+    "plantCount": 1538,
+    "growthStatus": "good",
+    "surveyDate": "2026-03-15",
+    "source": "mock"
+  },
+  {
+    "id": "450881YL01-11-P02",
+    "name": "野莲监测点 04",
+    "areaId": "450881YL01",
+    "featureId": "450881YL01-11",
+    "longitude": 110.077854,
+    "latitude": 23.390389,
+    "species": [
+      "野莲"
+    ],
+    "plantingAreaHa": 2.6,
+    "plantCount": 786,
+    "growthStatus": "normal",
+    "surveyDate": "2026-02-13",
+    "source": "mock"
+  },
+  {
+    "id": "450881YL01-11-P03",
+    "name": "野莲监测点 05",
+    "areaId": "450881YL01",
+    "featureId": "450881YL01-11",
+    "longitude": 110.076075,
+    "latitude": 23.388206,
+    "species": [
+      "野莲"
+    ],
+    "plantingAreaHa": 2.37,
+    "plantCount": 1016,
+    "growthStatus": "attention",
+    "surveyDate": "2025-03-31",
+    "source": "mock"
+  },
+  {
+    "id": "450481LHG01-12-P01",
+    "name": "野生罗汉果监测点 01",
+    "areaId": "450481LHG01",
+    "featureId": "450481LHG01-12",
+    "longitude": 110.99926,
+    "latitude": 22.928439,
+    "species": [
+      "野生罗汉果"
+    ],
+    "plantingAreaHa": 0.87,
+    "plantCount": 375,
+    "growthStatus": "good",
+    "surveyDate": "2026-05-25",
+    "source": "mock"
+  },
+  {
+    "id": "450481LHG01-12-P02",
+    "name": "野生罗汉果监测点 02",
+    "areaId": "450481LHG01",
+    "featureId": "450481LHG01-12",
+    "longitude": 111.000292,
+    "latitude": 22.931847,
+    "species": [
+      "野生罗汉果"
+    ],
+    "plantingAreaHa": 1.05,
+    "plantCount": 592,
+    "growthStatus": "good",
+    "surveyDate": "2025-07-04",
+    "source": "mock"
+  },
+  {
+    "id": "450481LHG01-13-P01",
+    "name": "野生罗汉果监测点 03",
+    "areaId": "450481LHG01",
+    "featureId": "450481LHG01-13",
+    "longitude": 111.000365,
+    "latitude": 22.932272,
+    "species": [
+      "野生罗汉果"
+    ],
+    "plantingAreaHa": 2.38,
+    "plantCount": 528,
+    "growthStatus": "normal",
+    "surveyDate": "2025-05-30",
+    "source": "mock"
+  },
+  {
+    "id": "450481LHG01-13-P02",
+    "name": "野生罗汉果监测点 04",
+    "areaId": "450481LHG01",
+    "featureId": "450481LHG01-13",
+    "longitude": 110.998513,
+    "latitude": 22.928646,
+    "species": [
+      "野生罗汉果"
+    ],
+    "plantingAreaHa": 3.07,
+    "plantCount": 1692,
+    "growthStatus": "good",
+    "surveyDate": "2025-09-26",
+    "source": "mock"
+  },
+  {
+    "id": "451028YSLK01-14-P01",
+    "name": "兰科植物监测点 01",
+    "areaId": "451028YSLK01",
+    "featureId": "451028YSLK01-14",
+    "longitude": 106.573004,
+    "latitude": 24.770277,
+    "species": [
+      "兰科植物"
+    ],
+    "plantingAreaHa": 4.36,
+    "plantCount": 1158,
+    "growthStatus": "good",
+    "surveyDate": "2026-06-05",
+    "source": "mock"
+  },
+  {
+    "id": "451028YSLK01-14-P02",
+    "name": "兰科植物监测点 02",
+    "areaId": "451028YSLK01",
+    "featureId": "451028YSLK01-14",
+    "longitude": 106.562474,
+    "latitude": 24.77477,
+    "species": [
+      "兰科植物"
+    ],
+    "plantingAreaHa": 4.37,
+    "plantCount": 2519,
+    "growthStatus": "good",
+    "surveyDate": "2025-03-10",
+    "source": "mock"
+  },
+  {
+    "id": "451028YSLK01-14-P03",
+    "name": "兰科植物监测点 03",
+    "areaId": "451028YSLK01",
+    "featureId": "451028YSLK01-14",
+    "longitude": 106.55615,
+    "latitude": 24.77504,
+    "species": [
+      "兰科植物"
+    ],
+    "plantingAreaHa": 4.3,
+    "plantCount": 1580,
+    "growthStatus": "normal",
+    "surveyDate": "2025-06-27",
+    "source": "mock"
+  },
+  {
+    "id": "451028YSLK01-15-P01",
+    "name": "兰科植物监测点 04",
+    "areaId": "451028YSLK01",
+    "featureId": "451028YSLK01-15",
+    "longitude": 106.566191,
+    "latitude": 24.777205,
+    "species": [
+      "兰科植物"
+    ],
+    "plantingAreaHa": 17.09,
+    "plantCount": 8332,
+    "growthStatus": "good",
+    "surveyDate": "2026-02-11",
+    "source": "mock"
+  },
+  {
+    "id": "451028YSLK01-15-P02",
+    "name": "兰科植物监测点 05",
+    "areaId": "451028YSLK01",
+    "featureId": "451028YSLK01-15",
+    "longitude": 106.549129,
+    "latitude": 24.791196,
+    "species": [
+      "兰科植物"
+    ],
+    "plantingAreaHa": 16.91,
+    "plantCount": 8642,
+    "growthStatus": "attention",
+    "surveyDate": "2025-05-17",
+    "source": "mock"
+  },
+  {
+    "id": "451028YSLK01-15-P03",
+    "name": "兰科植物监测点 06",
+    "areaId": "451028YSLK01",
+    "featureId": "451028YSLK01-15",
+    "longitude": 106.549072,
+    "latitude": 24.786208,
+    "species": [
+      "兰科植物"
+    ],
+    "plantingAreaHa": 20.63,
+    "plantCount": 4983,
+    "growthStatus": "good",
+    "surveyDate": "2025-03-11",
+    "source": "mock"
+  },
+  {
+    "id": "451028YSLK01-16-P01",
+    "name": "兰科植物监测点 07",
+    "areaId": "451028YSLK01",
+    "featureId": "451028YSLK01-16",
+    "longitude": 106.563592,
+    "latitude": 24.777368,
+    "species": [
+      "兰科植物"
+    ],
+    "plantingAreaHa": 0.09,
+    "plantCount": 37,
+    "growthStatus": "good",
+    "surveyDate": "2026-01-03",
+    "source": "mock"
+  },
+  {
+    "id": "451028YSLK01-17-P01",
+    "name": "兰科植物监测点 08",
+    "areaId": "451028YSLK01",
+    "featureId": "451028YSLK01-17",
+    "longitude": 106.564478,
+    "latitude": 24.777659,
+    "species": [
+      "兰科植物"
+    ],
+    "plantingAreaHa": 0.22,
+    "plantCount": 118,
+    "growthStatus": "good",
+    "surveyDate": "2025-10-19",
+    "source": "mock"
+  },
+  {
+    "id": "451225YSMHT01-18-P01",
+    "name": "野生猕猴桃监测点 01",
+    "areaId": "451225YSMHT01",
+    "featureId": "451225YSMHT01-18",
+    "longitude": 108.899741,
+    "latitude": 24.775617,
+    "species": [
+      "野生猕猴桃"
+    ],
+    "plantingAreaHa": 1.52,
+    "plantCount": 731,
+    "growthStatus": "good",
+    "surveyDate": "2026-04-15",
+    "source": "mock"
+  },
+  {
+    "id": "451225YSMHT01-18-P02",
+    "name": "野生猕猴桃监测点 02",
+    "areaId": "451225YSMHT01",
+    "featureId": "451225YSMHT01-18",
+    "longitude": 108.898986,
+    "latitude": 24.780214,
+    "species": [
+      "野生猕猴桃"
+    ],
+    "plantingAreaHa": 1.46,
+    "plantCount": 372,
+    "growthStatus": "good",
+    "surveyDate": "2025-04-17",
+    "source": "mock"
+  },
+  {
+    "id": "451225YSMHT01-18-P03",
+    "name": "野生猕猴桃监测点 03",
+    "areaId": "451225YSMHT01",
+    "featureId": "451225YSMHT01-18",
+    "longitude": 108.902404,
+    "latitude": 24.78164,
+    "species": [
+      "野生猕猴桃"
+    ],
+    "plantingAreaHa": 1.49,
+    "plantCount": 574,
+    "growthStatus": "attention",
+    "surveyDate": "2025-05-01",
+    "source": "mock"
+  },
+  {
+    "id": "451225YSMHT01-19-P01",
+    "name": "野生猕猴桃监测点 04",
+    "areaId": "451225YSMHT01",
+    "featureId": "451225YSMHT01-19",
+    "longitude": 108.899397,
+    "latitude": 24.78267,
+    "species": [
+      "野生猕猴桃"
+    ],
+    "plantingAreaHa": 3.37,
+    "plantCount": 605,
+    "growthStatus": "normal",
+    "surveyDate": "2025-03-01",
+    "source": "mock"
+  },
+  {
+    "id": "451225YSMHT01-19-P02",
+    "name": "野生猕猴桃监测点 05",
+    "areaId": "451225YSMHT01",
+    "featureId": "451225YSMHT01-19",
+    "longitude": 108.899647,
+    "latitude": 24.781056,
+    "species": [
+      "野生猕猴桃"
+    ],
+    "plantingAreaHa": 2.35,
+    "plantCount": 1218,
+    "growthStatus": "attention",
+    "surveyDate": "2026-01-11",
+    "source": "mock"
+  },
+  {
+    "id": "451226YSLH01-20-P01",
+    "name": "野生兰花监测点 01",
+    "areaId": "451226YSLH01",
+    "featureId": "451226YSLH01-20",
+    "longitude": 108.254886,
+    "latitude": 25.05297,
+    "species": [
+      "野生兰花"
+    ],
+    "plantingAreaHa": 4.86,
+    "plantCount": 2492,
+    "growthStatus": "attention",
+    "surveyDate": "2025-04-24",
+    "source": "mock"
+  },
+  {
+    "id": "451226YSLH01-20-P02",
+    "name": "野生兰花监测点 02",
+    "areaId": "451226YSLH01",
+    "featureId": "451226YSLH01-20",
+    "longitude": 108.254347,
+    "latitude": 25.050129,
+    "species": [
+      "野生兰花"
+    ],
+    "plantingAreaHa": 4.89,
+    "plantCount": 2647,
+    "growthStatus": "good",
+    "surveyDate": "2025-04-08",
+    "source": "mock"
+  },
+  {
+    "id": "451226YSLH01-20-P03",
+    "name": "野生兰花监测点 03",
+    "areaId": "451226YSLH01",
+    "featureId": "451226YSLH01-20",
+    "longitude": 108.256953,
+    "latitude": 25.051479,
+    "species": [
+      "野生兰花"
+    ],
+    "plantingAreaHa": 4.96,
+    "plantCount": 1496,
+    "growthStatus": "good",
+    "surveyDate": "2025-06-12",
+    "source": "mock"
+  },
+  {
+    "id": "451226YSLH01-21-P01",
+    "name": "野生兰花监测点 04",
+    "areaId": "451226YSLH01",
+    "featureId": "451226YSLH01-21",
+    "longitude": 108.260993,
+    "latitude": 25.04712,
+    "species": [
+      "野生兰花"
+    ],
+    "plantingAreaHa": 2.95,
+    "plantCount": 671,
+    "growthStatus": "good",
+    "surveyDate": "2025-06-20",
+    "source": "mock"
+  },
+  {
+    "id": "451226YSLH01-21-P02",
+    "name": "野生兰花监测点 05",
+    "areaId": "451226YSLH01",
+    "featureId": "451226YSLH01-21",
+    "longitude": 108.251562,
+    "latitude": 25.055412,
+    "species": [
+      "野生兰花"
+    ],
+    "plantingAreaHa": 4.01,
+    "plantCount": 683,
+    "growthStatus": "attention",
+    "surveyDate": "2026-06-29",
+    "source": "mock"
+  },
+  {
+    "id": "451226YSLH01-21-P03",
+    "name": "野生兰花监测点 06",
+    "areaId": "451226YSLH01",
+    "featureId": "451226YSLH01-21",
+    "longitude": 108.252993,
+    "latitude": 25.050351,
+    "species": [
+      "野生兰花"
+    ],
+    "plantingAreaHa": 4.26,
+    "plantCount": 1324,
+    "growthStatus": "normal",
+    "surveyDate": "2025-08-14",
+    "source": "mock"
+  },
+  {
+    "id": "451226YSLH01-22-P01",
+    "name": "野生兰花监测点 07",
+    "areaId": "451226YSLH01",
+    "featureId": "451226YSLH01-22",
+    "longitude": 108.24996,
+    "latitude": 25.049468,
+    "species": [
+      "野生兰花"
+    ],
+    "plantingAreaHa": 0.08,
+    "plantCount": 33,
+    "growthStatus": "attention",
+    "surveyDate": "2026-04-23",
+    "source": "mock"
+  },
+  {
+    "id": "451226YSLH01-23-P01",
+    "name": "野生兰花监测点 08",
+    "areaId": "451226YSLH01",
+    "featureId": "451226YSLH01-23",
+    "longitude": 108.250223,
+    "latitude": 25.049443,
+    "species": [
+      "野生兰花"
+    ],
+    "plantingAreaHa": 0.17,
+    "plantCount": 85,
+    "growthStatus": "good",
+    "surveyDate": "2025-11-02",
+    "source": "mock"
+  },
+  {
+    "id": "451422JHC01-24-P01",
+    "name": "金花茶监测点 01",
+    "areaId": "451422JHC01",
+    "featureId": "451422JHC01-24",
+    "longitude": 107.082039,
+    "latitude": 22.129545,
+    "species": [
+      "金花茶"
+    ],
+    "plantingAreaHa": 3.1,
+    "plantCount": 1390,
+    "growthStatus": "good",
+    "surveyDate": "2025-09-10",
+    "source": "mock"
+  },
+  {
+    "id": "451422JHC01-24-P02",
+    "name": "金花茶监测点 02",
+    "areaId": "451422JHC01",
+    "featureId": "451422JHC01-24",
+    "longitude": 107.081736,
+    "latitude": 22.129867,
+    "species": [
+      "金花茶"
+    ],
+    "plantingAreaHa": 2.56,
+    "plantCount": 1047,
+    "growthStatus": "attention",
+    "surveyDate": "2026-07-20",
+    "source": "mock"
+  },
+  {
+    "id": "451422JHC01-25-P01",
+    "name": "金花茶监测点 03",
+    "areaId": "451422JHC01",
+    "featureId": "451422JHC01-25",
+    "longitude": 107.080386,
+    "latitude": 22.13013,
+    "species": [
+      "金花茶"
+    ],
+    "plantingAreaHa": 1.01,
+    "plantCount": 443,
+    "growthStatus": "good",
+    "surveyDate": "2025-08-09",
+    "source": "mock"
+  },
+  {
+    "id": "451422JHC01-25-P02",
+    "name": "金花茶监测点 04",
+    "areaId": "451422JHC01",
+    "featureId": "451422JHC01-25",
+    "longitude": 107.081721,
+    "latitude": 22.131382,
+    "species": [
+      "金花茶"
+    ],
+    "plantingAreaHa": 1.14,
+    "plantCount": 628,
+    "growthStatus": "good",
+    "surveyDate": "2025-04-27",
+    "source": "mock"
+  },
+  {
+    "id": "450621JHC01-26-P01",
+    "name": "金花茶监测点 01",
+    "areaId": "450621JHC01",
+    "featureId": "450621JHC01-26",
+    "longitude": 107.98127,
+    "latitude": 22.159472,
+    "species": [
+      "金花茶"
+    ],
+    "plantingAreaHa": 2.66,
+    "plantCount": 980,
+    "growthStatus": "good",
+    "surveyDate": "2025-03-15",
+    "source": "mock"
+  },
+  {
+    "id": "450621JHC01-26-P02",
+    "name": "金花茶监测点 02",
+    "areaId": "450621JHC01",
+    "featureId": "450621JHC01-26",
+    "longitude": 107.985408,
+    "latitude": 22.158955,
+    "species": [
+      "金花茶"
+    ],
+    "plantingAreaHa": 2.42,
+    "plantCount": 1210,
+    "growthStatus": "good",
+    "surveyDate": "2026-07-03",
+    "source": "mock"
+  },
+  {
+    "id": "450621JHC01-27-P01",
+    "name": "金花茶监测点 03",
+    "areaId": "450621JHC01",
+    "featureId": "450621JHC01-27",
+    "longitude": 107.975226,
+    "latitude": 22.160028,
+    "species": [
+      "金花茶"
+    ],
+    "plantingAreaHa": 0.81,
+    "plantCount": 162,
+    "growthStatus": "good",
+    "surveyDate": "2025-11-14",
+    "source": "mock"
+  },
+  {
+    "id": "450621JHC01-27-P02",
+    "name": "金花茶监测点 04",
+    "areaId": "450621JHC01",
+    "featureId": "450621JHC01-27",
+    "longitude": 107.97838,
+    "latitude": 22.160551,
+    "species": [
+      "金花茶"
+    ],
+    "plantingAreaHa": 0.74,
+    "plantCount": 291,
+    "growthStatus": "good",
+    "surveyDate": "2025-10-24",
+    "source": "mock"
+  },
+  {
+    "id": "450721YSLZ01-28-P01",
+    "name": "野生荔枝监测点 01",
+    "areaId": "450721YSLZ01",
+    "featureId": "450721YSLZ01-28",
+    "longitude": 109.287443,
+    "latitude": 22.423147,
+    "species": [
+      "野生荔枝"
+    ],
+    "plantingAreaHa": 0.89,
+    "plantCount": 192,
+    "growthStatus": "good",
+    "surveyDate": "2025-07-30",
+    "source": "mock"
+  },
+  {
+    "id": "450721YSLZ01-28-P02",
+    "name": "野生荔枝监测点 02",
+    "areaId": "450721YSLZ01",
+    "featureId": "450721YSLZ01-28",
+    "longitude": 109.292145,
+    "latitude": 22.416545,
+    "species": [
+      "野生荔枝"
+    ],
+    "plantingAreaHa": 0.89,
+    "plantCount": 207,
+    "growthStatus": "good",
+    "surveyDate": "2025-12-04",
+    "source": "mock"
+  },
+  {
+    "id": "450721YSLZ01-28-P03",
+    "name": "野生荔枝监测点 03",
+    "areaId": "450721YSLZ01",
+    "featureId": "450721YSLZ01-28",
+    "longitude": 109.289219,
+    "latitude": 22.419591,
+    "species": [
+      "野生荔枝"
+    ],
+    "plantingAreaHa": 0.76,
+    "plantCount": 309,
+    "growthStatus": "good",
+    "surveyDate": "2026-02-18",
+    "source": "mock"
+  },
+  {
+    "id": "450721YSLZ01-29-P01",
+    "name": "野生荔枝监测点 04",
+    "areaId": "450721YSLZ01",
+    "featureId": "450721YSLZ01-29",
+    "longitude": 109.290342,
+    "latitude": 22.422137,
+    "species": [
+      "野生荔枝"
+    ],
+    "plantingAreaHa": 2.44,
+    "plantCount": 1278,
+    "growthStatus": "normal",
+    "surveyDate": "2025-11-13",
+    "source": "mock"
+  },
+  {
+    "id": "450721YSLZ01-29-P02",
+    "name": "野生荔枝监测点 05",
+    "areaId": "450721YSLZ01",
+    "featureId": "450721YSLZ01-29",
+    "longitude": 109.291428,
+    "latitude": 22.419367,
+    "species": [
+      "野生荔枝"
+    ],
+    "plantingAreaHa": 2.58,
+    "plantCount": 814,
+    "growthStatus": "good",
+    "surveyDate": "2026-02-28",
+    "source": "mock"
+  },
+  {
+    "id": "450921YSLY01-30-P01",
+    "name": "野生龙眼监测点 01",
+    "areaId": "450921YSLY01",
+    "featureId": "450921YSLY01-30",
+    "longitude": 110.551267,
+    "latitude": 22.859365,
+    "species": [
+      "野生龙眼"
+    ],
+    "plantingAreaHa": 1.57,
+    "plantCount": 589,
+    "growthStatus": "good",
+    "surveyDate": "2025-04-24",
+    "source": "mock"
+  },
+  {
+    "id": "450921YSLY01-30-P02",
+    "name": "野生龙眼监测点 02",
+    "areaId": "450921YSLY01",
+    "featureId": "450921YSLY01-30",
+    "longitude": 110.550261,
+    "latitude": 22.861438,
+    "species": [
+      "野生龙眼"
+    ],
+    "plantingAreaHa": 1.64,
+    "plantCount": 204,
+    "growthStatus": "normal",
+    "surveyDate": "2025-03-17",
+    "source": "mock"
+  },
+  {
+    "id": "450921YSLY01-31-P01",
+    "name": "野生龙眼监测点 03",
+    "areaId": "450921YSLY01",
+    "featureId": "450921YSLY01-31",
+    "longitude": 110.55047,
+    "latitude": 22.860453,
+    "species": [
+      "野生龙眼"
+    ],
+    "plantingAreaHa": 0.89,
+    "plantCount": 439,
+    "growthStatus": "normal",
+    "surveyDate": "2025-12-17",
+    "source": "mock"
+  },
+  {
+    "id": "450921YSLY01-31-P02",
+    "name": "野生龙眼监测点 04",
+    "areaId": "450921YSLY01",
+    "featureId": "450921YSLY01-31",
+    "longitude": 110.549549,
+    "latitude": 22.861279,
+    "species": [
+      "野生龙眼"
+    ],
+    "plantingAreaHa": 0.73,
+    "plantCount": 289,
+    "growthStatus": "good",
+    "surveyDate": "2026-04-09",
+    "source": "mock"
+  },
+  {
+    "id": "450521YSD01-32-P01",
+    "name": "野生稻监测点 01",
+    "areaId": "450521YSD01",
+    "featureId": "450521YSD01-32",
+    "longitude": 109.202206,
+    "latitude": 21.683076,
+    "species": [
+      "野生稻"
+    ],
+    "plantingAreaHa": 4.51,
+    "plantCount": 865,
+    "growthStatus": "normal",
+    "surveyDate": "2025-07-20",
+    "source": "mock"
+  },
+  {
+    "id": "450521YSD01-32-P02",
+    "name": "野生稻监测点 02",
+    "areaId": "450521YSD01",
+    "featureId": "450521YSD01-32",
+    "longitude": 109.198049,
+    "latitude": 21.676143,
+    "species": [
+      "野生稻"
+    ],
+    "plantingAreaHa": 3.08,
+    "plantCount": 1049,
+    "growthStatus": "good",
+    "surveyDate": "2025-11-03",
+    "source": "mock"
+  },
+  {
+    "id": "450521YSD01-32-P03",
+    "name": "野生稻监测点 03",
+    "areaId": "450521YSD01",
+    "featureId": "450521YSD01-32",
+    "longitude": 109.20296,
+    "latitude": 21.683489,
+    "species": [
+      "野生稻"
+    ],
+    "plantingAreaHa": 2.93,
+    "plantCount": 679,
+    "growthStatus": "good",
+    "surveyDate": "2026-07-28",
+    "source": "mock"
+  },
+  {
+    "id": "450521YSD01-33-P01",
+    "name": "野生稻监测点 04",
+    "areaId": "450521YSD01",
+    "featureId": "450521YSD01-33",
+    "longitude": 109.201925,
+    "latitude": 21.682204,
+    "species": [
+      "野生稻"
+    ],
+    "plantingAreaHa": 1.63,
+    "plantCount": 792,
+    "growthStatus": "normal",
+    "surveyDate": "2026-04-20",
+    "source": "mock"
+  },
+  {
+    "id": "450521YSD01-33-P02",
+    "name": "野生稻监测点 05",
+    "areaId": "450521YSD01",
+    "featureId": "450521YSD01-33",
+    "longitude": 109.201505,
+    "latitude": 21.681286,
+    "species": [
+      "野生稻"
+    ],
+    "plantingAreaHa": 1.14,
+    "plantCount": 292,
+    "growthStatus": "attention",
+    "surveyDate": "2026-02-18",
+    "source": "mock"
+  },
+  {
+    "id": "451121YSLH01-34-P01",
+    "name": "野生兰花监测点 01",
+    "areaId": "451121YSLH01",
+    "featureId": "451121YSLH01-34",
+    "longitude": 110.80125,
+    "latitude": 24.168037,
+    "species": [
+      "野生兰花"
+    ],
+    "plantingAreaHa": 2.65,
+    "plantCount": 1315,
+    "growthStatus": "good",
+    "surveyDate": "2025-08-05",
+    "source": "mock"
+  },
+  {
+    "id": "451121YSLH01-34-P02",
+    "name": "野生兰花监测点 02",
+    "areaId": "451121YSLH01",
+    "featureId": "451121YSLH01-34",
+    "longitude": 110.803432,
+    "latitude": 24.173388,
+    "species": [
+      "野生兰花"
+    ],
+    "plantingAreaHa": 2.39,
+    "plantCount": 1139,
+    "growthStatus": "good",
+    "surveyDate": "2026-05-10",
+    "source": "mock"
+  },
+  {
+    "id": "451121YSLH01-34-P03",
+    "name": "野生兰花监测点 03",
+    "areaId": "451121YSLH01",
+    "featureId": "451121YSLH01-34",
+    "longitude": 110.802025,
+    "latitude": 24.16983,
+    "species": [
+      "野生兰花"
+    ],
+    "plantingAreaHa": 2.44,
+    "plantCount": 323,
+    "growthStatus": "normal",
+    "surveyDate": "2025-03-08",
+    "source": "mock"
+  },
+  {
+    "id": "451121YSLH01-35-P01",
+    "name": "野生兰花监测点 04",
+    "areaId": "451121YSLH01",
+    "featureId": "451121YSLH01-35",
+    "longitude": 110.797673,
+    "latitude": 24.169588,
+    "species": [
+      "野生兰花"
+    ],
+    "plantingAreaHa": 2.62,
+    "plantCount": 387,
+    "growthStatus": "good",
+    "surveyDate": "2026-02-19",
+    "source": "mock"
+  },
+  {
+    "id": "451121YSLH01-35-P02",
+    "name": "野生兰花监测点 05",
+    "areaId": "451121YSLH01",
+    "featureId": "451121YSLH01-35",
+    "longitude": 110.800031,
+    "latitude": 24.171233,
+    "species": [
+      "野生兰花"
+    ],
+    "plantingAreaHa": 2.14,
+    "plantCount": 1187,
+    "growthStatus": "good",
+    "surveyDate": "2026-07-10",
+    "source": "mock"
+  },
+  {
+    "id": "450324YSWWZ01-36-P01",
+    "name": "野生五味子监测点 01",
+    "areaId": "450324YSWWZ01",
+    "featureId": "450324YSWWZ01-36",
+    "longitude": 111.070231,
+    "latitude": 25.928693,
+    "species": [
+      "野生五味子"
+    ],
+    "plantingAreaHa": 4.39,
+    "plantCount": 602,
+    "growthStatus": "normal",
+    "surveyDate": "2025-05-06",
+    "source": "mock"
+  },
+  {
+    "id": "450324YSWWZ01-36-P02",
+    "name": "野生五味子监测点 02",
+    "areaId": "450324YSWWZ01",
+    "featureId": "450324YSWWZ01-36",
+    "longitude": 111.074577,
+    "latitude": 25.930611,
+    "species": [
+      "野生五味子"
+    ],
+    "plantingAreaHa": 3.71,
+    "plantCount": 1260,
+    "growthStatus": "good",
+    "surveyDate": "2025-08-17",
+    "source": "mock"
+  },
+  {
+    "id": "450324YSWWZ01-36-P03",
+    "name": "野生五味子监测点 03",
+    "areaId": "450324YSWWZ01",
+    "featureId": "450324YSWWZ01-36",
+    "longitude": 111.070606,
+    "latitude": 25.93011,
+    "species": [
+      "野生五味子"
+    ],
+    "plantingAreaHa": 3.78,
+    "plantCount": 906,
+    "growthStatus": "attention",
+    "surveyDate": "2026-01-26",
+    "source": "mock"
+  },
+  {
+    "id": "450324YSWWZ01-37-P01",
+    "name": "野生五味子监测点 04",
+    "areaId": "450324YSWWZ01",
+    "featureId": "450324YSWWZ01-37",
+    "longitude": 111.066538,
+    "latitude": 25.933055,
+    "species": [
+      "野生五味子"
+    ],
+    "plantingAreaHa": 3.11,
+    "plantCount": 389,
+    "growthStatus": "good",
+    "surveyDate": "2025-11-23",
+    "source": "mock"
+  },
+  {
+    "id": "450324YSWWZ01-37-P02",
+    "name": "野生五味子监测点 05",
+    "areaId": "450324YSWWZ01",
+    "featureId": "450324YSWWZ01-37",
+    "longitude": 111.071451,
+    "latitude": 25.929333,
+    "species": [
+      "野生五味子"
+    ],
+    "plantingAreaHa": 3.26,
+    "plantCount": 1271,
+    "growthStatus": "good",
+    "surveyDate": "2025-11-16",
+    "source": "mock"
+  },
+  {
+    "id": "450324YSWWZ01-37-P03",
+    "name": "野生五味子监测点 06",
+    "areaId": "450324YSWWZ01",
+    "featureId": "450324YSWWZ01-37",
+    "longitude": 111.064564,
+    "latitude": 25.933559,
+    "species": [
+      "野生五味子"
+    ],
+    "plantingAreaHa": 3.73,
+    "plantCount": 1682,
+    "growthStatus": "good",
+    "surveyDate": "2025-12-22",
+    "source": "mock"
+  },
+  {
+    "id": "451081JQM01-38-P01",
+    "name": "金荞麦监测点 01",
+    "areaId": "451081JQM01",
+    "featureId": "451081JQM01-38",
+    "longitude": 106.419807,
+    "latitude": 23.144007,
+    "species": [
+      "金荞麦"
+    ],
+    "plantingAreaHa": 4.41,
+    "plantCount": 1495,
+    "growthStatus": "good",
+    "surveyDate": "2026-05-16",
+    "source": "mock"
+  },
+  {
+    "id": "451081JQM01-38-P02",
+    "name": "金荞麦监测点 02",
+    "areaId": "451081JQM01",
+    "featureId": "451081JQM01-38",
+    "longitude": 106.417203,
+    "latitude": 23.141445,
+    "species": [
+      "金荞麦"
+    ],
+    "plantingAreaHa": 3.99,
+    "plantCount": 690,
+    "growthStatus": "normal",
+    "surveyDate": "2025-07-16",
+    "source": "mock"
+  },
+  {
+    "id": "451081JQM01-38-P03",
+    "name": "金荞麦监测点 03",
+    "areaId": "451081JQM01",
+    "featureId": "451081JQM01-38",
+    "longitude": 106.416289,
+    "latitude": 23.142183,
+    "species": [
+      "金荞麦"
+    ],
+    "plantingAreaHa": 3.8,
+    "plantCount": 1442,
+    "growthStatus": "good",
+    "surveyDate": "2026-02-01",
+    "source": "mock"
+  },
+  {
+    "id": "451081JQM01-39-P01",
+    "name": "金荞麦监测点 04",
+    "areaId": "451081JQM01",
+    "featureId": "451081JQM01-39",
+    "longitude": 106.422016,
+    "latitude": 23.136436,
+    "species": [
+      "金荞麦"
+    ],
+    "plantingAreaHa": 3.19,
+    "plantCount": 967,
+    "growthStatus": "good",
+    "surveyDate": "2026-01-02",
+    "source": "mock"
+  },
+  {
+    "id": "451081JQM01-39-P02",
+    "name": "金荞麦监测点 05",
+    "areaId": "451081JQM01",
+    "featureId": "451081JQM01-39",
+    "longitude": 106.422336,
+    "latitude": 23.137064,
+    "species": [
+      "金荞麦"
+    ],
+    "plantingAreaHa": 1.94,
+    "plantCount": 956,
+    "growthStatus": "good",
+    "surveyDate": "2026-06-02",
+    "source": "mock"
+  },
+  {
+    "id": "451081JQM01-39-P03",
+    "name": "金荞麦监测点 06",
+    "areaId": "451081JQM01",
+    "featureId": "451081JQM01-39",
+    "longitude": 106.420764,
+    "latitude": 23.141634,
+    "species": [
+      "金荞麦"
+    ],
+    "plantingAreaHa": 2.18,
+    "plantCount": 928,
+    "growthStatus": "normal",
+    "surveyDate": "2025-07-03",
+    "source": "mock"
+  },
+  {
+    "id": "451026BJW01-40-P01",
+    "name": "八角莲监测点 01",
+    "areaId": "451026BJW01",
+    "featureId": "451026BJW01-40",
+    "longitude": 105.840384,
+    "latitude": 23.41815,
+    "species": [
+      "八角莲"
+    ],
+    "plantingAreaHa": 1.59,
+    "plantCount": 216,
+    "growthStatus": "good",
+    "surveyDate": "2026-05-23",
+    "source": "mock"
+  },
+  {
+    "id": "451026BJW01-40-P02",
+    "name": "八角莲监测点 02",
+    "areaId": "451026BJW01",
+    "featureId": "451026BJW01-40",
+    "longitude": 105.840145,
+    "latitude": 23.419,
+    "species": [
+      "八角莲"
+    ],
+    "plantingAreaHa": 1.38,
+    "plantCount": 448,
+    "growthStatus": "good",
+    "surveyDate": "2025-06-26",
+    "source": "mock"
+  },
+  {
+    "id": "451026BJW01-41-P01",
+    "name": "八角莲监测点 03",
+    "areaId": "451026BJW01",
+    "featureId": "451026BJW01-41",
+    "longitude": 105.842146,
+    "latitude": 23.423152,
+    "species": [
+      "八角莲"
+    ],
+    "plantingAreaHa": 1.98,
+    "plantCount": 274,
+    "growthStatus": "good",
+    "surveyDate": "2026-02-08",
+    "source": "mock"
+  },
+  {
+    "id": "451026BJW01-41-P02",
+    "name": "八角莲监测点 04",
+    "areaId": "451026BJW01",
+    "featureId": "451026BJW01-41",
+    "longitude": 105.841399,
+    "latitude": 23.423595,
+    "species": [
+      "八角莲"
+    ],
+    "plantingAreaHa": 2.06,
+    "plantCount": 1115,
+    "growthStatus": "good",
+    "surveyDate": "2025-10-10",
+    "source": "mock"
+  },
+  {
+    "id": "451324YHLD01-42-P01",
+    "name": "岩黄连监测点 01",
+    "areaId": "451324YHLD01",
+    "featureId": "451324YHLD01-42",
+    "longitude": 110.187748,
+    "latitude": 24.134504,
+    "species": [
+      "岩黄连"
+    ],
+    "plantingAreaHa": 15.15,
+    "plantCount": 4155,
+    "growthStatus": "good",
+    "surveyDate": "2025-11-17",
+    "source": "mock"
+  },
+  {
+    "id": "451324YHLD01-42-P02",
+    "name": "岩黄连监测点 02",
+    "areaId": "451324YHLD01",
+    "featureId": "451324YHLD01-42",
+    "longitude": 110.186204,
+    "latitude": 24.131868,
+    "species": [
+      "岩黄连"
+    ],
+    "plantingAreaHa": 10.63,
+    "plantCount": 4031,
+    "growthStatus": "normal",
+    "surveyDate": "2026-07-02",
+    "source": "mock"
+  },
+  {
+    "id": "451324YHLD01-42-P03",
+    "name": "岩黄连监测点 03",
+    "areaId": "451324YHLD01",
+    "featureId": "451324YHLD01-42",
+    "longitude": 110.186581,
+    "latitude": 24.125082,
+    "species": [
+      "岩黄连"
+    ],
+    "plantingAreaHa": 13.02,
+    "plantCount": 1910,
+    "growthStatus": "normal",
+    "surveyDate": "2025-03-24",
+    "source": "mock"
+  },
+  {
+    "id": "451324YHLD01-43-P01",
+    "name": "岩黄连监测点 04",
+    "areaId": "451324YHLD01",
+    "featureId": "451324YHLD01-43",
+    "longitude": 110.194522,
+    "latitude": 24.119873,
+    "species": [
+      "岩黄连"
+    ],
+    "plantingAreaHa": 31.89,
+    "plantCount": 12346,
+    "growthStatus": "good",
+    "surveyDate": "2026-07-11",
+    "source": "mock"
+  },
+  {
+    "id": "451324YHLD01-43-P02",
+    "name": "岩黄连监测点 05",
+    "areaId": "451324YHLD01",
+    "featureId": "451324YHLD01-43",
+    "longitude": 110.182509,
+    "latitude": 24.121651,
+    "species": [
+      "岩黄连"
+    ],
+    "plantingAreaHa": 37.38,
+    "plantCount": 14253,
+    "growthStatus": "good",
+    "surveyDate": "2025-10-29",
+    "source": "mock"
+  },
+  {
+    "id": "451324YHLD01-43-P03",
+    "name": "岩黄连监测点 06",
+    "areaId": "451324YHLD01",
+    "featureId": "451324YHLD01-43",
+    "longitude": 110.196055,
+    "latitude": 24.123196,
+    "species": [
+      "岩黄连"
+    ],
+    "plantingAreaHa": 33.92,
+    "plantCount": 7517,
+    "growthStatus": "good",
+    "surveyDate": "2025-10-09",
+    "source": "mock"
+  },
+  {
+    "id": "450181SJ01-44-P01",
+    "name": "水蕨监测点 01",
+    "areaId": "450181SJ01",
+    "featureId": "450181SJ01-44",
+    "longitude": 109.274947,
+    "latitude": 22.692685,
+    "species": [
+      "水蕨",
+      "野莲",
+      "野菱"
+    ],
+    "plantingAreaHa": 1.14,
+    "plantCount": 537,
+    "growthStatus": "normal",
+    "surveyDate": "2025-04-27",
+    "source": "mock"
+  },
+  {
+    "id": "450181SJ01-44-P02",
+    "name": "水蕨监测点 02",
+    "areaId": "450181SJ01",
+    "featureId": "450181SJ01-44",
+    "longitude": 109.268732,
+    "latitude": 22.692543,
+    "species": [
+      "水蕨",
+      "野莲",
+      "野菱"
+    ],
+    "plantingAreaHa": 1.13,
+    "plantCount": 265,
+    "growthStatus": "normal",
+    "surveyDate": "2025-09-12",
+    "source": "mock"
+  },
+  {
+    "id": "450181SJ01-44-P03",
+    "name": "水蕨监测点 03",
+    "areaId": "450181SJ01",
+    "featureId": "450181SJ01-44",
+    "longitude": 109.266944,
+    "latitude": 22.692605,
+    "species": [
+      "水蕨",
+      "野莲",
+      "野菱"
+    ],
+    "plantingAreaHa": 1.27,
+    "plantCount": 152,
+    "growthStatus": "normal",
+    "surveyDate": "2025-04-08",
+    "source": "mock"
+  },
+  {
+    "id": "450181SJ01-45-P01",
+    "name": "水蕨监测点 04",
+    "areaId": "450181SJ01",
+    "featureId": "450181SJ01-45",
+    "longitude": 109.269911,
+    "latitude": 22.688811,
+    "species": [
+      "水蕨",
+      "野莲",
+      "野菱"
+    ],
+    "plantingAreaHa": 4.13,
+    "plantCount": 510,
+    "growthStatus": "normal",
+    "surveyDate": "2025-12-25",
+    "source": "mock"
+  },
+  {
+    "id": "450181SJ01-45-P02",
+    "name": "水蕨监测点 05",
+    "areaId": "450181SJ01",
+    "featureId": "450181SJ01-45",
+    "longitude": 109.27192,
+    "latitude": 22.688971,
+    "species": [
+      "水蕨",
+      "野莲",
+      "野菱"
+    ],
+    "plantingAreaHa": 5.27,
+    "plantCount": 891,
+    "growthStatus": "good",
+    "surveyDate": "2025-11-14",
+    "source": "mock"
+  },
+  {
+    "id": "450181SJ01-45-P03",
+    "name": "水蕨监测点 06",
+    "areaId": "450181SJ01",
+    "featureId": "450181SJ01-45",
+    "longitude": 109.273912,
+    "latitude": 22.691442,
+    "species": [
+      "水蕨",
+      "野莲",
+      "野菱"
+    ],
+    "plantingAreaHa": 6.25,
+    "plantCount": 3145,
+    "growthStatus": "normal",
+    "surveyDate": "2025-12-21",
+    "source": "mock"
+  },
+  {
+    "id": "450181SJ01-46-P01",
+    "name": "水蕨监测点 07",
+    "areaId": "450181SJ01",
+    "featureId": "450181SJ01-46",
+    "longitude": 109.271689,
+    "latitude": 22.687289,
+    "species": [
+      "水蕨",
+      "野莲",
+      "野菱"
+    ],
+    "plantingAreaHa": 0.09,
+    "plantCount": 32,
+    "growthStatus": "good",
+    "surveyDate": "2025-05-22",
+    "source": "mock"
+  },
+  {
+    "id": "450181SJ01-47-P01",
+    "name": "水蕨监测点 08",
+    "areaId": "450181SJ01",
+    "featureId": "450181SJ01-47",
+    "longitude": 109.263206,
+    "latitude": 22.688929,
+    "species": [
+      "水蕨",
+      "野莲",
+      "野菱"
+    ],
+    "plantingAreaHa": 0.09,
+    "plantCount": 30,
+    "growthStatus": "good",
+    "surveyDate": "2025-03-20",
+    "source": "mock"
+  },
+  {
+    "id": "450821YSDD01-48-P01",
+    "name": "野生大豆监测点 01",
+    "areaId": "450821YSDD01",
+    "featureId": "450821YSDD01-48",
+    "longitude": 110.401484,
+    "latitude": 23.538508,
+    "species": [
+      "野生大豆"
+    ],
+    "plantingAreaHa": 3.27,
+    "plantCount": 1213,
+    "growthStatus": "good",
+    "surveyDate": "2025-04-07",
+    "source": "mock"
+  },
+  {
+    "id": "450821YSDD01-48-P02",
+    "name": "野生大豆监测点 02",
+    "areaId": "450821YSDD01",
+    "featureId": "450821YSDD01-48",
+    "longitude": 110.400347,
+    "latitude": 23.541023,
+    "species": [
+      "野生大豆"
+    ],
+    "plantingAreaHa": 2.57,
+    "plantCount": 1503,
+    "growthStatus": "normal",
+    "surveyDate": "2025-05-10",
+    "source": "mock"
+  },
+  {
+    "id": "450821YSDD01-48-P03",
+    "name": "野生大豆监测点 03",
+    "areaId": "450821YSDD01",
+    "featureId": "450821YSDD01-48",
+    "longitude": 110.402092,
+    "latitude": 23.542568,
+    "species": [
+      "野生大豆"
+    ],
+    "plantingAreaHa": 2.4,
+    "plantCount": 811,
+    "growthStatus": "good",
+    "surveyDate": "2026-05-05",
+    "source": "mock"
+  },
+  {
+    "id": "450821YSDD01-49-P01",
+    "name": "野生大豆监测点 04",
+    "areaId": "450821YSDD01",
+    "featureId": "450821YSDD01-49",
+    "longitude": 110.398707,
+    "latitude": 23.538463,
+    "species": [
+      "野生大豆"
+    ],
+    "plantingAreaHa": 1.66,
+    "plantCount": 290,
+    "growthStatus": "attention",
+    "surveyDate": "2025-09-30",
+    "source": "mock"
+  },
+  {
+    "id": "450821YSDD01-49-P02",
+    "name": "野生大豆监测点 05",
+    "areaId": "450821YSDD01",
+    "featureId": "450821YSDD01-49",
+    "longitude": 110.398539,
+    "latitude": 23.535706,
+    "species": [
+      "野生大豆"
+    ],
+    "plantingAreaHa": 1.74,
+    "plantCount": 218,
+    "growthStatus": "normal",
+    "surveyDate": "2025-09-16",
+    "source": "mock"
+  },
+  {
+    "id": "450423YSDD01-50-P01",
+    "name": "野生大豆监测点 01",
+    "areaId": "450423YSDD01",
+    "featureId": "450423YSDD01-50",
+    "longitude": 110.522377,
+    "latitude": 24.202165,
+    "species": [
+      "野生大豆"
+    ],
+    "plantingAreaHa": 2.62,
+    "plantCount": 1408,
+    "growthStatus": "good",
+    "surveyDate": "2026-03-09",
+    "source": "mock"
+  },
+  {
+    "id": "450423YSDD01-50-P02",
+    "name": "野生大豆监测点 02",
+    "areaId": "450423YSDD01",
+    "featureId": "450423YSDD01-50",
+    "longitude": 110.517642,
+    "latitude": 24.197705,
+    "species": [
+      "野生大豆"
+    ],
+    "plantingAreaHa": 2.59,
+    "plantCount": 1104,
+    "growthStatus": "normal",
+    "surveyDate": "2025-04-04",
+    "source": "mock"
+  },
+  {
+    "id": "450423YSDD01-50-P03",
+    "name": "野生大豆监测点 03",
+    "areaId": "450423YSDD01",
+    "featureId": "450423YSDD01-50",
+    "longitude": 110.517744,
+    "latitude": 24.201354,
+    "species": [
+      "野生大豆"
+    ],
+    "plantingAreaHa": 2.89,
+    "plantCount": 966,
+    "growthStatus": "good",
+    "surveyDate": "2026-06-02",
+    "source": "mock"
+  },
+  {
+    "id": "450423YSDD01-51-P01",
+    "name": "野生大豆监测点 04",
+    "areaId": "450423YSDD01",
+    "featureId": "450423YSDD01-51",
+    "longitude": 110.517706,
+    "latitude": 24.200237,
+    "species": [
+      "野生大豆"
+    ],
+    "plantingAreaHa": 1.99,
+    "plantCount": 750,
+    "growthStatus": "normal",
+    "surveyDate": "2026-05-12",
+    "source": "mock"
+  },
+  {
+    "id": "450423YSDD01-51-P02",
+    "name": "野生大豆监测点 05",
+    "areaId": "450423YSDD01",
+    "featureId": "450423YSDD01-51",
+    "longitude": 110.519082,
+    "latitude": 24.201857,
+    "species": [
+      "野生大豆"
+    ],
+    "plantingAreaHa": 1.54,
+    "plantCount": 244,
+    "growthStatus": "good",
+    "surveyDate": "2026-03-18",
+    "source": "mock"
+  },
+  {
+    "id": "451123SY01-52-P01",
+    "name": "盾叶薯蓣监测点 01",
+    "areaId": "451123SY01",
+    "featureId": "451123SY01-52",
+    "longitude": 111.282375,
+    "latitude": 24.826499,
+    "species": [
+      "盾叶薯蓣",
+      "八角莲"
+    ],
+    "plantingAreaHa": 6.94,
+    "plantCount": 2958,
+    "growthStatus": "normal",
+    "surveyDate": "2025-11-25",
+    "source": "mock"
+  },
+  {
+    "id": "451123SY01-52-P02",
+    "name": "盾叶薯蓣监测点 02",
+    "areaId": "451123SY01",
+    "featureId": "451123SY01-52",
+    "longitude": 111.284894,
+    "latitude": 24.816685,
+    "species": [
+      "盾叶薯蓣",
+      "八角莲"
+    ],
+    "plantingAreaHa": 10.51,
+    "plantCount": 1431,
+    "growthStatus": "normal",
+    "surveyDate": "2026-04-27",
+    "source": "mock"
+  },
+  {
+    "id": "451123SY01-52-P03",
+    "name": "盾叶薯蓣监测点 03",
+    "areaId": "451123SY01",
+    "featureId": "451123SY01-52",
+    "longitude": 111.282108,
+    "latitude": 24.824737,
+    "species": [
+      "盾叶薯蓣",
+      "八角莲"
+    ],
+    "plantingAreaHa": 10.25,
+    "plantCount": 3269,
+    "growthStatus": "good",
+    "surveyDate": "2025-03-08",
+    "source": "mock"
+  },
+  {
+    "id": "451123SY01-53-P01",
+    "name": "盾叶薯蓣监测点 04",
+    "areaId": "451123SY01",
+    "featureId": "451123SY01-53",
+    "longitude": 111.27644,
+    "latitude": 24.815488,
+    "species": [
+      "盾叶薯蓣",
+      "八角莲"
+    ],
+    "plantingAreaHa": 5.02,
+    "plantCount": 2688,
+    "growthStatus": "good",
+    "surveyDate": "2026-07-08",
+    "source": "mock"
+  },
+  {
+    "id": "451123SY01-53-P02",
+    "name": "盾叶薯蓣监测点 05",
+    "areaId": "451123SY01",
+    "featureId": "451123SY01-53",
+    "longitude": 111.277159,
+    "latitude": 24.816846,
+    "species": [
+      "盾叶薯蓣",
+      "八角莲"
+    ],
+    "plantingAreaHa": 5.26,
+    "plantCount": 1657,
+    "growthStatus": "good",
+    "surveyDate": "2026-04-15",
+    "source": "mock"
+  },
+  {
+    "id": "451123SY01-53-P03",
+    "name": "盾叶薯蓣监测点 06",
+    "areaId": "451123SY01",
+    "featureId": "451123SY01-53",
+    "longitude": 111.279022,
+    "latitude": 24.817751,
+    "species": [
+      "盾叶薯蓣",
+      "八角莲"
+    ],
+    "plantingAreaHa": 5.29,
+    "plantCount": 2352,
+    "growthStatus": "attention",
+    "surveyDate": "2025-07-17",
+    "source": "mock"
+  },
+  {
+    "id": "451123SY01-54-P01",
+    "name": "盾叶薯蓣监测点 07",
+    "areaId": "451123SY01",
+    "featureId": "451123SY01-54",
+    "longitude": 111.278293,
+    "latitude": 24.817578,
+    "species": [
+      "盾叶薯蓣",
+      "八角莲"
+    ],
+    "plantingAreaHa": 0.1,
+    "plantCount": 44,
+    "growthStatus": "attention",
+    "surveyDate": "2026-01-22",
+    "source": "mock"
+  },
+  {
+    "id": "451123SY01-55-P01",
+    "name": "盾叶薯蓣监测点 08",
+    "areaId": "451123SY01",
+    "featureId": "451123SY01-55",
+    "longitude": 111.277689,
+    "latitude": 24.817778,
+    "species": [
+      "盾叶薯蓣",
+      "八角莲"
+    ],
+    "plantingAreaHa": 0.14,
+    "plantCount": 29,
+    "growthStatus": "good",
+    "surveyDate": "2026-07-19",
+    "source": "mock"
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "name": "tres-orbital-lab",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "pnpm@9.15.4",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "test": "vitest run",
+    "type-check": "vue-tsc -b --force",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tresjs/core": "^5.8.3",
+    "gsap": "^3.13.0",
+    "polyclip-ts": "^0.16.8",
+    "three": "^0.185.1",
+    "vue": "^3.5.41"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "@types/three": "^0.185.0",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "typescript": "~5.8.3",
+    "vite": "^6.4.1",
+    "vitest": "2.1.9",
+    "vue-tsc": "^2.2.10"
+  }
+}

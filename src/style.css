@@ -1,0 +1,64 @@
+:root {
+  color: #f1eee4;
+  background: #080c0b;
+  font-family: "Avenir Next Condensed", "DIN Alternate", "PingFang SC", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --paper: #f1eee4;
+  --muted: rgba(241, 238, 228, 0.56);
+  --faint: rgba(241, 238, 228, 0.3);
+  --line: rgba(241, 238, 228, 0.16);
+  --lime: #b9d56a;
+  --green-fill: #b9d56a;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  background: #080c0b;
+}
+
+body {
+  overflow: hidden;
+}
+
+button {
+  color: inherit;
+  font: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible {
+  outline: 1px solid var(--paper);
+  outline-offset: 4px;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

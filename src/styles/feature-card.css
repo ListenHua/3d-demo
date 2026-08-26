@@ -1,0 +1,124 @@
+.feature-card-renderer {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  pointer-events: none;
+}
+
+.feature-card-anchor {
+  pointer-events: none;
+  transform-style: preserve-3d;
+}
+
+.feature-card-shell {
+  transform: translateY(-88%);
+  transform-style: preserve-3d;
+}
+
+.feature-card-3d {
+  position: relative;
+  isolation: isolate;
+  width: 270px;
+  padding: 15px 16px 14px;
+  border: 1px solid rgba(241, 238, 228, 0.42);
+  border-radius: 4px;
+  background: rgba(8, 14, 12, 0.96);
+  color: var(--paper);
+  pointer-events: none;
+  transform-origin: 50% 100%;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.feature-card-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.feature-card-close {
+  position: absolute;
+  top: -7px;
+  right: -8px;
+  display: grid;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  color: rgba(241, 238, 228, 0.55);
+  cursor: pointer;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  line-height: 1;
+  pointer-events: auto;
+  transition:
+    color 150ms ease-out,
+    transform 150ms var(--ease-out);
+}
+
+.feature-card-close:active {
+  transform: scale(0.94);
+}
+
+.feature-card-swatch {
+  width: 5px;
+  height: 34px;
+  flex: 0 0 5px;
+}
+
+.feature-card-eyebrow,
+.feature-card-title,
+.feature-card-data,
+.feature-card-label,
+.feature-card-value {
+  margin: 0;
+  letter-spacing: 0;
+}
+
+.feature-card-eyebrow,
+.feature-card-label {
+  color: rgba(241, 238, 228, 0.4);
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.feature-card-title {
+  margin-top: 3px;
+  font-family: "Songti SC", "STSong", Georgia, serif;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.feature-card-data {
+  display: grid;
+  gap: 7px;
+  margin-top: 13px;
+  padding-top: 11px;
+  border-top: 1px solid rgba(241, 238, 228, 0.14);
+}
+
+.feature-card-row {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 10px;
+  align-items: baseline;
+}
+
+.feature-card-value {
+  overflow-wrap: anywhere;
+  color: rgba(241, 238, 228, 0.84);
+  font-size: 10px;
+  line-height: 1.35;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .feature-card-close:hover {
+    color: var(--paper);
+    transform: scale(1.06);
+  }
+}

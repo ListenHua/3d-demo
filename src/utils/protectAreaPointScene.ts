@@ -393,12 +393,13 @@ export function updateProtectAreaPointAnimation(
         2 * Math.tan((camera.fov * Math.PI) / 360) * distance
       ) / viewportHeight
       const hoverScale = sceneGraph.hoverScaleByPointId.get(point.id)?.value ?? 1
-      const interactionScale = point.id === sceneGraph.selectedPointId
-        ? config.selectedScale
+      const isSelected = point.id === sceneGraph.selectedPointId
+      const interactionScale = isSelected
+        ? config.hoverScale
         : hoverScale
       const markerWidth = config.markerWidthPx * worldUnitsPerPixel * interactionScale
       const markerHeight = config.markerHeightPx * worldUnitsPerPixel * interactionScale
-      const bobOffset = reducedMotion
+      const bobOffset = reducedMotion || isSelected
         ? 0
         : Math.sin(elapsedSeconds * bobFrequency + phase) * config.bobAmplitudeKm
       const rotation = reducedMotion
@@ -444,11 +445,12 @@ export function updateProtectAreaPointAnimation(
       const worldUnitsPerPixel = (
         2 * Math.tan((camera.fov * Math.PI) / 360) * distance
       ) / viewportHeight
-      const bobProgress = reducedMotion
+      const isSelected = point.id === sceneGraph.selectedPointId
+      const bobProgress = reducedMotion || isSelected
         ? 0
         : Math.sin(elapsedSeconds * bobFrequency + phase)
       const shadowSize = config.shadowSizePx * worldUnitsPerPixel * (
-        reducedMotion
+        reducedMotion || isSelected
           ? 1
           : 1 + ((bobProgress + 1) / 2) * config.shadowBobScale
       )

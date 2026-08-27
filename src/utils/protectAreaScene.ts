@@ -1,11 +1,18 @@
 import {
+  BufferGeometry,
   Color,
   ExtrudeGeometry,
+  Float32BufferAttribute,
   Group,
+  LineBasicMaterial,
+  LineSegments,
   Mesh,
+  MeshBasicMaterial,
   MeshStandardMaterial,
   Path,
   Shape,
+  ShapeGeometry,
+  Texture,
   Vector2,
 } from 'three'
 import { PROTECT_AREA_TYPE_DEFINITIONS } from '../config/protectArea'
@@ -13,6 +20,7 @@ import { SCENE_CONFIG } from '../config/scene'
 import type {
   AreaType,
   GeoPosition,
+  ProjectedBounds,
   ProjectedPolygon,
   ProtectAreaGroup,
 } from '../types/protect-area'
@@ -42,12 +50,19 @@ export interface FeatureVisual {
   type: AreaType
   group: Group
   fill: MeshStandardMaterial
+  tint: MeshBasicMaterial
+  border: LineBasicMaterial
 }
 
 export interface ProtectAreaSceneGraph {
   group: Group
   visuals: FeatureVisual[]
 }
+
+const TERRAIN_TEXTURE_BRIGHTNESS = 1.85
+const TERRAIN_OVERLAY_ELEVATION_OFFSET_KM = 0.0005
+const FEATURE_TINT_ELEVATION_OFFSET_KM = 0.0005
+const FEATURE_BORDER_ELEVATION_OFFSET_KM = 0.0005
 
 function stripClosingPoint(ring: GeoPosition[]): GeoPosition[] {
   if (ring.length < 2) return ring
@@ -86,7 +101,151 @@ function createShape(polygon: ProjectedPolygon): Shape {
   return shape
 }
 
-export function createProtectAreaSceneGraph(areas: ProtectAreaGroup[]): ProtectAreaSceneGraph {
+function createTerrainMaterial(terrainTexture: Texture): MeshBasicMaterial {
+  const material = new MeshBasicMaterial({
+    color: '#ffffff',
+    map: terrainTexture,
+    transparent: true,
+  })
+  material.depthWrite = false
+
+  material.onBeforeCompile = (shader) => {
+    shader.fragmentShader = shader.fragmentShader.replace(
+      'diffuseColor *= sampledDiffuseColor;',
+      [
+        `sampledDiffuseColor.rgb = min(sampledDiffuseColor.rgb * ${TERRAIN_TEXTURE_BRIGHTNESS.toFixed(2)}, vec3(1.0));`,
+        'diffuseColor *= sampledDiffuseColor;',
+      ].join('\n\t'),
+    )
+  }
+
+  return material
+}
+
+function applyFeatureTerrainUV(geometry: ShapeGeometry, bounds: ProjectedBounds): void {
+  const position = geometry.getAttribute('position')
+  const width = bounds.width || 1
+  const depth = bounds.depth || 1
+  const uv: number[] = []
+
+  for (let index = 0; index < position.count; index += 1) {
+    const x = position.getX(index)
+    const z = -position.getY(index)
+
+    uv.push(
+      (x - bounds.minX) / width,
+      1 - (z - bounds.minZ) / depth,
+    )
+  }
+
+  geometry.setAttribute('uv', new Float32BufferAttribute(uv, 2))
+}
+
+function createFeatureOverlayGeometry(shapes: Shape[]): ShapeGeometry {
+  const geometry = new ShapeGeometry(shapes, 1)
+  return geometry
+}
+
+function createFeatureTerrainOverlay(
+  terrainTexture: Texture,
+  shapes: Shape[],
+  bounds: ProjectedBounds,
+): Mesh {
+  const geometry = createFeatureOverlayGeometry(shapes)
+  applyFeatureTerrainUV(geometry, bounds)
+  geometry.rotateX(-Math.PI / 2)
+
+  const mesh = new Mesh(geometry, createTerrainMaterial(terrainTexture))
+  mesh.name = 'feature-terrain-image-overlay'
+  mesh.position.y = getFeatureTopY() + TERRAIN_OVERLAY_ELEVATION_OFFSET_KM
+  mesh.renderOrder = 1
+  mesh.raycast = () => {}
+
+  return mesh
+}
+
+function createFeatureTintMaterial(color: Color): MeshBasicMaterial {
+  const material = new MeshBasicMaterial({
+    color,
+    opacity: SCENE_CONFIG.feature.visual.activeTintOpacity,
+    transparent: true,
+  })
+  material.depthWrite = false
+  return material
+}
+
+function createFeatureTintOverlay(shapes: Shape[], material: MeshBasicMaterial): Mesh {
+  const geometry = createFeatureOverlayGeometry(shapes)
+  geometry.rotateX(-Math.PI / 2)
+
+  const mesh = new Mesh(geometry, material)
+  mesh.name = 'feature-type-tint-overlay'
+  mesh.position.y = getFeatureTopY() + FEATURE_TINT_ELEVATION_OFFSET_KM
+  mesh.renderOrder = 2
+  mesh.raycast = () => {}
+
+  return mesh
+}
+
+function appendRingBorderSegments(vertices: number[], ring: GeoPosition[]): void {
+  const points = stripClosingPoint(ring)
+  if (points.length < 2) return
+
+  for (let index = 0; index < points.length; index += 1) {
+    const current = points[index]
+    const next = points[(index + 1) % points.length]
+
+    vertices.push(
+      current[0],
+      0,
+      current[1],
+      next[0],
+      0,
+      next[1],
+    )
+  }
+}
+
+function createFeatureBorderGeometry(polygons: ProjectedPolygon[]): BufferGeometry {
+  const vertices: number[] = []
+
+  for (const polygon of polygons) {
+    appendRingBorderSegments(vertices, polygon.outer)
+    polygon.holes.forEach((hole) => appendRingBorderSegments(vertices, hole))
+  }
+
+  const geometry = new BufferGeometry()
+  geometry.setAttribute('position', new Float32BufferAttribute(vertices, 3))
+  return geometry
+}
+
+function createFeatureBorderMaterial(color: Color): LineBasicMaterial {
+  const material = new LineBasicMaterial({
+    color,
+    opacity: SCENE_CONFIG.feature.visual.activeBorderOpacity,
+    transparent: true,
+  })
+  material.depthWrite = false
+  return material
+}
+
+function createFeatureBorderOverlay(
+  polygons: ProjectedPolygon[],
+  material: LineBasicMaterial,
+): LineSegments {
+  const lines = new LineSegments(createFeatureBorderGeometry(polygons), material)
+  lines.name = 'feature-border-line'
+  lines.position.y = getFeatureTopY() + FEATURE_BORDER_ELEVATION_OFFSET_KM
+  lines.renderOrder = 3
+  lines.raycast = () => {}
+
+  return lines
+}
+
+export function createProtectAreaSceneGraph(
+  areas: ProtectAreaGroup[],
+  terrainTexture: Texture,
+): ProtectAreaSceneGraph {
   const group = new Group()
   const visuals: FeatureVisual[] = []
   group.name = 'protect-area-map'
@@ -134,6 +293,11 @@ export function createProtectAreaSceneGraph(areas: ProtectAreaGroup[]): ProtectA
       mesh.userData.featureId = feature.id
       mesh.renderOrder = elevation * 100
       featureGroup.add(mesh)
+      featureGroup.add(createFeatureTerrainOverlay(terrainTexture, shapes, feature.bounds))
+      const tint = createFeatureTintMaterial(color)
+      featureGroup.add(createFeatureTintOverlay(shapes, tint))
+      const border = createFeatureBorderMaterial(color)
+      featureGroup.add(createFeatureBorderOverlay(polygons, border))
 
       areaGroup.add(featureGroup)
 
@@ -144,6 +308,8 @@ export function createProtectAreaSceneGraph(areas: ProtectAreaGroup[]): ProtectA
         type: feature.type,
         group: featureGroup,
         fill,
+        tint,
+        border,
       })
     }
 
@@ -155,7 +321,7 @@ export function createProtectAreaSceneGraph(areas: ProtectAreaGroup[]): ProtectA
 
 export function disposeProtectAreaSceneGraph(sceneGraph: ProtectAreaSceneGraph): void {
   sceneGraph.group.traverse((object) => {
-    if (object instanceof Mesh) {
+    if (object instanceof Mesh || object instanceof LineSegments) {
       object.geometry.dispose()
 
       if (Array.isArray(object.material)) {

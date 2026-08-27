@@ -106,6 +106,18 @@ export const SCENE_CONFIG = {
       inactiveBrightness: 0.28,
       /** 非当前保护区域地块的自发光强度。 */
       inactiveEmissiveIntensity: 0.015,
+      /** 当前保护区域内顶面功能区透明色覆盖层的不透明度。 */
+      activeTintOpacity: 0.5,
+      /** 悬停或选中地块顶面功能区透明色覆盖层的不透明度。 */
+      emphasizedTintOpacity: 0.6,
+      /** 非当前保护区域顶面功能区透明色覆盖层的不透明度。 */
+      inactiveTintOpacity: 1,
+      /** 当前保护区域内功能区顶面边框线的不透明度。 */
+      activeBorderOpacity: 0.68,
+      /** 悬停或选中地块顶面边框线的不透明度。 */
+      emphasizedBorderOpacity: 1,
+      /** 非当前保护区域功能区顶面边框线的不透明度。 */
+      inactiveBorderOpacity: 1,
     },
   },
   /** 区域切换、地块聚焦和返回视角的镜头动画参数。 */
@@ -226,8 +238,6 @@ export const SCENE_CONFIG = {
       /** 点位恢复缓动。 */
       leaveEase: 'power2.out',
     },
-    /** 当前选中实例的缩放倍率。 */
-    selectedScale: 1.24,
     /** 不可见命中体相对可见标记的缩放倍率。 */
     hitScale: 1.55,
     /** 持续动画的最高刷新率。 */

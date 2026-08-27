@@ -236,14 +236,32 @@ export function useFeatureInteraction({
       : isActive
         ? config.activeEmissiveIntensity
         : config.inactiveEmissiveIntensity
+    const tintOpacity = isEmphasized
+      ? config.emphasizedTintOpacity
+      : isActive
+        ? config.activeTintOpacity
+        : config.inactiveTintOpacity
+    const borderOpacity = isEmphasized
+      ? config.emphasizedBorderOpacity
+      : isActive
+        ? config.activeBorderOpacity
+        : config.inactiveBorderOpacity
     const targetColor = visual.baseColor.clone().multiplyScalar(brightness)
 
     gsap.killTweensOf(visual.fill)
     gsap.killTweensOf(visual.fill.color)
+    gsap.killTweensOf(visual.tint)
+    gsap.killTweensOf(visual.tint.color)
+    gsap.killTweensOf(visual.border)
+    gsap.killTweensOf(visual.border.color)
 
     if (immediate || reducedMotion.matches) {
       visual.fill.color.copy(targetColor)
       visual.fill.emissiveIntensity = emissiveIntensity
+      visual.tint.color.copy(targetColor)
+      visual.tint.opacity = tintOpacity
+      visual.border.color.copy(targetColor)
+      visual.border.opacity = borderOpacity
       invalidate()
       return
     }
@@ -261,6 +279,38 @@ export function useFeatureInteraction({
       duration: SCENE_CONFIG.feature.motion.visualDurationSeconds,
       ease: 'power2.out',
       emissiveIntensity,
+      overwrite: true,
+      onUpdate: invalidate,
+    })
+    gsap.to(visual.tint.color, {
+      b: targetColor.b,
+      duration: SCENE_CONFIG.feature.motion.visualDurationSeconds,
+      ease: 'power2.out',
+      g: targetColor.g,
+      overwrite: true,
+      r: targetColor.r,
+      onUpdate: invalidate,
+    })
+    gsap.to(visual.tint, {
+      duration: SCENE_CONFIG.feature.motion.visualDurationSeconds,
+      ease: 'power2.out',
+      opacity: tintOpacity,
+      overwrite: true,
+      onUpdate: invalidate,
+    })
+    gsap.to(visual.border.color, {
+      b: targetColor.b,
+      duration: SCENE_CONFIG.feature.motion.visualDurationSeconds,
+      ease: 'power2.out',
+      g: targetColor.g,
+      overwrite: true,
+      r: targetColor.r,
+      onUpdate: invalidate,
+    })
+    gsap.to(visual.border, {
+      duration: SCENE_CONFIG.feature.motion.visualDurationSeconds,
+      ease: 'power2.out',
+      opacity: borderOpacity,
       overwrite: true,
       onUpdate: invalidate,
     })
@@ -592,6 +642,10 @@ export function useFeatureInteraction({
     sceneGraph.visuals.forEach((visual) => {
       gsap.killTweensOf(visual.fill)
       gsap.killTweensOf(visual.fill.color)
+      gsap.killTweensOf(visual.tint)
+      gsap.killTweensOf(visual.tint.color)
+      gsap.killTweensOf(visual.border)
+      gsap.killTweensOf(visual.border.color)
       gsap.killTweensOf(visual.group.scale)
     })
   }

@@ -1,7 +1,16 @@
 <script setup lang="ts">
 import { useLoop, useTresContext } from '@tresjs/core'
-import { Vector3 } from 'three'
+import {
+  ClampToEdgeWrapping,
+  LinearFilter,
+  LinearMipmapLinearFilter,
+  SRGBColorSpace,
+  TextureLoader,
+  Vector3,
+} from 'three'
+import type { WebGLRenderer } from 'three'
 import { markRaw, onBeforeUnmount, onMounted, watch } from 'vue'
+import plotTextureUrl from '../../assets/images/plot.png'
 import { SCENE_CONFIG } from '../../config/scene'
 import type {
   ProtectAreaDataset,
@@ -43,7 +52,24 @@ const emit = defineEmits<{
 const { renderer, sizes } = useTresContext()
 const { onBeforeRender } = useLoop()
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
-const sceneGraph = markRaw(createProtectAreaSceneGraph(props.dataset.areas))
+const webglRenderer = renderer.instance as WebGLRenderer
+const terrainTexture = markRaw(new TextureLoader().load(
+  plotTextureUrl,
+  () => renderer.invalidate(),
+))
+terrainTexture.colorSpace = SRGBColorSpace
+terrainTexture.wrapS = ClampToEdgeWrapping
+terrainTexture.wrapT = ClampToEdgeWrapping
+terrainTexture.magFilter = LinearFilter
+terrainTexture.minFilter = LinearMipmapLinearFilter
+terrainTexture.anisotropy = Math.min(
+  webglRenderer.capabilities.getMaxAnisotropy(),
+  8,
+)
+const sceneGraph = markRaw(createProtectAreaSceneGraph(
+  props.dataset.areas,
+  terrainTexture,
+))
 const featureVisualById = new Map(
   sceneGraph.visuals.map((visual) => [visual.featureId, visual]),
 )
@@ -265,6 +291,7 @@ onBeforeUnmount(() => {
   featureInteraction.dispose()
   disposeProtectAreaPointSceneGraph(pointSceneGraph)
   disposeProtectAreaSceneGraph(sceneGraph)
+  terrainTexture.dispose()
 })
 </script>
 

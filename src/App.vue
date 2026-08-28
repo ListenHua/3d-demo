@@ -242,26 +242,27 @@ function playAreaTitle(): void {
 
   areaTitleTween?.kill()
   gsap.killTweensOf(title)
-  title.style.willChange = 'transform, opacity'
+  title.style.willChange = 'clip-path, opacity'
 
   if (prefersReducedMotion()) {
-    gsap.set(title, { autoAlpha: 1, x: 0 })
+    gsap.set(title, { autoAlpha: 1, clipPath: 'inset(0 0% 0 0)' })
     title.style.willChange = 'auto'
     return
   }
 
   areaTitleTween = gsap.fromTo(
     title,
-    { autoAlpha: 0, x: -18 },
+    { autoAlpha: 0, clipPath: 'inset(0 100% 0 0)' },
     {
       autoAlpha: 1,
-      duration: 0.72,
-      ease: 'power3.out',
+      clearProps: 'clipPath',
+      clipPath: 'inset(0 0% 0 0)',
+      duration: 1,
+      ease: 'power2.inOut',
       onComplete: () => {
         title.style.willChange = 'auto'
         areaTitleTween = null
       },
-      x: 0,
     },
   )
 }

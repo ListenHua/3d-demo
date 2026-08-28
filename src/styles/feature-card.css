@@ -11,8 +11,13 @@
 }
 
 .feature-card-shell {
-  transform: translateY(-88%);
+  --feature-card-offset-y: -88%;
+  transform: translateY(var(--feature-card-offset-y));
   transform-style: preserve-3d;
+}
+
+.feature-card-shell--point {
+  --feature-card-offset-y: -72%;
 }
 
 .feature-card-3d {

@@ -15,6 +15,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@gt/mapbox-gl": "1.0.2",
     "@tresjs/core": "^5.8.3",
     "gsap": "^3.13.0",
     "polyclip-ts": "^0.16.8",

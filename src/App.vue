@@ -447,8 +447,9 @@ onBeforeUnmount(() => {
 .area-legend {
   position: absolute;
   z-index: 2;
-  top: 112px;
-  right: 30px;
+  right: auto;
+  bottom: 174px;
+  left: 30px;
   min-width: 124px;
   pointer-events: none;
 }
@@ -569,9 +570,8 @@ onBeforeUnmount(() => {
   }
 
   .area-legend {
-    top: auto;
-    right: 16px;
-    bottom: 140px;
+    right: auto;
+    bottom: 166px;
     left: 16px;
   }
 
@@ -582,7 +582,7 @@ onBeforeUnmount(() => {
   .area-legend ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
     gap: 6px 14px;
     margin: 0;
   }
@@ -606,7 +606,7 @@ onBeforeUnmount(() => {
   }
 
   .area-legend {
-    bottom: 132px;
+    bottom: 142px;
   }
 }
 </style>

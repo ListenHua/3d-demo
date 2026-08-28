@@ -8,6 +8,7 @@ import { SCENE_CONFIG } from '../config/scene'
 export interface FeatureCardContent {
   color: string
   eyebrow: string
+  kind: 'feature' | 'point'
   rows: Array<{
     label: string
     value: string
@@ -22,6 +23,7 @@ export interface FeatureCard3D {
   onPointerDown: (event: PointerEvent) => void
   renderer: CSS3DRenderer
   scene: Scene
+  shell: HTMLElement
   sprite: CSS3DSprite
   fields: {
     details: HTMLElement
@@ -103,6 +105,7 @@ export function createFeatureCard3D(
     onPointerDown,
     renderer,
     scene,
+    shell,
     sprite,
     fields: {
       details,
@@ -127,6 +130,7 @@ export function updateFeatureCard3D(
   handle.fields.eyebrow.textContent = content.eyebrow
   handle.fields.title.textContent = content.title
   handle.fields.swatch.style.backgroundColor = content.color
+  handle.shell.classList.toggle('feature-card-shell--point', content.kind === 'point')
   handle.sprite.position.copy(position)
 }
 

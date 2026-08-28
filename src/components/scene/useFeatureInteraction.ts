@@ -458,6 +458,7 @@ export function useFeatureInteraction({
           return {
             color: pointStatus.color,
             eyebrow: '模拟监测点',
+            kind: 'point' as const,
             title: point.name,
             rows: [
               { label: '物种', value: point.species.join(' / ') },
@@ -473,6 +474,7 @@ export function useFeatureInteraction({
       : {
           color: definition.color,
           eyebrow: '功能区',
+          kind: 'feature' as const,
           title: definition.label,
           rows: [
             { label: '面积', value: `${feature.area.toFixed(2)} ha` },

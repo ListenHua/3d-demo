@@ -13,7 +13,21 @@
     "plantCount": 149,
     "growthStatus": "normal",
     "surveyDate": "2025-08-18",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生稻监测点 01：用于跟踪野生稻的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450125YSD01-0-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450125YSD01-0-P01-species-1/640/420",
+      "https://picsum.photos/seed/450125YSD01-0-P01-species-2/640/420",
+      "https://picsum.photos/seed/450125YSD01-0-P01-species-3/640/420",
+      "https://picsum.photos/seed/450125YSD01-0-P01-species-4/640/420",
+      "https://picsum.photos/seed/450125YSD01-0-P01-species-5/640/420",
+      "https://picsum.photos/seed/450125YSD01-0-P01-species-6/640/420",
+      "https://picsum.photos/seed/450125YSD01-0-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450125YSD01-0-P02",
@@ -29,7 +43,21 @@
     "plantCount": 208,
     "growthStatus": "attention",
     "surveyDate": "2026-04-27",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生稻监测点 02：用于跟踪野生稻的种群数量、生长势和样方环境变化。近期记录显示该点位存在需要关注的生长波动，适合作为下一轮现场复核的优先点。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "长势波动较明显，需复核水分、遮阴和人为干扰情况。",
+    "speciesImageUrl": "https://picsum.photos/seed/450125YSD01-0-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450125YSD01-0-P02-species-1/640/420",
+      "https://picsum.photos/seed/450125YSD01-0-P02-species-2/640/420",
+      "https://picsum.photos/seed/450125YSD01-0-P02-species-3/640/420",
+      "https://picsum.photos/seed/450125YSD01-0-P02-species-4/640/420",
+      "https://picsum.photos/seed/450125YSD01-0-P02-species-5/640/420",
+      "https://picsum.photos/seed/450125YSD01-0-P02-species-6/640/420",
+      "https://picsum.photos/seed/450125YSD01-0-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450125YSD01-0-P03",
@@ -45,7 +73,21 @@
     "plantCount": 640,
     "growthStatus": "good",
     "surveyDate": "2025-06-22",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生稻监测点 03：用于跟踪野生稻的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450125YSD01-0-P03-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450125YSD01-0-P03-species-1/640/420",
+      "https://picsum.photos/seed/450125YSD01-0-P03-species-2/640/420",
+      "https://picsum.photos/seed/450125YSD01-0-P03-species-3/640/420",
+      "https://picsum.photos/seed/450125YSD01-0-P03-species-4/640/420",
+      "https://picsum.photos/seed/450125YSD01-0-P03-species-5/640/420",
+      "https://picsum.photos/seed/450125YSD01-0-P03-species-6/640/420",
+      "https://picsum.photos/seed/450125YSD01-0-P03-species-7/640/420"
+    ]
   },
   {
     "id": "450125YSD01-1-P01",
@@ -61,7 +103,21 @@
     "plantCount": 1056,
     "growthStatus": "good",
     "surveyDate": "2025-07-21",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生稻监测点 04：用于跟踪野生稻的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450125YSD01-1-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450125YSD01-1-P01-species-1/640/420",
+      "https://picsum.photos/seed/450125YSD01-1-P01-species-2/640/420",
+      "https://picsum.photos/seed/450125YSD01-1-P01-species-3/640/420",
+      "https://picsum.photos/seed/450125YSD01-1-P01-species-4/640/420",
+      "https://picsum.photos/seed/450125YSD01-1-P01-species-5/640/420",
+      "https://picsum.photos/seed/450125YSD01-1-P01-species-6/640/420",
+      "https://picsum.photos/seed/450125YSD01-1-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450125YSD01-1-P02",
@@ -77,7 +133,21 @@
     "plantCount": 289,
     "growthStatus": "normal",
     "surveyDate": "2026-06-10",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生稻监测点 05：用于跟踪野生稻的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450125YSD01-1-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450125YSD01-1-P02-species-1/640/420",
+      "https://picsum.photos/seed/450125YSD01-1-P02-species-2/640/420",
+      "https://picsum.photos/seed/450125YSD01-1-P02-species-3/640/420",
+      "https://picsum.photos/seed/450125YSD01-1-P02-species-4/640/420",
+      "https://picsum.photos/seed/450125YSD01-1-P02-species-5/640/420",
+      "https://picsum.photos/seed/450125YSD01-1-P02-species-6/640/420",
+      "https://picsum.photos/seed/450125YSD01-1-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450328YSMHT01-2-P01",
@@ -93,7 +163,21 @@
     "plantCount": 529,
     "growthStatus": "normal",
     "surveyDate": "2026-01-31",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生猕猴桃监测点 01：用于跟踪野生猕猴桃的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450328YSMHT01-2-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450328YSMHT01-2-P01-species-1/640/420",
+      "https://picsum.photos/seed/450328YSMHT01-2-P01-species-2/640/420",
+      "https://picsum.photos/seed/450328YSMHT01-2-P01-species-3/640/420",
+      "https://picsum.photos/seed/450328YSMHT01-2-P01-species-4/640/420",
+      "https://picsum.photos/seed/450328YSMHT01-2-P01-species-5/640/420",
+      "https://picsum.photos/seed/450328YSMHT01-2-P01-species-6/640/420",
+      "https://picsum.photos/seed/450328YSMHT01-2-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450328YSMHT01-2-P02",
@@ -109,7 +193,21 @@
     "plantCount": 770,
     "growthStatus": "good",
     "surveyDate": "2025-09-04",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生猕猴桃监测点 02：用于跟踪野生猕猴桃的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450328YSMHT01-2-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450328YSMHT01-2-P02-species-1/640/420",
+      "https://picsum.photos/seed/450328YSMHT01-2-P02-species-2/640/420",
+      "https://picsum.photos/seed/450328YSMHT01-2-P02-species-3/640/420",
+      "https://picsum.photos/seed/450328YSMHT01-2-P02-species-4/640/420",
+      "https://picsum.photos/seed/450328YSMHT01-2-P02-species-5/640/420",
+      "https://picsum.photos/seed/450328YSMHT01-2-P02-species-6/640/420",
+      "https://picsum.photos/seed/450328YSMHT01-2-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450328YSMHT01-3-P01",
@@ -125,7 +223,21 @@
     "plantCount": 247,
     "growthStatus": "attention",
     "surveyDate": "2025-10-14",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生猕猴桃监测点 03：用于跟踪野生猕猴桃的种群数量、生长势和样方环境变化。近期记录显示该点位存在需要关注的生长波动，适合作为下一轮现场复核的优先点。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "长势波动较明显，需复核水分、遮阴和人为干扰情况。",
+    "speciesImageUrl": "https://picsum.photos/seed/450328YSMHT01-3-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450328YSMHT01-3-P01-species-1/640/420",
+      "https://picsum.photos/seed/450328YSMHT01-3-P01-species-2/640/420",
+      "https://picsum.photos/seed/450328YSMHT01-3-P01-species-3/640/420",
+      "https://picsum.photos/seed/450328YSMHT01-3-P01-species-4/640/420",
+      "https://picsum.photos/seed/450328YSMHT01-3-P01-species-5/640/420",
+      "https://picsum.photos/seed/450328YSMHT01-3-P01-species-6/640/420",
+      "https://picsum.photos/seed/450328YSMHT01-3-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450328YSMHT01-3-P02",
@@ -141,7 +253,21 @@
     "plantCount": 255,
     "growthStatus": "normal",
     "surveyDate": "2025-11-24",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生猕猴桃监测点 04：用于跟踪野生猕猴桃的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450328YSMHT01-3-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450328YSMHT01-3-P02-species-1/640/420",
+      "https://picsum.photos/seed/450328YSMHT01-3-P02-species-2/640/420",
+      "https://picsum.photos/seed/450328YSMHT01-3-P02-species-3/640/420",
+      "https://picsum.photos/seed/450328YSMHT01-3-P02-species-4/640/420",
+      "https://picsum.photos/seed/450328YSMHT01-3-P02-species-5/640/420",
+      "https://picsum.photos/seed/450328YSMHT01-3-P02-species-6/640/420",
+      "https://picsum.photos/seed/450328YSMHT01-3-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450329YSLH01-4-P01",
@@ -157,7 +283,21 @@
     "plantCount": 473,
     "growthStatus": "attention",
     "surveyDate": "2026-02-21",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生兰花监测点 01：用于跟踪野生兰花的种群数量、生长势和样方环境变化。近期记录显示该点位存在需要关注的生长波动，适合作为下一轮现场复核的优先点。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "长势波动较明显，需复核水分、遮阴和人为干扰情况。",
+    "speciesImageUrl": "https://picsum.photos/seed/450329YSLH01-4-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450329YSLH01-4-P01-species-1/640/420",
+      "https://picsum.photos/seed/450329YSLH01-4-P01-species-2/640/420",
+      "https://picsum.photos/seed/450329YSLH01-4-P01-species-3/640/420",
+      "https://picsum.photos/seed/450329YSLH01-4-P01-species-4/640/420",
+      "https://picsum.photos/seed/450329YSLH01-4-P01-species-5/640/420",
+      "https://picsum.photos/seed/450329YSLH01-4-P01-species-6/640/420",
+      "https://picsum.photos/seed/450329YSLH01-4-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450329YSLH01-4-P02",
@@ -173,7 +313,21 @@
     "plantCount": 419,
     "growthStatus": "normal",
     "surveyDate": "2025-05-03",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生兰花监测点 02：用于跟踪野生兰花的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450329YSLH01-4-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450329YSLH01-4-P02-species-1/640/420",
+      "https://picsum.photos/seed/450329YSLH01-4-P02-species-2/640/420",
+      "https://picsum.photos/seed/450329YSLH01-4-P02-species-3/640/420",
+      "https://picsum.photos/seed/450329YSLH01-4-P02-species-4/640/420",
+      "https://picsum.photos/seed/450329YSLH01-4-P02-species-5/640/420",
+      "https://picsum.photos/seed/450329YSLH01-4-P02-species-6/640/420",
+      "https://picsum.photos/seed/450329YSLH01-4-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450329YSLH01-5-P01",
@@ -189,7 +343,21 @@
     "plantCount": 254,
     "growthStatus": "normal",
     "surveyDate": "2025-07-31",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生兰花监测点 03：用于跟踪野生兰花的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450329YSLH01-5-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450329YSLH01-5-P01-species-1/640/420",
+      "https://picsum.photos/seed/450329YSLH01-5-P01-species-2/640/420",
+      "https://picsum.photos/seed/450329YSLH01-5-P01-species-3/640/420",
+      "https://picsum.photos/seed/450329YSLH01-5-P01-species-4/640/420",
+      "https://picsum.photos/seed/450329YSLH01-5-P01-species-5/640/420",
+      "https://picsum.photos/seed/450329YSLH01-5-P01-species-6/640/420",
+      "https://picsum.photos/seed/450329YSLH01-5-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450329YSLH01-5-P02",
@@ -205,7 +373,21 @@
     "plantCount": 432,
     "growthStatus": "good",
     "surveyDate": "2026-05-24",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生兰花监测点 04：用于跟踪野生兰花的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450329YSLH01-5-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450329YSLH01-5-P02-species-1/640/420",
+      "https://picsum.photos/seed/450329YSLH01-5-P02-species-2/640/420",
+      "https://picsum.photos/seed/450329YSLH01-5-P02-species-3/640/420",
+      "https://picsum.photos/seed/450329YSLH01-5-P02-species-4/640/420",
+      "https://picsum.photos/seed/450329YSLH01-5-P02-species-5/640/420",
+      "https://picsum.photos/seed/450329YSLH01-5-P02-species-6/640/420",
+      "https://picsum.photos/seed/450329YSLH01-5-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450329YSLH01-5-P03",
@@ -221,7 +403,21 @@
     "plantCount": 350,
     "growthStatus": "good",
     "surveyDate": "2025-03-10",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生兰花监测点 05：用于跟踪野生兰花的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450329YSLH01-5-P03-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450329YSLH01-5-P03-species-1/640/420",
+      "https://picsum.photos/seed/450329YSLH01-5-P03-species-2/640/420",
+      "https://picsum.photos/seed/450329YSLH01-5-P03-species-3/640/420",
+      "https://picsum.photos/seed/450329YSLH01-5-P03-species-4/640/420",
+      "https://picsum.photos/seed/450329YSLH01-5-P03-species-5/640/420",
+      "https://picsum.photos/seed/450329YSLH01-5-P03-species-6/640/420",
+      "https://picsum.photos/seed/450329YSLH01-5-P03-species-7/640/420"
+    ]
   },
   {
     "id": "450225YSGJ01-6-P01",
@@ -237,7 +433,21 @@
     "plantCount": 1040,
     "growthStatus": "good",
     "surveyDate": "2025-03-05",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生柑橘监测点 01：用于跟踪野生柑橘的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450225YSGJ01-6-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450225YSGJ01-6-P01-species-1/640/420",
+      "https://picsum.photos/seed/450225YSGJ01-6-P01-species-2/640/420",
+      "https://picsum.photos/seed/450225YSGJ01-6-P01-species-3/640/420",
+      "https://picsum.photos/seed/450225YSGJ01-6-P01-species-4/640/420",
+      "https://picsum.photos/seed/450225YSGJ01-6-P01-species-5/640/420",
+      "https://picsum.photos/seed/450225YSGJ01-6-P01-species-6/640/420",
+      "https://picsum.photos/seed/450225YSGJ01-6-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450225YSGJ01-6-P02",
@@ -253,7 +463,21 @@
     "plantCount": 1162,
     "growthStatus": "good",
     "surveyDate": "2026-04-18",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生柑橘监测点 02：用于跟踪野生柑橘的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450225YSGJ01-6-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450225YSGJ01-6-P02-species-1/640/420",
+      "https://picsum.photos/seed/450225YSGJ01-6-P02-species-2/640/420",
+      "https://picsum.photos/seed/450225YSGJ01-6-P02-species-3/640/420",
+      "https://picsum.photos/seed/450225YSGJ01-6-P02-species-4/640/420",
+      "https://picsum.photos/seed/450225YSGJ01-6-P02-species-5/640/420",
+      "https://picsum.photos/seed/450225YSGJ01-6-P02-species-6/640/420",
+      "https://picsum.photos/seed/450225YSGJ01-6-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450225YSGJ01-7-P01",
@@ -269,7 +493,21 @@
     "plantCount": 354,
     "growthStatus": "good",
     "surveyDate": "2026-04-01",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生柑橘监测点 03：用于跟踪野生柑橘的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450225YSGJ01-7-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450225YSGJ01-7-P01-species-1/640/420",
+      "https://picsum.photos/seed/450225YSGJ01-7-P01-species-2/640/420",
+      "https://picsum.photos/seed/450225YSGJ01-7-P01-species-3/640/420",
+      "https://picsum.photos/seed/450225YSGJ01-7-P01-species-4/640/420",
+      "https://picsum.photos/seed/450225YSGJ01-7-P01-species-5/640/420",
+      "https://picsum.photos/seed/450225YSGJ01-7-P01-species-6/640/420",
+      "https://picsum.photos/seed/450225YSGJ01-7-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450225YSGJ01-7-P02",
@@ -285,7 +523,21 @@
     "plantCount": 219,
     "growthStatus": "normal",
     "surveyDate": "2025-05-27",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生柑橘监测点 04：用于跟踪野生柑橘的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450225YSGJ01-7-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450225YSGJ01-7-P02-species-1/640/420",
+      "https://picsum.photos/seed/450225YSGJ01-7-P02-species-2/640/420",
+      "https://picsum.photos/seed/450225YSGJ01-7-P02-species-3/640/420",
+      "https://picsum.photos/seed/450225YSGJ01-7-P02-species-4/640/420",
+      "https://picsum.photos/seed/450225YSGJ01-7-P02-species-5/640/420",
+      "https://picsum.photos/seed/450225YSGJ01-7-P02-species-6/640/420",
+      "https://picsum.photos/seed/450225YSGJ01-7-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450226YSDD01-8-P01",
@@ -301,7 +553,21 @@
     "plantCount": 493,
     "growthStatus": "good",
     "surveyDate": "2025-11-12",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生大豆监测点 01：用于跟踪野生大豆的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450226YSDD01-8-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450226YSDD01-8-P01-species-1/640/420",
+      "https://picsum.photos/seed/450226YSDD01-8-P01-species-2/640/420",
+      "https://picsum.photos/seed/450226YSDD01-8-P01-species-3/640/420",
+      "https://picsum.photos/seed/450226YSDD01-8-P01-species-4/640/420",
+      "https://picsum.photos/seed/450226YSDD01-8-P01-species-5/640/420",
+      "https://picsum.photos/seed/450226YSDD01-8-P01-species-6/640/420",
+      "https://picsum.photos/seed/450226YSDD01-8-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450226YSDD01-8-P02",
@@ -317,7 +583,21 @@
     "plantCount": 309,
     "growthStatus": "good",
     "surveyDate": "2025-05-12",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生大豆监测点 02：用于跟踪野生大豆的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450226YSDD01-8-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450226YSDD01-8-P02-species-1/640/420",
+      "https://picsum.photos/seed/450226YSDD01-8-P02-species-2/640/420",
+      "https://picsum.photos/seed/450226YSDD01-8-P02-species-3/640/420",
+      "https://picsum.photos/seed/450226YSDD01-8-P02-species-4/640/420",
+      "https://picsum.photos/seed/450226YSDD01-8-P02-species-5/640/420",
+      "https://picsum.photos/seed/450226YSDD01-8-P02-species-6/640/420",
+      "https://picsum.photos/seed/450226YSDD01-8-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450226YSDD01-8-P03",
@@ -333,7 +613,21 @@
     "plantCount": 319,
     "growthStatus": "good",
     "surveyDate": "2025-07-28",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生大豆监测点 03：用于跟踪野生大豆的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450226YSDD01-8-P03-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450226YSDD01-8-P03-species-1/640/420",
+      "https://picsum.photos/seed/450226YSDD01-8-P03-species-2/640/420",
+      "https://picsum.photos/seed/450226YSDD01-8-P03-species-3/640/420",
+      "https://picsum.photos/seed/450226YSDD01-8-P03-species-4/640/420",
+      "https://picsum.photos/seed/450226YSDD01-8-P03-species-5/640/420",
+      "https://picsum.photos/seed/450226YSDD01-8-P03-species-6/640/420",
+      "https://picsum.photos/seed/450226YSDD01-8-P03-species-7/640/420"
+    ]
   },
   {
     "id": "450226YSDD01-9-P01",
@@ -349,7 +643,21 @@
     "plantCount": 411,
     "growthStatus": "normal",
     "surveyDate": "2025-10-13",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生大豆监测点 04：用于跟踪野生大豆的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450226YSDD01-9-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450226YSDD01-9-P01-species-1/640/420",
+      "https://picsum.photos/seed/450226YSDD01-9-P01-species-2/640/420",
+      "https://picsum.photos/seed/450226YSDD01-9-P01-species-3/640/420",
+      "https://picsum.photos/seed/450226YSDD01-9-P01-species-4/640/420",
+      "https://picsum.photos/seed/450226YSDD01-9-P01-species-5/640/420",
+      "https://picsum.photos/seed/450226YSDD01-9-P01-species-6/640/420",
+      "https://picsum.photos/seed/450226YSDD01-9-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450226YSDD01-9-P02",
@@ -365,7 +673,21 @@
     "plantCount": 293,
     "growthStatus": "good",
     "surveyDate": "2025-06-09",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生大豆监测点 05：用于跟踪野生大豆的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450226YSDD01-9-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450226YSDD01-9-P02-species-1/640/420",
+      "https://picsum.photos/seed/450226YSDD01-9-P02-species-2/640/420",
+      "https://picsum.photos/seed/450226YSDD01-9-P02-species-3/640/420",
+      "https://picsum.photos/seed/450226YSDD01-9-P02-species-4/640/420",
+      "https://picsum.photos/seed/450226YSDD01-9-P02-species-5/640/420",
+      "https://picsum.photos/seed/450226YSDD01-9-P02-species-6/640/420",
+      "https://picsum.photos/seed/450226YSDD01-9-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450881YL01-10-P01",
@@ -381,7 +703,21 @@
     "plantCount": 773,
     "growthStatus": "good",
     "surveyDate": "2025-06-23",
-    "source": "mock"
+    "source": "mock",
+    "description": "野莲监测点 01：用于跟踪野莲的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450881YL01-10-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450881YL01-10-P01-species-1/640/420",
+      "https://picsum.photos/seed/450881YL01-10-P01-species-2/640/420",
+      "https://picsum.photos/seed/450881YL01-10-P01-species-3/640/420",
+      "https://picsum.photos/seed/450881YL01-10-P01-species-4/640/420",
+      "https://picsum.photos/seed/450881YL01-10-P01-species-5/640/420",
+      "https://picsum.photos/seed/450881YL01-10-P01-species-6/640/420",
+      "https://picsum.photos/seed/450881YL01-10-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450881YL01-10-P02",
@@ -397,7 +733,21 @@
     "plantCount": 855,
     "growthStatus": "normal",
     "surveyDate": "2026-06-29",
-    "source": "mock"
+    "source": "mock",
+    "description": "野莲监测点 02：用于跟踪野莲的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450881YL01-10-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450881YL01-10-P02-species-1/640/420",
+      "https://picsum.photos/seed/450881YL01-10-P02-species-2/640/420",
+      "https://picsum.photos/seed/450881YL01-10-P02-species-3/640/420",
+      "https://picsum.photos/seed/450881YL01-10-P02-species-4/640/420",
+      "https://picsum.photos/seed/450881YL01-10-P02-species-5/640/420",
+      "https://picsum.photos/seed/450881YL01-10-P02-species-6/640/420",
+      "https://picsum.photos/seed/450881YL01-10-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450881YL01-11-P01",
@@ -413,7 +763,21 @@
     "plantCount": 1538,
     "growthStatus": "good",
     "surveyDate": "2026-03-15",
-    "source": "mock"
+    "source": "mock",
+    "description": "野莲监测点 03：用于跟踪野莲的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450881YL01-11-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450881YL01-11-P01-species-1/640/420",
+      "https://picsum.photos/seed/450881YL01-11-P01-species-2/640/420",
+      "https://picsum.photos/seed/450881YL01-11-P01-species-3/640/420",
+      "https://picsum.photos/seed/450881YL01-11-P01-species-4/640/420",
+      "https://picsum.photos/seed/450881YL01-11-P01-species-5/640/420",
+      "https://picsum.photos/seed/450881YL01-11-P01-species-6/640/420",
+      "https://picsum.photos/seed/450881YL01-11-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450881YL01-11-P02",
@@ -429,7 +793,21 @@
     "plantCount": 786,
     "growthStatus": "normal",
     "surveyDate": "2026-02-13",
-    "source": "mock"
+    "source": "mock",
+    "description": "野莲监测点 04：用于跟踪野莲的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450881YL01-11-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450881YL01-11-P02-species-1/640/420",
+      "https://picsum.photos/seed/450881YL01-11-P02-species-2/640/420",
+      "https://picsum.photos/seed/450881YL01-11-P02-species-3/640/420",
+      "https://picsum.photos/seed/450881YL01-11-P02-species-4/640/420",
+      "https://picsum.photos/seed/450881YL01-11-P02-species-5/640/420",
+      "https://picsum.photos/seed/450881YL01-11-P02-species-6/640/420",
+      "https://picsum.photos/seed/450881YL01-11-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450881YL01-11-P03",
@@ -445,7 +823,21 @@
     "plantCount": 1016,
     "growthStatus": "attention",
     "surveyDate": "2025-03-31",
-    "source": "mock"
+    "source": "mock",
+    "description": "野莲监测点 05：用于跟踪野莲的种群数量、生长势和样方环境变化。近期记录显示该点位存在需要关注的生长波动，适合作为下一轮现场复核的优先点。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "长势波动较明显，需复核水分、遮阴和人为干扰情况。",
+    "speciesImageUrl": "https://picsum.photos/seed/450881YL01-11-P03-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450881YL01-11-P03-species-1/640/420",
+      "https://picsum.photos/seed/450881YL01-11-P03-species-2/640/420",
+      "https://picsum.photos/seed/450881YL01-11-P03-species-3/640/420",
+      "https://picsum.photos/seed/450881YL01-11-P03-species-4/640/420",
+      "https://picsum.photos/seed/450881YL01-11-P03-species-5/640/420",
+      "https://picsum.photos/seed/450881YL01-11-P03-species-6/640/420",
+      "https://picsum.photos/seed/450881YL01-11-P03-species-7/640/420"
+    ]
   },
   {
     "id": "450481LHG01-12-P01",
@@ -461,7 +853,21 @@
     "plantCount": 375,
     "growthStatus": "good",
     "surveyDate": "2026-05-25",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生罗汉果监测点 01：用于跟踪野生罗汉果的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450481LHG01-12-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450481LHG01-12-P01-species-1/640/420",
+      "https://picsum.photos/seed/450481LHG01-12-P01-species-2/640/420",
+      "https://picsum.photos/seed/450481LHG01-12-P01-species-3/640/420",
+      "https://picsum.photos/seed/450481LHG01-12-P01-species-4/640/420",
+      "https://picsum.photos/seed/450481LHG01-12-P01-species-5/640/420",
+      "https://picsum.photos/seed/450481LHG01-12-P01-species-6/640/420",
+      "https://picsum.photos/seed/450481LHG01-12-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450481LHG01-12-P02",
@@ -477,7 +883,21 @@
     "plantCount": 592,
     "growthStatus": "good",
     "surveyDate": "2025-07-04",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生罗汉果监测点 02：用于跟踪野生罗汉果的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450481LHG01-12-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450481LHG01-12-P02-species-1/640/420",
+      "https://picsum.photos/seed/450481LHG01-12-P02-species-2/640/420",
+      "https://picsum.photos/seed/450481LHG01-12-P02-species-3/640/420",
+      "https://picsum.photos/seed/450481LHG01-12-P02-species-4/640/420",
+      "https://picsum.photos/seed/450481LHG01-12-P02-species-5/640/420",
+      "https://picsum.photos/seed/450481LHG01-12-P02-species-6/640/420",
+      "https://picsum.photos/seed/450481LHG01-12-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450481LHG01-13-P01",
@@ -493,7 +913,21 @@
     "plantCount": 528,
     "growthStatus": "normal",
     "surveyDate": "2025-05-30",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生罗汉果监测点 03：用于跟踪野生罗汉果的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450481LHG01-13-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450481LHG01-13-P01-species-1/640/420",
+      "https://picsum.photos/seed/450481LHG01-13-P01-species-2/640/420",
+      "https://picsum.photos/seed/450481LHG01-13-P01-species-3/640/420",
+      "https://picsum.photos/seed/450481LHG01-13-P01-species-4/640/420",
+      "https://picsum.photos/seed/450481LHG01-13-P01-species-5/640/420",
+      "https://picsum.photos/seed/450481LHG01-13-P01-species-6/640/420",
+      "https://picsum.photos/seed/450481LHG01-13-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450481LHG01-13-P02",
@@ -509,7 +943,21 @@
     "plantCount": 1692,
     "growthStatus": "good",
     "surveyDate": "2025-09-26",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生罗汉果监测点 04：用于跟踪野生罗汉果的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450481LHG01-13-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450481LHG01-13-P02-species-1/640/420",
+      "https://picsum.photos/seed/450481LHG01-13-P02-species-2/640/420",
+      "https://picsum.photos/seed/450481LHG01-13-P02-species-3/640/420",
+      "https://picsum.photos/seed/450481LHG01-13-P02-species-4/640/420",
+      "https://picsum.photos/seed/450481LHG01-13-P02-species-5/640/420",
+      "https://picsum.photos/seed/450481LHG01-13-P02-species-6/640/420",
+      "https://picsum.photos/seed/450481LHG01-13-P02-species-7/640/420"
+    ]
   },
   {
     "id": "451028YSLK01-14-P01",
@@ -525,7 +973,21 @@
     "plantCount": 1158,
     "growthStatus": "good",
     "surveyDate": "2026-06-05",
-    "source": "mock"
+    "source": "mock",
+    "description": "兰科植物监测点 01：用于跟踪兰科植物的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451028YSLK01-14-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451028YSLK01-14-P01-species-1/640/420",
+      "https://picsum.photos/seed/451028YSLK01-14-P01-species-2/640/420",
+      "https://picsum.photos/seed/451028YSLK01-14-P01-species-3/640/420",
+      "https://picsum.photos/seed/451028YSLK01-14-P01-species-4/640/420",
+      "https://picsum.photos/seed/451028YSLK01-14-P01-species-5/640/420",
+      "https://picsum.photos/seed/451028YSLK01-14-P01-species-6/640/420",
+      "https://picsum.photos/seed/451028YSLK01-14-P01-species-7/640/420"
+    ]
   },
   {
     "id": "451028YSLK01-14-P02",
@@ -541,7 +1003,21 @@
     "plantCount": 2519,
     "growthStatus": "good",
     "surveyDate": "2025-03-10",
-    "source": "mock"
+    "source": "mock",
+    "description": "兰科植物监测点 02：用于跟踪兰科植物的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451028YSLK01-14-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451028YSLK01-14-P02-species-1/640/420",
+      "https://picsum.photos/seed/451028YSLK01-14-P02-species-2/640/420",
+      "https://picsum.photos/seed/451028YSLK01-14-P02-species-3/640/420",
+      "https://picsum.photos/seed/451028YSLK01-14-P02-species-4/640/420",
+      "https://picsum.photos/seed/451028YSLK01-14-P02-species-5/640/420",
+      "https://picsum.photos/seed/451028YSLK01-14-P02-species-6/640/420",
+      "https://picsum.photos/seed/451028YSLK01-14-P02-species-7/640/420"
+    ]
   },
   {
     "id": "451028YSLK01-14-P03",
@@ -557,7 +1033,21 @@
     "plantCount": 1580,
     "growthStatus": "normal",
     "surveyDate": "2025-06-27",
-    "source": "mock"
+    "source": "mock",
+    "description": "兰科植物监测点 03：用于跟踪兰科植物的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/451028YSLK01-14-P03-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451028YSLK01-14-P03-species-1/640/420",
+      "https://picsum.photos/seed/451028YSLK01-14-P03-species-2/640/420",
+      "https://picsum.photos/seed/451028YSLK01-14-P03-species-3/640/420",
+      "https://picsum.photos/seed/451028YSLK01-14-P03-species-4/640/420",
+      "https://picsum.photos/seed/451028YSLK01-14-P03-species-5/640/420",
+      "https://picsum.photos/seed/451028YSLK01-14-P03-species-6/640/420",
+      "https://picsum.photos/seed/451028YSLK01-14-P03-species-7/640/420"
+    ]
   },
   {
     "id": "451028YSLK01-15-P01",
@@ -573,7 +1063,21 @@
     "plantCount": 8332,
     "growthStatus": "good",
     "surveyDate": "2026-02-11",
-    "source": "mock"
+    "source": "mock",
+    "description": "兰科植物监测点 04：用于跟踪兰科植物的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451028YSLK01-15-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451028YSLK01-15-P01-species-1/640/420",
+      "https://picsum.photos/seed/451028YSLK01-15-P01-species-2/640/420",
+      "https://picsum.photos/seed/451028YSLK01-15-P01-species-3/640/420",
+      "https://picsum.photos/seed/451028YSLK01-15-P01-species-4/640/420",
+      "https://picsum.photos/seed/451028YSLK01-15-P01-species-5/640/420",
+      "https://picsum.photos/seed/451028YSLK01-15-P01-species-6/640/420",
+      "https://picsum.photos/seed/451028YSLK01-15-P01-species-7/640/420"
+    ]
   },
   {
     "id": "451028YSLK01-15-P02",
@@ -589,7 +1093,21 @@
     "plantCount": 8642,
     "growthStatus": "attention",
     "surveyDate": "2025-05-17",
-    "source": "mock"
+    "source": "mock",
+    "description": "兰科植物监测点 05：用于跟踪兰科植物的种群数量、生长势和样方环境变化。近期记录显示该点位存在需要关注的生长波动，适合作为下一轮现场复核的优先点。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "长势波动较明显，需复核水分、遮阴和人为干扰情况。",
+    "speciesImageUrl": "https://picsum.photos/seed/451028YSLK01-15-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451028YSLK01-15-P02-species-1/640/420",
+      "https://picsum.photos/seed/451028YSLK01-15-P02-species-2/640/420",
+      "https://picsum.photos/seed/451028YSLK01-15-P02-species-3/640/420",
+      "https://picsum.photos/seed/451028YSLK01-15-P02-species-4/640/420",
+      "https://picsum.photos/seed/451028YSLK01-15-P02-species-5/640/420",
+      "https://picsum.photos/seed/451028YSLK01-15-P02-species-6/640/420",
+      "https://picsum.photos/seed/451028YSLK01-15-P02-species-7/640/420"
+    ]
   },
   {
     "id": "451028YSLK01-15-P03",
@@ -605,7 +1123,21 @@
     "plantCount": 4983,
     "growthStatus": "good",
     "surveyDate": "2025-03-11",
-    "source": "mock"
+    "source": "mock",
+    "description": "兰科植物监测点 06：用于跟踪兰科植物的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451028YSLK01-15-P03-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451028YSLK01-15-P03-species-1/640/420",
+      "https://picsum.photos/seed/451028YSLK01-15-P03-species-2/640/420",
+      "https://picsum.photos/seed/451028YSLK01-15-P03-species-3/640/420",
+      "https://picsum.photos/seed/451028YSLK01-15-P03-species-4/640/420",
+      "https://picsum.photos/seed/451028YSLK01-15-P03-species-5/640/420",
+      "https://picsum.photos/seed/451028YSLK01-15-P03-species-6/640/420",
+      "https://picsum.photos/seed/451028YSLK01-15-P03-species-7/640/420"
+    ]
   },
   {
     "id": "451028YSLK01-16-P01",
@@ -621,7 +1153,21 @@
     "plantCount": 37,
     "growthStatus": "good",
     "surveyDate": "2026-01-03",
-    "source": "mock"
+    "source": "mock",
+    "description": "兰科植物监测点 07：用于跟踪兰科植物的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451028YSLK01-16-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451028YSLK01-16-P01-species-1/640/420",
+      "https://picsum.photos/seed/451028YSLK01-16-P01-species-2/640/420",
+      "https://picsum.photos/seed/451028YSLK01-16-P01-species-3/640/420",
+      "https://picsum.photos/seed/451028YSLK01-16-P01-species-4/640/420",
+      "https://picsum.photos/seed/451028YSLK01-16-P01-species-5/640/420",
+      "https://picsum.photos/seed/451028YSLK01-16-P01-species-6/640/420",
+      "https://picsum.photos/seed/451028YSLK01-16-P01-species-7/640/420"
+    ]
   },
   {
     "id": "451028YSLK01-17-P01",
@@ -637,7 +1183,21 @@
     "plantCount": 118,
     "growthStatus": "good",
     "surveyDate": "2025-10-19",
-    "source": "mock"
+    "source": "mock",
+    "description": "兰科植物监测点 08：用于跟踪兰科植物的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451028YSLK01-17-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451028YSLK01-17-P01-species-1/640/420",
+      "https://picsum.photos/seed/451028YSLK01-17-P01-species-2/640/420",
+      "https://picsum.photos/seed/451028YSLK01-17-P01-species-3/640/420",
+      "https://picsum.photos/seed/451028YSLK01-17-P01-species-4/640/420",
+      "https://picsum.photos/seed/451028YSLK01-17-P01-species-5/640/420",
+      "https://picsum.photos/seed/451028YSLK01-17-P01-species-6/640/420",
+      "https://picsum.photos/seed/451028YSLK01-17-P01-species-7/640/420"
+    ]
   },
   {
     "id": "451225YSMHT01-18-P01",
@@ -653,7 +1213,21 @@
     "plantCount": 731,
     "growthStatus": "good",
     "surveyDate": "2026-04-15",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生猕猴桃监测点 01：用于跟踪野生猕猴桃的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451225YSMHT01-18-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451225YSMHT01-18-P01-species-1/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-18-P01-species-2/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-18-P01-species-3/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-18-P01-species-4/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-18-P01-species-5/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-18-P01-species-6/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-18-P01-species-7/640/420"
+    ]
   },
   {
     "id": "451225YSMHT01-18-P02",
@@ -669,7 +1243,21 @@
     "plantCount": 372,
     "growthStatus": "good",
     "surveyDate": "2025-04-17",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生猕猴桃监测点 02：用于跟踪野生猕猴桃的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451225YSMHT01-18-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451225YSMHT01-18-P02-species-1/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-18-P02-species-2/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-18-P02-species-3/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-18-P02-species-4/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-18-P02-species-5/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-18-P02-species-6/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-18-P02-species-7/640/420"
+    ]
   },
   {
     "id": "451225YSMHT01-18-P03",
@@ -685,7 +1273,21 @@
     "plantCount": 574,
     "growthStatus": "attention",
     "surveyDate": "2025-05-01",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生猕猴桃监测点 03：用于跟踪野生猕猴桃的种群数量、生长势和样方环境变化。近期记录显示该点位存在需要关注的生长波动，适合作为下一轮现场复核的优先点。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "长势波动较明显，需复核水分、遮阴和人为干扰情况。",
+    "speciesImageUrl": "https://picsum.photos/seed/451225YSMHT01-18-P03-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451225YSMHT01-18-P03-species-1/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-18-P03-species-2/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-18-P03-species-3/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-18-P03-species-4/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-18-P03-species-5/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-18-P03-species-6/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-18-P03-species-7/640/420"
+    ]
   },
   {
     "id": "451225YSMHT01-19-P01",
@@ -701,7 +1303,21 @@
     "plantCount": 605,
     "growthStatus": "normal",
     "surveyDate": "2025-03-01",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生猕猴桃监测点 04：用于跟踪野生猕猴桃的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/451225YSMHT01-19-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451225YSMHT01-19-P01-species-1/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-19-P01-species-2/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-19-P01-species-3/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-19-P01-species-4/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-19-P01-species-5/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-19-P01-species-6/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-19-P01-species-7/640/420"
+    ]
   },
   {
     "id": "451225YSMHT01-19-P02",
@@ -717,7 +1333,21 @@
     "plantCount": 1218,
     "growthStatus": "attention",
     "surveyDate": "2026-01-11",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生猕猴桃监测点 05：用于跟踪野生猕猴桃的种群数量、生长势和样方环境变化。近期记录显示该点位存在需要关注的生长波动，适合作为下一轮现场复核的优先点。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "长势波动较明显，需复核水分、遮阴和人为干扰情况。",
+    "speciesImageUrl": "https://picsum.photos/seed/451225YSMHT01-19-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451225YSMHT01-19-P02-species-1/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-19-P02-species-2/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-19-P02-species-3/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-19-P02-species-4/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-19-P02-species-5/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-19-P02-species-6/640/420",
+      "https://picsum.photos/seed/451225YSMHT01-19-P02-species-7/640/420"
+    ]
   },
   {
     "id": "451226YSLH01-20-P01",
@@ -733,7 +1363,21 @@
     "plantCount": 2492,
     "growthStatus": "attention",
     "surveyDate": "2025-04-24",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生兰花监测点 01：用于跟踪野生兰花的种群数量、生长势和样方环境变化。近期记录显示该点位存在需要关注的生长波动，适合作为下一轮现场复核的优先点。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "长势波动较明显，需复核水分、遮阴和人为干扰情况。",
+    "speciesImageUrl": "https://picsum.photos/seed/451226YSLH01-20-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451226YSLH01-20-P01-species-1/640/420",
+      "https://picsum.photos/seed/451226YSLH01-20-P01-species-2/640/420",
+      "https://picsum.photos/seed/451226YSLH01-20-P01-species-3/640/420",
+      "https://picsum.photos/seed/451226YSLH01-20-P01-species-4/640/420",
+      "https://picsum.photos/seed/451226YSLH01-20-P01-species-5/640/420",
+      "https://picsum.photos/seed/451226YSLH01-20-P01-species-6/640/420",
+      "https://picsum.photos/seed/451226YSLH01-20-P01-species-7/640/420"
+    ]
   },
   {
     "id": "451226YSLH01-20-P02",
@@ -749,7 +1393,21 @@
     "plantCount": 2647,
     "growthStatus": "good",
     "surveyDate": "2025-04-08",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生兰花监测点 02：用于跟踪野生兰花的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451226YSLH01-20-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451226YSLH01-20-P02-species-1/640/420",
+      "https://picsum.photos/seed/451226YSLH01-20-P02-species-2/640/420",
+      "https://picsum.photos/seed/451226YSLH01-20-P02-species-3/640/420",
+      "https://picsum.photos/seed/451226YSLH01-20-P02-species-4/640/420",
+      "https://picsum.photos/seed/451226YSLH01-20-P02-species-5/640/420",
+      "https://picsum.photos/seed/451226YSLH01-20-P02-species-6/640/420",
+      "https://picsum.photos/seed/451226YSLH01-20-P02-species-7/640/420"
+    ]
   },
   {
     "id": "451226YSLH01-20-P03",
@@ -765,7 +1423,21 @@
     "plantCount": 1496,
     "growthStatus": "good",
     "surveyDate": "2025-06-12",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生兰花监测点 03：用于跟踪野生兰花的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451226YSLH01-20-P03-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451226YSLH01-20-P03-species-1/640/420",
+      "https://picsum.photos/seed/451226YSLH01-20-P03-species-2/640/420",
+      "https://picsum.photos/seed/451226YSLH01-20-P03-species-3/640/420",
+      "https://picsum.photos/seed/451226YSLH01-20-P03-species-4/640/420",
+      "https://picsum.photos/seed/451226YSLH01-20-P03-species-5/640/420",
+      "https://picsum.photos/seed/451226YSLH01-20-P03-species-6/640/420",
+      "https://picsum.photos/seed/451226YSLH01-20-P03-species-7/640/420"
+    ]
   },
   {
     "id": "451226YSLH01-21-P01",
@@ -781,7 +1453,21 @@
     "plantCount": 671,
     "growthStatus": "good",
     "surveyDate": "2025-06-20",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生兰花监测点 04：用于跟踪野生兰花的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451226YSLH01-21-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451226YSLH01-21-P01-species-1/640/420",
+      "https://picsum.photos/seed/451226YSLH01-21-P01-species-2/640/420",
+      "https://picsum.photos/seed/451226YSLH01-21-P01-species-3/640/420",
+      "https://picsum.photos/seed/451226YSLH01-21-P01-species-4/640/420",
+      "https://picsum.photos/seed/451226YSLH01-21-P01-species-5/640/420",
+      "https://picsum.photos/seed/451226YSLH01-21-P01-species-6/640/420",
+      "https://picsum.photos/seed/451226YSLH01-21-P01-species-7/640/420"
+    ]
   },
   {
     "id": "451226YSLH01-21-P02",
@@ -797,7 +1483,21 @@
     "plantCount": 683,
     "growthStatus": "attention",
     "surveyDate": "2026-06-29",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生兰花监测点 05：用于跟踪野生兰花的种群数量、生长势和样方环境变化。近期记录显示该点位存在需要关注的生长波动，适合作为下一轮现场复核的优先点。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "长势波动较明显，需复核水分、遮阴和人为干扰情况。",
+    "speciesImageUrl": "https://picsum.photos/seed/451226YSLH01-21-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451226YSLH01-21-P02-species-1/640/420",
+      "https://picsum.photos/seed/451226YSLH01-21-P02-species-2/640/420",
+      "https://picsum.photos/seed/451226YSLH01-21-P02-species-3/640/420",
+      "https://picsum.photos/seed/451226YSLH01-21-P02-species-4/640/420",
+      "https://picsum.photos/seed/451226YSLH01-21-P02-species-5/640/420",
+      "https://picsum.photos/seed/451226YSLH01-21-P02-species-6/640/420",
+      "https://picsum.photos/seed/451226YSLH01-21-P02-species-7/640/420"
+    ]
   },
   {
     "id": "451226YSLH01-21-P03",
@@ -813,7 +1513,21 @@
     "plantCount": 1324,
     "growthStatus": "normal",
     "surveyDate": "2025-08-14",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生兰花监测点 06：用于跟踪野生兰花的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/451226YSLH01-21-P03-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451226YSLH01-21-P03-species-1/640/420",
+      "https://picsum.photos/seed/451226YSLH01-21-P03-species-2/640/420",
+      "https://picsum.photos/seed/451226YSLH01-21-P03-species-3/640/420",
+      "https://picsum.photos/seed/451226YSLH01-21-P03-species-4/640/420",
+      "https://picsum.photos/seed/451226YSLH01-21-P03-species-5/640/420",
+      "https://picsum.photos/seed/451226YSLH01-21-P03-species-6/640/420",
+      "https://picsum.photos/seed/451226YSLH01-21-P03-species-7/640/420"
+    ]
   },
   {
     "id": "451226YSLH01-22-P01",
@@ -829,7 +1543,21 @@
     "plantCount": 33,
     "growthStatus": "attention",
     "surveyDate": "2026-04-23",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生兰花监测点 07：用于跟踪野生兰花的种群数量、生长势和样方环境变化。近期记录显示该点位存在需要关注的生长波动，适合作为下一轮现场复核的优先点。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "长势波动较明显，需复核水分、遮阴和人为干扰情况。",
+    "speciesImageUrl": "https://picsum.photos/seed/451226YSLH01-22-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451226YSLH01-22-P01-species-1/640/420",
+      "https://picsum.photos/seed/451226YSLH01-22-P01-species-2/640/420",
+      "https://picsum.photos/seed/451226YSLH01-22-P01-species-3/640/420",
+      "https://picsum.photos/seed/451226YSLH01-22-P01-species-4/640/420",
+      "https://picsum.photos/seed/451226YSLH01-22-P01-species-5/640/420",
+      "https://picsum.photos/seed/451226YSLH01-22-P01-species-6/640/420",
+      "https://picsum.photos/seed/451226YSLH01-22-P01-species-7/640/420"
+    ]
   },
   {
     "id": "451226YSLH01-23-P01",
@@ -845,7 +1573,21 @@
     "plantCount": 85,
     "growthStatus": "good",
     "surveyDate": "2025-11-02",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生兰花监测点 08：用于跟踪野生兰花的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451226YSLH01-23-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451226YSLH01-23-P01-species-1/640/420",
+      "https://picsum.photos/seed/451226YSLH01-23-P01-species-2/640/420",
+      "https://picsum.photos/seed/451226YSLH01-23-P01-species-3/640/420",
+      "https://picsum.photos/seed/451226YSLH01-23-P01-species-4/640/420",
+      "https://picsum.photos/seed/451226YSLH01-23-P01-species-5/640/420",
+      "https://picsum.photos/seed/451226YSLH01-23-P01-species-6/640/420",
+      "https://picsum.photos/seed/451226YSLH01-23-P01-species-7/640/420"
+    ]
   },
   {
     "id": "451422JHC01-24-P01",
@@ -861,7 +1603,21 @@
     "plantCount": 1390,
     "growthStatus": "good",
     "surveyDate": "2025-09-10",
-    "source": "mock"
+    "source": "mock",
+    "description": "金花茶监测点 01：用于跟踪金花茶的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451422JHC01-24-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451422JHC01-24-P01-species-1/640/420",
+      "https://picsum.photos/seed/451422JHC01-24-P01-species-2/640/420",
+      "https://picsum.photos/seed/451422JHC01-24-P01-species-3/640/420",
+      "https://picsum.photos/seed/451422JHC01-24-P01-species-4/640/420",
+      "https://picsum.photos/seed/451422JHC01-24-P01-species-5/640/420",
+      "https://picsum.photos/seed/451422JHC01-24-P01-species-6/640/420",
+      "https://picsum.photos/seed/451422JHC01-24-P01-species-7/640/420"
+    ]
   },
   {
     "id": "451422JHC01-24-P02",
@@ -877,7 +1633,21 @@
     "plantCount": 1047,
     "growthStatus": "attention",
     "surveyDate": "2026-07-20",
-    "source": "mock"
+    "source": "mock",
+    "description": "金花茶监测点 02：用于跟踪金花茶的种群数量、生长势和样方环境变化。近期记录显示该点位存在需要关注的生长波动，适合作为下一轮现场复核的优先点。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "长势波动较明显，需复核水分、遮阴和人为干扰情况。",
+    "speciesImageUrl": "https://picsum.photos/seed/451422JHC01-24-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451422JHC01-24-P02-species-1/640/420",
+      "https://picsum.photos/seed/451422JHC01-24-P02-species-2/640/420",
+      "https://picsum.photos/seed/451422JHC01-24-P02-species-3/640/420",
+      "https://picsum.photos/seed/451422JHC01-24-P02-species-4/640/420",
+      "https://picsum.photos/seed/451422JHC01-24-P02-species-5/640/420",
+      "https://picsum.photos/seed/451422JHC01-24-P02-species-6/640/420",
+      "https://picsum.photos/seed/451422JHC01-24-P02-species-7/640/420"
+    ]
   },
   {
     "id": "451422JHC01-25-P01",
@@ -893,7 +1663,21 @@
     "plantCount": 443,
     "growthStatus": "good",
     "surveyDate": "2025-08-09",
-    "source": "mock"
+    "source": "mock",
+    "description": "金花茶监测点 03：用于跟踪金花茶的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451422JHC01-25-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451422JHC01-25-P01-species-1/640/420",
+      "https://picsum.photos/seed/451422JHC01-25-P01-species-2/640/420",
+      "https://picsum.photos/seed/451422JHC01-25-P01-species-3/640/420",
+      "https://picsum.photos/seed/451422JHC01-25-P01-species-4/640/420",
+      "https://picsum.photos/seed/451422JHC01-25-P01-species-5/640/420",
+      "https://picsum.photos/seed/451422JHC01-25-P01-species-6/640/420",
+      "https://picsum.photos/seed/451422JHC01-25-P01-species-7/640/420"
+    ]
   },
   {
     "id": "451422JHC01-25-P02",
@@ -909,7 +1693,21 @@
     "plantCount": 628,
     "growthStatus": "good",
     "surveyDate": "2025-04-27",
-    "source": "mock"
+    "source": "mock",
+    "description": "金花茶监测点 04：用于跟踪金花茶的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451422JHC01-25-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451422JHC01-25-P02-species-1/640/420",
+      "https://picsum.photos/seed/451422JHC01-25-P02-species-2/640/420",
+      "https://picsum.photos/seed/451422JHC01-25-P02-species-3/640/420",
+      "https://picsum.photos/seed/451422JHC01-25-P02-species-4/640/420",
+      "https://picsum.photos/seed/451422JHC01-25-P02-species-5/640/420",
+      "https://picsum.photos/seed/451422JHC01-25-P02-species-6/640/420",
+      "https://picsum.photos/seed/451422JHC01-25-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450621JHC01-26-P01",
@@ -925,7 +1723,21 @@
     "plantCount": 980,
     "growthStatus": "good",
     "surveyDate": "2025-03-15",
-    "source": "mock"
+    "source": "mock",
+    "description": "金花茶监测点 01：用于跟踪金花茶的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450621JHC01-26-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450621JHC01-26-P01-species-1/640/420",
+      "https://picsum.photos/seed/450621JHC01-26-P01-species-2/640/420",
+      "https://picsum.photos/seed/450621JHC01-26-P01-species-3/640/420",
+      "https://picsum.photos/seed/450621JHC01-26-P01-species-4/640/420",
+      "https://picsum.photos/seed/450621JHC01-26-P01-species-5/640/420",
+      "https://picsum.photos/seed/450621JHC01-26-P01-species-6/640/420",
+      "https://picsum.photos/seed/450621JHC01-26-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450621JHC01-26-P02",
@@ -941,7 +1753,21 @@
     "plantCount": 1210,
     "growthStatus": "good",
     "surveyDate": "2026-07-03",
-    "source": "mock"
+    "source": "mock",
+    "description": "金花茶监测点 02：用于跟踪金花茶的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450621JHC01-26-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450621JHC01-26-P02-species-1/640/420",
+      "https://picsum.photos/seed/450621JHC01-26-P02-species-2/640/420",
+      "https://picsum.photos/seed/450621JHC01-26-P02-species-3/640/420",
+      "https://picsum.photos/seed/450621JHC01-26-P02-species-4/640/420",
+      "https://picsum.photos/seed/450621JHC01-26-P02-species-5/640/420",
+      "https://picsum.photos/seed/450621JHC01-26-P02-species-6/640/420",
+      "https://picsum.photos/seed/450621JHC01-26-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450621JHC01-27-P01",
@@ -957,7 +1783,21 @@
     "plantCount": 162,
     "growthStatus": "good",
     "surveyDate": "2025-11-14",
-    "source": "mock"
+    "source": "mock",
+    "description": "金花茶监测点 03：用于跟踪金花茶的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450621JHC01-27-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450621JHC01-27-P01-species-1/640/420",
+      "https://picsum.photos/seed/450621JHC01-27-P01-species-2/640/420",
+      "https://picsum.photos/seed/450621JHC01-27-P01-species-3/640/420",
+      "https://picsum.photos/seed/450621JHC01-27-P01-species-4/640/420",
+      "https://picsum.photos/seed/450621JHC01-27-P01-species-5/640/420",
+      "https://picsum.photos/seed/450621JHC01-27-P01-species-6/640/420",
+      "https://picsum.photos/seed/450621JHC01-27-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450621JHC01-27-P02",
@@ -973,7 +1813,21 @@
     "plantCount": 291,
     "growthStatus": "good",
     "surveyDate": "2025-10-24",
-    "source": "mock"
+    "source": "mock",
+    "description": "金花茶监测点 04：用于跟踪金花茶的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450621JHC01-27-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450621JHC01-27-P02-species-1/640/420",
+      "https://picsum.photos/seed/450621JHC01-27-P02-species-2/640/420",
+      "https://picsum.photos/seed/450621JHC01-27-P02-species-3/640/420",
+      "https://picsum.photos/seed/450621JHC01-27-P02-species-4/640/420",
+      "https://picsum.photos/seed/450621JHC01-27-P02-species-5/640/420",
+      "https://picsum.photos/seed/450621JHC01-27-P02-species-6/640/420",
+      "https://picsum.photos/seed/450621JHC01-27-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450721YSLZ01-28-P01",
@@ -989,7 +1843,21 @@
     "plantCount": 192,
     "growthStatus": "good",
     "surveyDate": "2025-07-30",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生荔枝监测点 01：用于跟踪野生荔枝的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450721YSLZ01-28-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450721YSLZ01-28-P01-species-1/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-28-P01-species-2/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-28-P01-species-3/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-28-P01-species-4/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-28-P01-species-5/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-28-P01-species-6/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-28-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450721YSLZ01-28-P02",
@@ -1005,7 +1873,21 @@
     "plantCount": 207,
     "growthStatus": "good",
     "surveyDate": "2025-12-04",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生荔枝监测点 02：用于跟踪野生荔枝的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450721YSLZ01-28-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450721YSLZ01-28-P02-species-1/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-28-P02-species-2/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-28-P02-species-3/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-28-P02-species-4/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-28-P02-species-5/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-28-P02-species-6/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-28-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450721YSLZ01-28-P03",
@@ -1021,7 +1903,21 @@
     "plantCount": 309,
     "growthStatus": "good",
     "surveyDate": "2026-02-18",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生荔枝监测点 03：用于跟踪野生荔枝的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450721YSLZ01-28-P03-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450721YSLZ01-28-P03-species-1/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-28-P03-species-2/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-28-P03-species-3/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-28-P03-species-4/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-28-P03-species-5/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-28-P03-species-6/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-28-P03-species-7/640/420"
+    ]
   },
   {
     "id": "450721YSLZ01-29-P01",
@@ -1037,7 +1933,21 @@
     "plantCount": 1278,
     "growthStatus": "normal",
     "surveyDate": "2025-11-13",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生荔枝监测点 04：用于跟踪野生荔枝的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450721YSLZ01-29-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450721YSLZ01-29-P01-species-1/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-29-P01-species-2/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-29-P01-species-3/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-29-P01-species-4/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-29-P01-species-5/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-29-P01-species-6/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-29-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450721YSLZ01-29-P02",
@@ -1053,7 +1963,21 @@
     "plantCount": 814,
     "growthStatus": "good",
     "surveyDate": "2026-02-28",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生荔枝监测点 05：用于跟踪野生荔枝的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450721YSLZ01-29-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450721YSLZ01-29-P02-species-1/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-29-P02-species-2/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-29-P02-species-3/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-29-P02-species-4/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-29-P02-species-5/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-29-P02-species-6/640/420",
+      "https://picsum.photos/seed/450721YSLZ01-29-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450921YSLY01-30-P01",
@@ -1069,7 +1993,21 @@
     "plantCount": 589,
     "growthStatus": "good",
     "surveyDate": "2025-04-24",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生龙眼监测点 01：用于跟踪野生龙眼的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450921YSLY01-30-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450921YSLY01-30-P01-species-1/640/420",
+      "https://picsum.photos/seed/450921YSLY01-30-P01-species-2/640/420",
+      "https://picsum.photos/seed/450921YSLY01-30-P01-species-3/640/420",
+      "https://picsum.photos/seed/450921YSLY01-30-P01-species-4/640/420",
+      "https://picsum.photos/seed/450921YSLY01-30-P01-species-5/640/420",
+      "https://picsum.photos/seed/450921YSLY01-30-P01-species-6/640/420",
+      "https://picsum.photos/seed/450921YSLY01-30-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450921YSLY01-30-P02",
@@ -1085,7 +2023,21 @@
     "plantCount": 204,
     "growthStatus": "normal",
     "surveyDate": "2025-03-17",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生龙眼监测点 02：用于跟踪野生龙眼的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450921YSLY01-30-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450921YSLY01-30-P02-species-1/640/420",
+      "https://picsum.photos/seed/450921YSLY01-30-P02-species-2/640/420",
+      "https://picsum.photos/seed/450921YSLY01-30-P02-species-3/640/420",
+      "https://picsum.photos/seed/450921YSLY01-30-P02-species-4/640/420",
+      "https://picsum.photos/seed/450921YSLY01-30-P02-species-5/640/420",
+      "https://picsum.photos/seed/450921YSLY01-30-P02-species-6/640/420",
+      "https://picsum.photos/seed/450921YSLY01-30-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450921YSLY01-31-P01",
@@ -1101,7 +2053,21 @@
     "plantCount": 439,
     "growthStatus": "normal",
     "surveyDate": "2025-12-17",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生龙眼监测点 03：用于跟踪野生龙眼的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450921YSLY01-31-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450921YSLY01-31-P01-species-1/640/420",
+      "https://picsum.photos/seed/450921YSLY01-31-P01-species-2/640/420",
+      "https://picsum.photos/seed/450921YSLY01-31-P01-species-3/640/420",
+      "https://picsum.photos/seed/450921YSLY01-31-P01-species-4/640/420",
+      "https://picsum.photos/seed/450921YSLY01-31-P01-species-5/640/420",
+      "https://picsum.photos/seed/450921YSLY01-31-P01-species-6/640/420",
+      "https://picsum.photos/seed/450921YSLY01-31-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450921YSLY01-31-P02",
@@ -1117,7 +2083,21 @@
     "plantCount": 289,
     "growthStatus": "good",
     "surveyDate": "2026-04-09",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生龙眼监测点 04：用于跟踪野生龙眼的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450921YSLY01-31-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450921YSLY01-31-P02-species-1/640/420",
+      "https://picsum.photos/seed/450921YSLY01-31-P02-species-2/640/420",
+      "https://picsum.photos/seed/450921YSLY01-31-P02-species-3/640/420",
+      "https://picsum.photos/seed/450921YSLY01-31-P02-species-4/640/420",
+      "https://picsum.photos/seed/450921YSLY01-31-P02-species-5/640/420",
+      "https://picsum.photos/seed/450921YSLY01-31-P02-species-6/640/420",
+      "https://picsum.photos/seed/450921YSLY01-31-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450521YSD01-32-P01",
@@ -1133,7 +2113,21 @@
     "plantCount": 865,
     "growthStatus": "normal",
     "surveyDate": "2025-07-20",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生稻监测点 01：用于跟踪野生稻的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450521YSD01-32-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450521YSD01-32-P01-species-1/640/420",
+      "https://picsum.photos/seed/450521YSD01-32-P01-species-2/640/420",
+      "https://picsum.photos/seed/450521YSD01-32-P01-species-3/640/420",
+      "https://picsum.photos/seed/450521YSD01-32-P01-species-4/640/420",
+      "https://picsum.photos/seed/450521YSD01-32-P01-species-5/640/420",
+      "https://picsum.photos/seed/450521YSD01-32-P01-species-6/640/420",
+      "https://picsum.photos/seed/450521YSD01-32-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450521YSD01-32-P02",
@@ -1149,7 +2143,21 @@
     "plantCount": 1049,
     "growthStatus": "good",
     "surveyDate": "2025-11-03",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生稻监测点 02：用于跟踪野生稻的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450521YSD01-32-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450521YSD01-32-P02-species-1/640/420",
+      "https://picsum.photos/seed/450521YSD01-32-P02-species-2/640/420",
+      "https://picsum.photos/seed/450521YSD01-32-P02-species-3/640/420",
+      "https://picsum.photos/seed/450521YSD01-32-P02-species-4/640/420",
+      "https://picsum.photos/seed/450521YSD01-32-P02-species-5/640/420",
+      "https://picsum.photos/seed/450521YSD01-32-P02-species-6/640/420",
+      "https://picsum.photos/seed/450521YSD01-32-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450521YSD01-32-P03",
@@ -1165,7 +2173,21 @@
     "plantCount": 679,
     "growthStatus": "good",
     "surveyDate": "2026-07-28",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生稻监测点 03：用于跟踪野生稻的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450521YSD01-32-P03-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450521YSD01-32-P03-species-1/640/420",
+      "https://picsum.photos/seed/450521YSD01-32-P03-species-2/640/420",
+      "https://picsum.photos/seed/450521YSD01-32-P03-species-3/640/420",
+      "https://picsum.photos/seed/450521YSD01-32-P03-species-4/640/420",
+      "https://picsum.photos/seed/450521YSD01-32-P03-species-5/640/420",
+      "https://picsum.photos/seed/450521YSD01-32-P03-species-6/640/420",
+      "https://picsum.photos/seed/450521YSD01-32-P03-species-7/640/420"
+    ]
   },
   {
     "id": "450521YSD01-33-P01",
@@ -1181,7 +2203,21 @@
     "plantCount": 792,
     "growthStatus": "normal",
     "surveyDate": "2026-04-20",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生稻监测点 04：用于跟踪野生稻的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450521YSD01-33-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450521YSD01-33-P01-species-1/640/420",
+      "https://picsum.photos/seed/450521YSD01-33-P01-species-2/640/420",
+      "https://picsum.photos/seed/450521YSD01-33-P01-species-3/640/420",
+      "https://picsum.photos/seed/450521YSD01-33-P01-species-4/640/420",
+      "https://picsum.photos/seed/450521YSD01-33-P01-species-5/640/420",
+      "https://picsum.photos/seed/450521YSD01-33-P01-species-6/640/420",
+      "https://picsum.photos/seed/450521YSD01-33-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450521YSD01-33-P02",
@@ -1197,7 +2233,21 @@
     "plantCount": 292,
     "growthStatus": "attention",
     "surveyDate": "2026-02-18",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生稻监测点 05：用于跟踪野生稻的种群数量、生长势和样方环境变化。近期记录显示该点位存在需要关注的生长波动，适合作为下一轮现场复核的优先点。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "长势波动较明显，需复核水分、遮阴和人为干扰情况。",
+    "speciesImageUrl": "https://picsum.photos/seed/450521YSD01-33-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450521YSD01-33-P02-species-1/640/420",
+      "https://picsum.photos/seed/450521YSD01-33-P02-species-2/640/420",
+      "https://picsum.photos/seed/450521YSD01-33-P02-species-3/640/420",
+      "https://picsum.photos/seed/450521YSD01-33-P02-species-4/640/420",
+      "https://picsum.photos/seed/450521YSD01-33-P02-species-5/640/420",
+      "https://picsum.photos/seed/450521YSD01-33-P02-species-6/640/420",
+      "https://picsum.photos/seed/450521YSD01-33-P02-species-7/640/420"
+    ]
   },
   {
     "id": "451121YSLH01-34-P01",
@@ -1213,7 +2263,21 @@
     "plantCount": 1315,
     "growthStatus": "good",
     "surveyDate": "2025-08-05",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生兰花监测点 01：用于跟踪野生兰花的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451121YSLH01-34-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451121YSLH01-34-P01-species-1/640/420",
+      "https://picsum.photos/seed/451121YSLH01-34-P01-species-2/640/420",
+      "https://picsum.photos/seed/451121YSLH01-34-P01-species-3/640/420",
+      "https://picsum.photos/seed/451121YSLH01-34-P01-species-4/640/420",
+      "https://picsum.photos/seed/451121YSLH01-34-P01-species-5/640/420",
+      "https://picsum.photos/seed/451121YSLH01-34-P01-species-6/640/420",
+      "https://picsum.photos/seed/451121YSLH01-34-P01-species-7/640/420"
+    ]
   },
   {
     "id": "451121YSLH01-34-P02",
@@ -1229,7 +2293,21 @@
     "plantCount": 1139,
     "growthStatus": "good",
     "surveyDate": "2026-05-10",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生兰花监测点 02：用于跟踪野生兰花的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451121YSLH01-34-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451121YSLH01-34-P02-species-1/640/420",
+      "https://picsum.photos/seed/451121YSLH01-34-P02-species-2/640/420",
+      "https://picsum.photos/seed/451121YSLH01-34-P02-species-3/640/420",
+      "https://picsum.photos/seed/451121YSLH01-34-P02-species-4/640/420",
+      "https://picsum.photos/seed/451121YSLH01-34-P02-species-5/640/420",
+      "https://picsum.photos/seed/451121YSLH01-34-P02-species-6/640/420",
+      "https://picsum.photos/seed/451121YSLH01-34-P02-species-7/640/420"
+    ]
   },
   {
     "id": "451121YSLH01-34-P03",
@@ -1245,7 +2323,21 @@
     "plantCount": 323,
     "growthStatus": "normal",
     "surveyDate": "2025-03-08",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生兰花监测点 03：用于跟踪野生兰花的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/451121YSLH01-34-P03-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451121YSLH01-34-P03-species-1/640/420",
+      "https://picsum.photos/seed/451121YSLH01-34-P03-species-2/640/420",
+      "https://picsum.photos/seed/451121YSLH01-34-P03-species-3/640/420",
+      "https://picsum.photos/seed/451121YSLH01-34-P03-species-4/640/420",
+      "https://picsum.photos/seed/451121YSLH01-34-P03-species-5/640/420",
+      "https://picsum.photos/seed/451121YSLH01-34-P03-species-6/640/420",
+      "https://picsum.photos/seed/451121YSLH01-34-P03-species-7/640/420"
+    ]
   },
   {
     "id": "451121YSLH01-35-P01",
@@ -1261,7 +2353,21 @@
     "plantCount": 387,
     "growthStatus": "good",
     "surveyDate": "2026-02-19",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生兰花监测点 04：用于跟踪野生兰花的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451121YSLH01-35-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451121YSLH01-35-P01-species-1/640/420",
+      "https://picsum.photos/seed/451121YSLH01-35-P01-species-2/640/420",
+      "https://picsum.photos/seed/451121YSLH01-35-P01-species-3/640/420",
+      "https://picsum.photos/seed/451121YSLH01-35-P01-species-4/640/420",
+      "https://picsum.photos/seed/451121YSLH01-35-P01-species-5/640/420",
+      "https://picsum.photos/seed/451121YSLH01-35-P01-species-6/640/420",
+      "https://picsum.photos/seed/451121YSLH01-35-P01-species-7/640/420"
+    ]
   },
   {
     "id": "451121YSLH01-35-P02",
@@ -1277,7 +2383,21 @@
     "plantCount": 1187,
     "growthStatus": "good",
     "surveyDate": "2026-07-10",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生兰花监测点 05：用于跟踪野生兰花的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451121YSLH01-35-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451121YSLH01-35-P02-species-1/640/420",
+      "https://picsum.photos/seed/451121YSLH01-35-P02-species-2/640/420",
+      "https://picsum.photos/seed/451121YSLH01-35-P02-species-3/640/420",
+      "https://picsum.photos/seed/451121YSLH01-35-P02-species-4/640/420",
+      "https://picsum.photos/seed/451121YSLH01-35-P02-species-5/640/420",
+      "https://picsum.photos/seed/451121YSLH01-35-P02-species-6/640/420",
+      "https://picsum.photos/seed/451121YSLH01-35-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450324YSWWZ01-36-P01",
@@ -1293,7 +2413,21 @@
     "plantCount": 602,
     "growthStatus": "normal",
     "surveyDate": "2025-05-06",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生五味子监测点 01：用于跟踪野生五味子的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450324YSWWZ01-36-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450324YSWWZ01-36-P01-species-1/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-36-P01-species-2/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-36-P01-species-3/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-36-P01-species-4/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-36-P01-species-5/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-36-P01-species-6/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-36-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450324YSWWZ01-36-P02",
@@ -1309,7 +2443,21 @@
     "plantCount": 1260,
     "growthStatus": "good",
     "surveyDate": "2025-08-17",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生五味子监测点 02：用于跟踪野生五味子的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450324YSWWZ01-36-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450324YSWWZ01-36-P02-species-1/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-36-P02-species-2/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-36-P02-species-3/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-36-P02-species-4/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-36-P02-species-5/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-36-P02-species-6/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-36-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450324YSWWZ01-36-P03",
@@ -1325,7 +2473,21 @@
     "plantCount": 906,
     "growthStatus": "attention",
     "surveyDate": "2026-01-26",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生五味子监测点 03：用于跟踪野生五味子的种群数量、生长势和样方环境变化。近期记录显示该点位存在需要关注的生长波动，适合作为下一轮现场复核的优先点。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "长势波动较明显，需复核水分、遮阴和人为干扰情况。",
+    "speciesImageUrl": "https://picsum.photos/seed/450324YSWWZ01-36-P03-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450324YSWWZ01-36-P03-species-1/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-36-P03-species-2/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-36-P03-species-3/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-36-P03-species-4/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-36-P03-species-5/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-36-P03-species-6/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-36-P03-species-7/640/420"
+    ]
   },
   {
     "id": "450324YSWWZ01-37-P01",
@@ -1341,7 +2503,21 @@
     "plantCount": 389,
     "growthStatus": "good",
     "surveyDate": "2025-11-23",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生五味子监测点 04：用于跟踪野生五味子的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450324YSWWZ01-37-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450324YSWWZ01-37-P01-species-1/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-37-P01-species-2/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-37-P01-species-3/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-37-P01-species-4/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-37-P01-species-5/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-37-P01-species-6/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-37-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450324YSWWZ01-37-P02",
@@ -1357,7 +2533,21 @@
     "plantCount": 1271,
     "growthStatus": "good",
     "surveyDate": "2025-11-16",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生五味子监测点 05：用于跟踪野生五味子的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450324YSWWZ01-37-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450324YSWWZ01-37-P02-species-1/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-37-P02-species-2/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-37-P02-species-3/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-37-P02-species-4/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-37-P02-species-5/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-37-P02-species-6/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-37-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450324YSWWZ01-37-P03",
@@ -1373,7 +2563,21 @@
     "plantCount": 1682,
     "growthStatus": "good",
     "surveyDate": "2025-12-22",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生五味子监测点 06：用于跟踪野生五味子的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450324YSWWZ01-37-P03-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450324YSWWZ01-37-P03-species-1/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-37-P03-species-2/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-37-P03-species-3/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-37-P03-species-4/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-37-P03-species-5/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-37-P03-species-6/640/420",
+      "https://picsum.photos/seed/450324YSWWZ01-37-P03-species-7/640/420"
+    ]
   },
   {
     "id": "451081JQM01-38-P01",
@@ -1389,7 +2593,21 @@
     "plantCount": 1495,
     "growthStatus": "good",
     "surveyDate": "2026-05-16",
-    "source": "mock"
+    "source": "mock",
+    "description": "金荞麦监测点 01：用于跟踪金荞麦的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451081JQM01-38-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451081JQM01-38-P01-species-1/640/420",
+      "https://picsum.photos/seed/451081JQM01-38-P01-species-2/640/420",
+      "https://picsum.photos/seed/451081JQM01-38-P01-species-3/640/420",
+      "https://picsum.photos/seed/451081JQM01-38-P01-species-4/640/420",
+      "https://picsum.photos/seed/451081JQM01-38-P01-species-5/640/420",
+      "https://picsum.photos/seed/451081JQM01-38-P01-species-6/640/420",
+      "https://picsum.photos/seed/451081JQM01-38-P01-species-7/640/420"
+    ]
   },
   {
     "id": "451081JQM01-38-P02",
@@ -1405,7 +2623,21 @@
     "plantCount": 690,
     "growthStatus": "normal",
     "surveyDate": "2025-07-16",
-    "source": "mock"
+    "source": "mock",
+    "description": "金荞麦监测点 02：用于跟踪金荞麦的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/451081JQM01-38-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451081JQM01-38-P02-species-1/640/420",
+      "https://picsum.photos/seed/451081JQM01-38-P02-species-2/640/420",
+      "https://picsum.photos/seed/451081JQM01-38-P02-species-3/640/420",
+      "https://picsum.photos/seed/451081JQM01-38-P02-species-4/640/420",
+      "https://picsum.photos/seed/451081JQM01-38-P02-species-5/640/420",
+      "https://picsum.photos/seed/451081JQM01-38-P02-species-6/640/420",
+      "https://picsum.photos/seed/451081JQM01-38-P02-species-7/640/420"
+    ]
   },
   {
     "id": "451081JQM01-38-P03",
@@ -1421,7 +2653,21 @@
     "plantCount": 1442,
     "growthStatus": "good",
     "surveyDate": "2026-02-01",
-    "source": "mock"
+    "source": "mock",
+    "description": "金荞麦监测点 03：用于跟踪金荞麦的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451081JQM01-38-P03-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451081JQM01-38-P03-species-1/640/420",
+      "https://picsum.photos/seed/451081JQM01-38-P03-species-2/640/420",
+      "https://picsum.photos/seed/451081JQM01-38-P03-species-3/640/420",
+      "https://picsum.photos/seed/451081JQM01-38-P03-species-4/640/420",
+      "https://picsum.photos/seed/451081JQM01-38-P03-species-5/640/420",
+      "https://picsum.photos/seed/451081JQM01-38-P03-species-6/640/420",
+      "https://picsum.photos/seed/451081JQM01-38-P03-species-7/640/420"
+    ]
   },
   {
     "id": "451081JQM01-39-P01",
@@ -1437,7 +2683,21 @@
     "plantCount": 967,
     "growthStatus": "good",
     "surveyDate": "2026-01-02",
-    "source": "mock"
+    "source": "mock",
+    "description": "金荞麦监测点 04：用于跟踪金荞麦的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451081JQM01-39-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451081JQM01-39-P01-species-1/640/420",
+      "https://picsum.photos/seed/451081JQM01-39-P01-species-2/640/420",
+      "https://picsum.photos/seed/451081JQM01-39-P01-species-3/640/420",
+      "https://picsum.photos/seed/451081JQM01-39-P01-species-4/640/420",
+      "https://picsum.photos/seed/451081JQM01-39-P01-species-5/640/420",
+      "https://picsum.photos/seed/451081JQM01-39-P01-species-6/640/420",
+      "https://picsum.photos/seed/451081JQM01-39-P01-species-7/640/420"
+    ]
   },
   {
     "id": "451081JQM01-39-P02",
@@ -1453,7 +2713,21 @@
     "plantCount": 956,
     "growthStatus": "good",
     "surveyDate": "2026-06-02",
-    "source": "mock"
+    "source": "mock",
+    "description": "金荞麦监测点 05：用于跟踪金荞麦的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451081JQM01-39-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451081JQM01-39-P02-species-1/640/420",
+      "https://picsum.photos/seed/451081JQM01-39-P02-species-2/640/420",
+      "https://picsum.photos/seed/451081JQM01-39-P02-species-3/640/420",
+      "https://picsum.photos/seed/451081JQM01-39-P02-species-4/640/420",
+      "https://picsum.photos/seed/451081JQM01-39-P02-species-5/640/420",
+      "https://picsum.photos/seed/451081JQM01-39-P02-species-6/640/420",
+      "https://picsum.photos/seed/451081JQM01-39-P02-species-7/640/420"
+    ]
   },
   {
     "id": "451081JQM01-39-P03",
@@ -1469,7 +2743,21 @@
     "plantCount": 928,
     "growthStatus": "normal",
     "surveyDate": "2025-07-03",
-    "source": "mock"
+    "source": "mock",
+    "description": "金荞麦监测点 06：用于跟踪金荞麦的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/451081JQM01-39-P03-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451081JQM01-39-P03-species-1/640/420",
+      "https://picsum.photos/seed/451081JQM01-39-P03-species-2/640/420",
+      "https://picsum.photos/seed/451081JQM01-39-P03-species-3/640/420",
+      "https://picsum.photos/seed/451081JQM01-39-P03-species-4/640/420",
+      "https://picsum.photos/seed/451081JQM01-39-P03-species-5/640/420",
+      "https://picsum.photos/seed/451081JQM01-39-P03-species-6/640/420",
+      "https://picsum.photos/seed/451081JQM01-39-P03-species-7/640/420"
+    ]
   },
   {
     "id": "451026BJW01-40-P01",
@@ -1485,7 +2773,21 @@
     "plantCount": 216,
     "growthStatus": "good",
     "surveyDate": "2026-05-23",
-    "source": "mock"
+    "source": "mock",
+    "description": "八角莲监测点 01：用于跟踪八角莲的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451026BJW01-40-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451026BJW01-40-P01-species-1/640/420",
+      "https://picsum.photos/seed/451026BJW01-40-P01-species-2/640/420",
+      "https://picsum.photos/seed/451026BJW01-40-P01-species-3/640/420",
+      "https://picsum.photos/seed/451026BJW01-40-P01-species-4/640/420",
+      "https://picsum.photos/seed/451026BJW01-40-P01-species-5/640/420",
+      "https://picsum.photos/seed/451026BJW01-40-P01-species-6/640/420",
+      "https://picsum.photos/seed/451026BJW01-40-P01-species-7/640/420"
+    ]
   },
   {
     "id": "451026BJW01-40-P02",
@@ -1501,7 +2803,21 @@
     "plantCount": 448,
     "growthStatus": "good",
     "surveyDate": "2025-06-26",
-    "source": "mock"
+    "source": "mock",
+    "description": "八角莲监测点 02：用于跟踪八角莲的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451026BJW01-40-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451026BJW01-40-P02-species-1/640/420",
+      "https://picsum.photos/seed/451026BJW01-40-P02-species-2/640/420",
+      "https://picsum.photos/seed/451026BJW01-40-P02-species-3/640/420",
+      "https://picsum.photos/seed/451026BJW01-40-P02-species-4/640/420",
+      "https://picsum.photos/seed/451026BJW01-40-P02-species-5/640/420",
+      "https://picsum.photos/seed/451026BJW01-40-P02-species-6/640/420",
+      "https://picsum.photos/seed/451026BJW01-40-P02-species-7/640/420"
+    ]
   },
   {
     "id": "451026BJW01-41-P01",
@@ -1517,7 +2833,21 @@
     "plantCount": 274,
     "growthStatus": "good",
     "surveyDate": "2026-02-08",
-    "source": "mock"
+    "source": "mock",
+    "description": "八角莲监测点 03：用于跟踪八角莲的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451026BJW01-41-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451026BJW01-41-P01-species-1/640/420",
+      "https://picsum.photos/seed/451026BJW01-41-P01-species-2/640/420",
+      "https://picsum.photos/seed/451026BJW01-41-P01-species-3/640/420",
+      "https://picsum.photos/seed/451026BJW01-41-P01-species-4/640/420",
+      "https://picsum.photos/seed/451026BJW01-41-P01-species-5/640/420",
+      "https://picsum.photos/seed/451026BJW01-41-P01-species-6/640/420",
+      "https://picsum.photos/seed/451026BJW01-41-P01-species-7/640/420"
+    ]
   },
   {
     "id": "451026BJW01-41-P02",
@@ -1533,7 +2863,21 @@
     "plantCount": 1115,
     "growthStatus": "good",
     "surveyDate": "2025-10-10",
-    "source": "mock"
+    "source": "mock",
+    "description": "八角莲监测点 04：用于跟踪八角莲的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451026BJW01-41-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451026BJW01-41-P02-species-1/640/420",
+      "https://picsum.photos/seed/451026BJW01-41-P02-species-2/640/420",
+      "https://picsum.photos/seed/451026BJW01-41-P02-species-3/640/420",
+      "https://picsum.photos/seed/451026BJW01-41-P02-species-4/640/420",
+      "https://picsum.photos/seed/451026BJW01-41-P02-species-5/640/420",
+      "https://picsum.photos/seed/451026BJW01-41-P02-species-6/640/420",
+      "https://picsum.photos/seed/451026BJW01-41-P02-species-7/640/420"
+    ]
   },
   {
     "id": "451324YHLD01-42-P01",
@@ -1549,7 +2893,21 @@
     "plantCount": 4155,
     "growthStatus": "good",
     "surveyDate": "2025-11-17",
-    "source": "mock"
+    "source": "mock",
+    "description": "岩黄连监测点 01：用于跟踪岩黄连的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451324YHLD01-42-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451324YHLD01-42-P01-species-1/640/420",
+      "https://picsum.photos/seed/451324YHLD01-42-P01-species-2/640/420",
+      "https://picsum.photos/seed/451324YHLD01-42-P01-species-3/640/420",
+      "https://picsum.photos/seed/451324YHLD01-42-P01-species-4/640/420",
+      "https://picsum.photos/seed/451324YHLD01-42-P01-species-5/640/420",
+      "https://picsum.photos/seed/451324YHLD01-42-P01-species-6/640/420",
+      "https://picsum.photos/seed/451324YHLD01-42-P01-species-7/640/420"
+    ]
   },
   {
     "id": "451324YHLD01-42-P02",
@@ -1565,7 +2923,21 @@
     "plantCount": 4031,
     "growthStatus": "normal",
     "surveyDate": "2026-07-02",
-    "source": "mock"
+    "source": "mock",
+    "description": "岩黄连监测点 02：用于跟踪岩黄连的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/451324YHLD01-42-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451324YHLD01-42-P02-species-1/640/420",
+      "https://picsum.photos/seed/451324YHLD01-42-P02-species-2/640/420",
+      "https://picsum.photos/seed/451324YHLD01-42-P02-species-3/640/420",
+      "https://picsum.photos/seed/451324YHLD01-42-P02-species-4/640/420",
+      "https://picsum.photos/seed/451324YHLD01-42-P02-species-5/640/420",
+      "https://picsum.photos/seed/451324YHLD01-42-P02-species-6/640/420",
+      "https://picsum.photos/seed/451324YHLD01-42-P02-species-7/640/420"
+    ]
   },
   {
     "id": "451324YHLD01-42-P03",
@@ -1581,7 +2953,21 @@
     "plantCount": 1910,
     "growthStatus": "normal",
     "surveyDate": "2025-03-24",
-    "source": "mock"
+    "source": "mock",
+    "description": "岩黄连监测点 03：用于跟踪岩黄连的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/451324YHLD01-42-P03-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451324YHLD01-42-P03-species-1/640/420",
+      "https://picsum.photos/seed/451324YHLD01-42-P03-species-2/640/420",
+      "https://picsum.photos/seed/451324YHLD01-42-P03-species-3/640/420",
+      "https://picsum.photos/seed/451324YHLD01-42-P03-species-4/640/420",
+      "https://picsum.photos/seed/451324YHLD01-42-P03-species-5/640/420",
+      "https://picsum.photos/seed/451324YHLD01-42-P03-species-6/640/420",
+      "https://picsum.photos/seed/451324YHLD01-42-P03-species-7/640/420"
+    ]
   },
   {
     "id": "451324YHLD01-43-P01",
@@ -1597,7 +2983,21 @@
     "plantCount": 12346,
     "growthStatus": "good",
     "surveyDate": "2026-07-11",
-    "source": "mock"
+    "source": "mock",
+    "description": "岩黄连监测点 04：用于跟踪岩黄连的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451324YHLD01-43-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451324YHLD01-43-P01-species-1/640/420",
+      "https://picsum.photos/seed/451324YHLD01-43-P01-species-2/640/420",
+      "https://picsum.photos/seed/451324YHLD01-43-P01-species-3/640/420",
+      "https://picsum.photos/seed/451324YHLD01-43-P01-species-4/640/420",
+      "https://picsum.photos/seed/451324YHLD01-43-P01-species-5/640/420",
+      "https://picsum.photos/seed/451324YHLD01-43-P01-species-6/640/420",
+      "https://picsum.photos/seed/451324YHLD01-43-P01-species-7/640/420"
+    ]
   },
   {
     "id": "451324YHLD01-43-P02",
@@ -1613,7 +3013,21 @@
     "plantCount": 14253,
     "growthStatus": "good",
     "surveyDate": "2025-10-29",
-    "source": "mock"
+    "source": "mock",
+    "description": "岩黄连监测点 05：用于跟踪岩黄连的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451324YHLD01-43-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451324YHLD01-43-P02-species-1/640/420",
+      "https://picsum.photos/seed/451324YHLD01-43-P02-species-2/640/420",
+      "https://picsum.photos/seed/451324YHLD01-43-P02-species-3/640/420",
+      "https://picsum.photos/seed/451324YHLD01-43-P02-species-4/640/420",
+      "https://picsum.photos/seed/451324YHLD01-43-P02-species-5/640/420",
+      "https://picsum.photos/seed/451324YHLD01-43-P02-species-6/640/420",
+      "https://picsum.photos/seed/451324YHLD01-43-P02-species-7/640/420"
+    ]
   },
   {
     "id": "451324YHLD01-43-P03",
@@ -1629,7 +3043,21 @@
     "plantCount": 7517,
     "growthStatus": "good",
     "surveyDate": "2025-10-09",
-    "source": "mock"
+    "source": "mock",
+    "description": "岩黄连监测点 06：用于跟踪岩黄连的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451324YHLD01-43-P03-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451324YHLD01-43-P03-species-1/640/420",
+      "https://picsum.photos/seed/451324YHLD01-43-P03-species-2/640/420",
+      "https://picsum.photos/seed/451324YHLD01-43-P03-species-3/640/420",
+      "https://picsum.photos/seed/451324YHLD01-43-P03-species-4/640/420",
+      "https://picsum.photos/seed/451324YHLD01-43-P03-species-5/640/420",
+      "https://picsum.photos/seed/451324YHLD01-43-P03-species-6/640/420",
+      "https://picsum.photos/seed/451324YHLD01-43-P03-species-7/640/420"
+    ]
   },
   {
     "id": "450181SJ01-44-P01",
@@ -1647,7 +3075,21 @@
     "plantCount": 537,
     "growthStatus": "normal",
     "surveyDate": "2025-04-27",
-    "source": "mock"
+    "source": "mock",
+    "description": "水蕨监测点 01：用于跟踪水蕨、野莲、野菱的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450181SJ01-44-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450181SJ01-44-P01-species-1/640/420",
+      "https://picsum.photos/seed/450181SJ01-44-P01-species-2/640/420",
+      "https://picsum.photos/seed/450181SJ01-44-P01-species-3/640/420",
+      "https://picsum.photos/seed/450181SJ01-44-P01-species-4/640/420",
+      "https://picsum.photos/seed/450181SJ01-44-P01-species-5/640/420",
+      "https://picsum.photos/seed/450181SJ01-44-P01-species-6/640/420",
+      "https://picsum.photos/seed/450181SJ01-44-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450181SJ01-44-P02",
@@ -1665,7 +3107,21 @@
     "plantCount": 265,
     "growthStatus": "normal",
     "surveyDate": "2025-09-12",
-    "source": "mock"
+    "source": "mock",
+    "description": "水蕨监测点 02：用于跟踪水蕨、野莲、野菱的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450181SJ01-44-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450181SJ01-44-P02-species-1/640/420",
+      "https://picsum.photos/seed/450181SJ01-44-P02-species-2/640/420",
+      "https://picsum.photos/seed/450181SJ01-44-P02-species-3/640/420",
+      "https://picsum.photos/seed/450181SJ01-44-P02-species-4/640/420",
+      "https://picsum.photos/seed/450181SJ01-44-P02-species-5/640/420",
+      "https://picsum.photos/seed/450181SJ01-44-P02-species-6/640/420",
+      "https://picsum.photos/seed/450181SJ01-44-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450181SJ01-44-P03",
@@ -1683,7 +3139,21 @@
     "plantCount": 152,
     "growthStatus": "normal",
     "surveyDate": "2025-04-08",
-    "source": "mock"
+    "source": "mock",
+    "description": "水蕨监测点 03：用于跟踪水蕨、野莲、野菱的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450181SJ01-44-P03-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450181SJ01-44-P03-species-1/640/420",
+      "https://picsum.photos/seed/450181SJ01-44-P03-species-2/640/420",
+      "https://picsum.photos/seed/450181SJ01-44-P03-species-3/640/420",
+      "https://picsum.photos/seed/450181SJ01-44-P03-species-4/640/420",
+      "https://picsum.photos/seed/450181SJ01-44-P03-species-5/640/420",
+      "https://picsum.photos/seed/450181SJ01-44-P03-species-6/640/420",
+      "https://picsum.photos/seed/450181SJ01-44-P03-species-7/640/420"
+    ]
   },
   {
     "id": "450181SJ01-45-P01",
@@ -1701,7 +3171,21 @@
     "plantCount": 510,
     "growthStatus": "normal",
     "surveyDate": "2025-12-25",
-    "source": "mock"
+    "source": "mock",
+    "description": "水蕨监测点 04：用于跟踪水蕨、野莲、野菱的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450181SJ01-45-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450181SJ01-45-P01-species-1/640/420",
+      "https://picsum.photos/seed/450181SJ01-45-P01-species-2/640/420",
+      "https://picsum.photos/seed/450181SJ01-45-P01-species-3/640/420",
+      "https://picsum.photos/seed/450181SJ01-45-P01-species-4/640/420",
+      "https://picsum.photos/seed/450181SJ01-45-P01-species-5/640/420",
+      "https://picsum.photos/seed/450181SJ01-45-P01-species-6/640/420",
+      "https://picsum.photos/seed/450181SJ01-45-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450181SJ01-45-P02",
@@ -1719,7 +3203,21 @@
     "plantCount": 891,
     "growthStatus": "good",
     "surveyDate": "2025-11-14",
-    "source": "mock"
+    "source": "mock",
+    "description": "水蕨监测点 05：用于跟踪水蕨、野莲、野菱的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450181SJ01-45-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450181SJ01-45-P02-species-1/640/420",
+      "https://picsum.photos/seed/450181SJ01-45-P02-species-2/640/420",
+      "https://picsum.photos/seed/450181SJ01-45-P02-species-3/640/420",
+      "https://picsum.photos/seed/450181SJ01-45-P02-species-4/640/420",
+      "https://picsum.photos/seed/450181SJ01-45-P02-species-5/640/420",
+      "https://picsum.photos/seed/450181SJ01-45-P02-species-6/640/420",
+      "https://picsum.photos/seed/450181SJ01-45-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450181SJ01-45-P03",
@@ -1737,7 +3235,21 @@
     "plantCount": 3145,
     "growthStatus": "normal",
     "surveyDate": "2025-12-21",
-    "source": "mock"
+    "source": "mock",
+    "description": "水蕨监测点 06：用于跟踪水蕨、野莲、野菱的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450181SJ01-45-P03-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450181SJ01-45-P03-species-1/640/420",
+      "https://picsum.photos/seed/450181SJ01-45-P03-species-2/640/420",
+      "https://picsum.photos/seed/450181SJ01-45-P03-species-3/640/420",
+      "https://picsum.photos/seed/450181SJ01-45-P03-species-4/640/420",
+      "https://picsum.photos/seed/450181SJ01-45-P03-species-5/640/420",
+      "https://picsum.photos/seed/450181SJ01-45-P03-species-6/640/420",
+      "https://picsum.photos/seed/450181SJ01-45-P03-species-7/640/420"
+    ]
   },
   {
     "id": "450181SJ01-46-P01",
@@ -1755,7 +3267,21 @@
     "plantCount": 32,
     "growthStatus": "good",
     "surveyDate": "2025-05-22",
-    "source": "mock"
+    "source": "mock",
+    "description": "水蕨监测点 07：用于跟踪水蕨、野莲、野菱的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450181SJ01-46-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450181SJ01-46-P01-species-1/640/420",
+      "https://picsum.photos/seed/450181SJ01-46-P01-species-2/640/420",
+      "https://picsum.photos/seed/450181SJ01-46-P01-species-3/640/420",
+      "https://picsum.photos/seed/450181SJ01-46-P01-species-4/640/420",
+      "https://picsum.photos/seed/450181SJ01-46-P01-species-5/640/420",
+      "https://picsum.photos/seed/450181SJ01-46-P01-species-6/640/420",
+      "https://picsum.photos/seed/450181SJ01-46-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450181SJ01-47-P01",
@@ -1773,7 +3299,21 @@
     "plantCount": 30,
     "growthStatus": "good",
     "surveyDate": "2025-03-20",
-    "source": "mock"
+    "source": "mock",
+    "description": "水蕨监测点 08：用于跟踪水蕨、野莲、野菱的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450181SJ01-47-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450181SJ01-47-P01-species-1/640/420",
+      "https://picsum.photos/seed/450181SJ01-47-P01-species-2/640/420",
+      "https://picsum.photos/seed/450181SJ01-47-P01-species-3/640/420",
+      "https://picsum.photos/seed/450181SJ01-47-P01-species-4/640/420",
+      "https://picsum.photos/seed/450181SJ01-47-P01-species-5/640/420",
+      "https://picsum.photos/seed/450181SJ01-47-P01-species-6/640/420",
+      "https://picsum.photos/seed/450181SJ01-47-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450821YSDD01-48-P01",
@@ -1789,7 +3329,21 @@
     "plantCount": 1213,
     "growthStatus": "good",
     "surveyDate": "2025-04-07",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生大豆监测点 01：用于跟踪野生大豆的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450821YSDD01-48-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450821YSDD01-48-P01-species-1/640/420",
+      "https://picsum.photos/seed/450821YSDD01-48-P01-species-2/640/420",
+      "https://picsum.photos/seed/450821YSDD01-48-P01-species-3/640/420",
+      "https://picsum.photos/seed/450821YSDD01-48-P01-species-4/640/420",
+      "https://picsum.photos/seed/450821YSDD01-48-P01-species-5/640/420",
+      "https://picsum.photos/seed/450821YSDD01-48-P01-species-6/640/420",
+      "https://picsum.photos/seed/450821YSDD01-48-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450821YSDD01-48-P02",
@@ -1805,7 +3359,21 @@
     "plantCount": 1503,
     "growthStatus": "normal",
     "surveyDate": "2025-05-10",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生大豆监测点 02：用于跟踪野生大豆的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450821YSDD01-48-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450821YSDD01-48-P02-species-1/640/420",
+      "https://picsum.photos/seed/450821YSDD01-48-P02-species-2/640/420",
+      "https://picsum.photos/seed/450821YSDD01-48-P02-species-3/640/420",
+      "https://picsum.photos/seed/450821YSDD01-48-P02-species-4/640/420",
+      "https://picsum.photos/seed/450821YSDD01-48-P02-species-5/640/420",
+      "https://picsum.photos/seed/450821YSDD01-48-P02-species-6/640/420",
+      "https://picsum.photos/seed/450821YSDD01-48-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450821YSDD01-48-P03",
@@ -1821,7 +3389,21 @@
     "plantCount": 811,
     "growthStatus": "good",
     "surveyDate": "2026-05-05",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生大豆监测点 03：用于跟踪野生大豆的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450821YSDD01-48-P03-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450821YSDD01-48-P03-species-1/640/420",
+      "https://picsum.photos/seed/450821YSDD01-48-P03-species-2/640/420",
+      "https://picsum.photos/seed/450821YSDD01-48-P03-species-3/640/420",
+      "https://picsum.photos/seed/450821YSDD01-48-P03-species-4/640/420",
+      "https://picsum.photos/seed/450821YSDD01-48-P03-species-5/640/420",
+      "https://picsum.photos/seed/450821YSDD01-48-P03-species-6/640/420",
+      "https://picsum.photos/seed/450821YSDD01-48-P03-species-7/640/420"
+    ]
   },
   {
     "id": "450821YSDD01-49-P01",
@@ -1837,7 +3419,21 @@
     "plantCount": 290,
     "growthStatus": "attention",
     "surveyDate": "2025-09-30",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生大豆监测点 04：用于跟踪野生大豆的种群数量、生长势和样方环境变化。近期记录显示该点位存在需要关注的生长波动，适合作为下一轮现场复核的优先点。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "长势波动较明显，需复核水分、遮阴和人为干扰情况。",
+    "speciesImageUrl": "https://picsum.photos/seed/450821YSDD01-49-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450821YSDD01-49-P01-species-1/640/420",
+      "https://picsum.photos/seed/450821YSDD01-49-P01-species-2/640/420",
+      "https://picsum.photos/seed/450821YSDD01-49-P01-species-3/640/420",
+      "https://picsum.photos/seed/450821YSDD01-49-P01-species-4/640/420",
+      "https://picsum.photos/seed/450821YSDD01-49-P01-species-5/640/420",
+      "https://picsum.photos/seed/450821YSDD01-49-P01-species-6/640/420",
+      "https://picsum.photos/seed/450821YSDD01-49-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450821YSDD01-49-P02",
@@ -1853,7 +3449,21 @@
     "plantCount": 218,
     "growthStatus": "normal",
     "surveyDate": "2025-09-16",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生大豆监测点 05：用于跟踪野生大豆的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450821YSDD01-49-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450821YSDD01-49-P02-species-1/640/420",
+      "https://picsum.photos/seed/450821YSDD01-49-P02-species-2/640/420",
+      "https://picsum.photos/seed/450821YSDD01-49-P02-species-3/640/420",
+      "https://picsum.photos/seed/450821YSDD01-49-P02-species-4/640/420",
+      "https://picsum.photos/seed/450821YSDD01-49-P02-species-5/640/420",
+      "https://picsum.photos/seed/450821YSDD01-49-P02-species-6/640/420",
+      "https://picsum.photos/seed/450821YSDD01-49-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450423YSDD01-50-P01",
@@ -1869,7 +3479,21 @@
     "plantCount": 1408,
     "growthStatus": "good",
     "surveyDate": "2026-03-09",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生大豆监测点 01：用于跟踪野生大豆的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450423YSDD01-50-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450423YSDD01-50-P01-species-1/640/420",
+      "https://picsum.photos/seed/450423YSDD01-50-P01-species-2/640/420",
+      "https://picsum.photos/seed/450423YSDD01-50-P01-species-3/640/420",
+      "https://picsum.photos/seed/450423YSDD01-50-P01-species-4/640/420",
+      "https://picsum.photos/seed/450423YSDD01-50-P01-species-5/640/420",
+      "https://picsum.photos/seed/450423YSDD01-50-P01-species-6/640/420",
+      "https://picsum.photos/seed/450423YSDD01-50-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450423YSDD01-50-P02",
@@ -1885,7 +3509,21 @@
     "plantCount": 1104,
     "growthStatus": "normal",
     "surveyDate": "2025-04-04",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生大豆监测点 02：用于跟踪野生大豆的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450423YSDD01-50-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450423YSDD01-50-P02-species-1/640/420",
+      "https://picsum.photos/seed/450423YSDD01-50-P02-species-2/640/420",
+      "https://picsum.photos/seed/450423YSDD01-50-P02-species-3/640/420",
+      "https://picsum.photos/seed/450423YSDD01-50-P02-species-4/640/420",
+      "https://picsum.photos/seed/450423YSDD01-50-P02-species-5/640/420",
+      "https://picsum.photos/seed/450423YSDD01-50-P02-species-6/640/420",
+      "https://picsum.photos/seed/450423YSDD01-50-P02-species-7/640/420"
+    ]
   },
   {
     "id": "450423YSDD01-50-P03",
@@ -1901,7 +3539,21 @@
     "plantCount": 966,
     "growthStatus": "good",
     "surveyDate": "2026-06-02",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生大豆监测点 03：用于跟踪野生大豆的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450423YSDD01-50-P03-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450423YSDD01-50-P03-species-1/640/420",
+      "https://picsum.photos/seed/450423YSDD01-50-P03-species-2/640/420",
+      "https://picsum.photos/seed/450423YSDD01-50-P03-species-3/640/420",
+      "https://picsum.photos/seed/450423YSDD01-50-P03-species-4/640/420",
+      "https://picsum.photos/seed/450423YSDD01-50-P03-species-5/640/420",
+      "https://picsum.photos/seed/450423YSDD01-50-P03-species-6/640/420",
+      "https://picsum.photos/seed/450423YSDD01-50-P03-species-7/640/420"
+    ]
   },
   {
     "id": "450423YSDD01-51-P01",
@@ -1917,7 +3569,21 @@
     "plantCount": 750,
     "growthStatus": "normal",
     "surveyDate": "2026-05-12",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生大豆监测点 04：用于跟踪野生大豆的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/450423YSDD01-51-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450423YSDD01-51-P01-species-1/640/420",
+      "https://picsum.photos/seed/450423YSDD01-51-P01-species-2/640/420",
+      "https://picsum.photos/seed/450423YSDD01-51-P01-species-3/640/420",
+      "https://picsum.photos/seed/450423YSDD01-51-P01-species-4/640/420",
+      "https://picsum.photos/seed/450423YSDD01-51-P01-species-5/640/420",
+      "https://picsum.photos/seed/450423YSDD01-51-P01-species-6/640/420",
+      "https://picsum.photos/seed/450423YSDD01-51-P01-species-7/640/420"
+    ]
   },
   {
     "id": "450423YSDD01-51-P02",
@@ -1933,7 +3599,21 @@
     "plantCount": 244,
     "growthStatus": "good",
     "surveyDate": "2026-03-18",
-    "source": "mock"
+    "source": "mock",
+    "description": "野生大豆监测点 05：用于跟踪野生大豆的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/450423YSDD01-51-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/450423YSDD01-51-P02-species-1/640/420",
+      "https://picsum.photos/seed/450423YSDD01-51-P02-species-2/640/420",
+      "https://picsum.photos/seed/450423YSDD01-51-P02-species-3/640/420",
+      "https://picsum.photos/seed/450423YSDD01-51-P02-species-4/640/420",
+      "https://picsum.photos/seed/450423YSDD01-51-P02-species-5/640/420",
+      "https://picsum.photos/seed/450423YSDD01-51-P02-species-6/640/420",
+      "https://picsum.photos/seed/450423YSDD01-51-P02-species-7/640/420"
+    ]
   },
   {
     "id": "451123SY01-52-P01",
@@ -1950,7 +3630,21 @@
     "plantCount": 2958,
     "growthStatus": "normal",
     "surveyDate": "2025-11-25",
-    "source": "mock"
+    "source": "mock",
+    "description": "盾叶薯蓣监测点 01：用于跟踪盾叶薯蓣、八角莲的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/451123SY01-52-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451123SY01-52-P01-species-1/640/420",
+      "https://picsum.photos/seed/451123SY01-52-P01-species-2/640/420",
+      "https://picsum.photos/seed/451123SY01-52-P01-species-3/640/420",
+      "https://picsum.photos/seed/451123SY01-52-P01-species-4/640/420",
+      "https://picsum.photos/seed/451123SY01-52-P01-species-5/640/420",
+      "https://picsum.photos/seed/451123SY01-52-P01-species-6/640/420",
+      "https://picsum.photos/seed/451123SY01-52-P01-species-7/640/420"
+    ]
   },
   {
     "id": "451123SY01-52-P02",
@@ -1967,7 +3661,21 @@
     "plantCount": 1431,
     "growthStatus": "normal",
     "surveyDate": "2026-04-27",
-    "source": "mock"
+    "source": "mock",
+    "description": "盾叶薯蓣监测点 02：用于跟踪盾叶薯蓣、八角莲的种群数量、生长势和样方环境变化。该点位样方记录完整，当前观测指标处于常规范围，可用于区域基线监测。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "样方状态平稳，建议保持例行巡检和影像记录。",
+    "speciesImageUrl": "https://picsum.photos/seed/451123SY01-52-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451123SY01-52-P02-species-1/640/420",
+      "https://picsum.photos/seed/451123SY01-52-P02-species-2/640/420",
+      "https://picsum.photos/seed/451123SY01-52-P02-species-3/640/420",
+      "https://picsum.photos/seed/451123SY01-52-P02-species-4/640/420",
+      "https://picsum.photos/seed/451123SY01-52-P02-species-5/640/420",
+      "https://picsum.photos/seed/451123SY01-52-P02-species-6/640/420",
+      "https://picsum.photos/seed/451123SY01-52-P02-species-7/640/420"
+    ]
   },
   {
     "id": "451123SY01-52-P03",
@@ -1984,7 +3692,21 @@
     "plantCount": 3269,
     "growthStatus": "good",
     "surveyDate": "2025-03-08",
-    "source": "mock"
+    "source": "mock",
+    "description": "盾叶薯蓣监测点 03：用于跟踪盾叶薯蓣、八角莲的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451123SY01-52-P03-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451123SY01-52-P03-species-1/640/420",
+      "https://picsum.photos/seed/451123SY01-52-P03-species-2/640/420",
+      "https://picsum.photos/seed/451123SY01-52-P03-species-3/640/420",
+      "https://picsum.photos/seed/451123SY01-52-P03-species-4/640/420",
+      "https://picsum.photos/seed/451123SY01-52-P03-species-5/640/420",
+      "https://picsum.photos/seed/451123SY01-52-P03-species-6/640/420",
+      "https://picsum.photos/seed/451123SY01-52-P03-species-7/640/420"
+    ]
   },
   {
     "id": "451123SY01-53-P01",
@@ -2001,7 +3723,21 @@
     "plantCount": 2688,
     "growthStatus": "good",
     "surveyDate": "2026-07-08",
-    "source": "mock"
+    "source": "mock",
+    "description": "盾叶薯蓣监测点 04：用于跟踪盾叶薯蓣、八角莲的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451123SY01-53-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451123SY01-53-P01-species-1/640/420",
+      "https://picsum.photos/seed/451123SY01-53-P01-species-2/640/420",
+      "https://picsum.photos/seed/451123SY01-53-P01-species-3/640/420",
+      "https://picsum.photos/seed/451123SY01-53-P01-species-4/640/420",
+      "https://picsum.photos/seed/451123SY01-53-P01-species-5/640/420",
+      "https://picsum.photos/seed/451123SY01-53-P01-species-6/640/420",
+      "https://picsum.photos/seed/451123SY01-53-P01-species-7/640/420"
+    ]
   },
   {
     "id": "451123SY01-53-P02",
@@ -2018,7 +3754,21 @@
     "plantCount": 1657,
     "growthStatus": "good",
     "surveyDate": "2026-04-15",
-    "source": "mock"
+    "source": "mock",
+    "description": "盾叶薯蓣监测点 05：用于跟踪盾叶薯蓣、八角莲的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "近水浅滩与湿润土壤交错带",
+    "monitoringMethod": "无人机低空影像复核 + 地面样方计数",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451123SY01-53-P02-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451123SY01-53-P02-species-1/640/420",
+      "https://picsum.photos/seed/451123SY01-53-P02-species-2/640/420",
+      "https://picsum.photos/seed/451123SY01-53-P02-species-3/640/420",
+      "https://picsum.photos/seed/451123SY01-53-P02-species-4/640/420",
+      "https://picsum.photos/seed/451123SY01-53-P02-species-5/640/420",
+      "https://picsum.photos/seed/451123SY01-53-P02-species-6/640/420",
+      "https://picsum.photos/seed/451123SY01-53-P02-species-7/640/420"
+    ]
   },
   {
     "id": "451123SY01-53-P03",
@@ -2035,7 +3785,21 @@
     "plantCount": 2352,
     "growthStatus": "attention",
     "surveyDate": "2025-07-17",
-    "source": "mock"
+    "source": "mock",
+    "description": "盾叶薯蓣监测点 06：用于跟踪盾叶薯蓣、八角莲的种群数量、生长势和样方环境变化。近期记录显示该点位存在需要关注的生长波动，适合作为下一轮现场复核的优先点。",
+    "habitat": "林缘缓坡与草本覆盖斑块",
+    "monitoringMethod": "固定样线巡查 + 物候照片采集",
+    "riskNote": "长势波动较明显，需复核水分、遮阴和人为干扰情况。",
+    "speciesImageUrl": "https://picsum.photos/seed/451123SY01-53-P03-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451123SY01-53-P03-species-1/640/420",
+      "https://picsum.photos/seed/451123SY01-53-P03-species-2/640/420",
+      "https://picsum.photos/seed/451123SY01-53-P03-species-3/640/420",
+      "https://picsum.photos/seed/451123SY01-53-P03-species-4/640/420",
+      "https://picsum.photos/seed/451123SY01-53-P03-species-5/640/420",
+      "https://picsum.photos/seed/451123SY01-53-P03-species-6/640/420",
+      "https://picsum.photos/seed/451123SY01-53-P03-species-7/640/420"
+    ]
   },
   {
     "id": "451123SY01-54-P01",
@@ -2052,7 +3816,21 @@
     "plantCount": 44,
     "growthStatus": "attention",
     "surveyDate": "2026-01-22",
-    "source": "mock"
+    "source": "mock",
+    "description": "盾叶薯蓣监测点 07：用于跟踪盾叶薯蓣、八角莲的种群数量、生长势和样方环境变化。近期记录显示该点位存在需要关注的生长波动，适合作为下一轮现场复核的优先点。",
+    "habitat": "沟谷湿润生境与半阴坡面",
+    "monitoringMethod": "样方复测 + 生境扰动记录",
+    "riskNote": "长势波动较明显，需复核水分、遮阴和人为干扰情况。",
+    "speciesImageUrl": "https://picsum.photos/seed/451123SY01-54-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451123SY01-54-P01-species-1/640/420",
+      "https://picsum.photos/seed/451123SY01-54-P01-species-2/640/420",
+      "https://picsum.photos/seed/451123SY01-54-P01-species-3/640/420",
+      "https://picsum.photos/seed/451123SY01-54-P01-species-4/640/420",
+      "https://picsum.photos/seed/451123SY01-54-P01-species-5/640/420",
+      "https://picsum.photos/seed/451123SY01-54-P01-species-6/640/420",
+      "https://picsum.photos/seed/451123SY01-54-P01-species-7/640/420"
+    ]
   },
   {
     "id": "451123SY01-55-P01",
@@ -2069,6 +3847,20 @@
     "plantCount": 29,
     "growthStatus": "good",
     "surveyDate": "2026-07-19",
-    "source": "mock"
+    "source": "mock",
+    "description": "盾叶薯蓣监测点 08：用于跟踪盾叶薯蓣、八角莲的种群数量、生长势和样方环境变化。该点位样方群落连续性较好，植株分布清晰，适合作为稳定样点持续对比。",
+    "habitat": "保护区边缘缓冲带样方",
+    "monitoringMethod": "定位拍照 + 植株数量抽样核验",
+    "riskNote": "样方长势稳定，可按常规周期继续跟踪。",
+    "speciesImageUrl": "https://picsum.photos/seed/451123SY01-55-P01-species-1/640/420",
+    "speciesImageUrls": [
+      "https://picsum.photos/seed/451123SY01-55-P01-species-1/640/420",
+      "https://picsum.photos/seed/451123SY01-55-P01-species-2/640/420",
+      "https://picsum.photos/seed/451123SY01-55-P01-species-3/640/420",
+      "https://picsum.photos/seed/451123SY01-55-P01-species-4/640/420",
+      "https://picsum.photos/seed/451123SY01-55-P01-species-5/640/420",
+      "https://picsum.photos/seed/451123SY01-55-P01-species-6/640/420",
+      "https://picsum.photos/seed/451123SY01-55-P01-species-7/640/420"
+    ]
   }
 ]

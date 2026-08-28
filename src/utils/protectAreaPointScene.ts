@@ -46,12 +46,18 @@ interface PointHoverScaleState {
   value: number
 }
 
+interface PointMotionPauseState {
+  bobProgress: number
+  rotation: number
+}
+
 export interface ProtectAreaPointSceneGraph {
   activeAreaId: string | null
   batches: ProtectAreaPointBatch[]
   geometry: BufferGeometry
   group: Group
   hitMaterial: MeshBasicMaterial
+  hoverMotionPauseByPointId: Map<string, PointMotionPauseState>
   hoverScaleByPointId: Map<string, PointHoverScaleState>
   hoveredPointId: string | null
   materials: Map<PointGrowthStatus, MeshBasicMaterial>
@@ -277,6 +283,7 @@ export function createProtectAreaPointSceneGraph(
     geometry,
     group,
     hitMaterial,
+    hoverMotionPauseByPointId: new Map(),
     hoverScaleByPointId: new Map(),
     hoveredPointId: null,
     materials,
@@ -316,6 +323,9 @@ export function setProtectAreaPointHover(
   const previousPointId = sceneGraph.hoveredPointId
   if (previousPointId === pointId) return
   sceneGraph.hoveredPointId = pointId
+  if (previousPointId && previousPointId !== sceneGraph.selectedPointId) {
+    sceneGraph.hoverMotionPauseByPointId.delete(previousPointId)
+  }
 
   function transitionPointScale(targetPointId: string, isHovered: boolean): void {
     const state = sceneGraph.hoverScaleByPointId.get(targetPointId) ?? { value: 1 }
@@ -358,7 +368,25 @@ export function setProtectAreaPointSelection(
   sceneGraph: ProtectAreaPointSceneGraph,
   pointId: string | null,
 ): void {
+  const previousPointId = sceneGraph.selectedPointId
+  if (previousPointId && previousPointId !== pointId && previousPointId !== sceneGraph.hoveredPointId) {
+    sceneGraph.hoverMotionPauseByPointId.delete(previousPointId)
+  }
   sceneGraph.selectedPointId = pointId
+}
+
+function getPointMotionPause(
+  sceneGraph: ProtectAreaPointSceneGraph,
+  pointId: string,
+  bobProgress: number,
+  rotation: number,
+): PointMotionPauseState {
+  const state = sceneGraph.hoverMotionPauseByPointId.get(pointId) ?? {
+    bobProgress,
+    rotation,
+  }
+  sceneGraph.hoverMotionPauseByPointId.set(pointId, state)
+  return state
 }
 
 export function updateProtectAreaPointAnimation(
@@ -399,12 +427,24 @@ export function updateProtectAreaPointAnimation(
         : hoverScale
       const markerWidth = config.markerWidthPx * worldUnitsPerPixel * interactionScale
       const markerHeight = config.markerHeightPx * worldUnitsPerPixel * interactionScale
-      const bobOffset = reducedMotion || isSelected
+      const isHovered = point.id === sceneGraph.hoveredPointId
+      const shouldPauseMotion = isHovered || isSelected
+      const animatedBobProgress = Math.sin(elapsedSeconds * bobFrequency + phase)
+      const animatedRotation = elapsedSeconds * config.rotationSpeedRad + phase
+      const pausedMotion = shouldPauseMotion
+        ? getPointMotionPause(
+            sceneGraph,
+            point.id,
+            animatedBobProgress,
+            animatedRotation,
+          )
+        : null
+      const bobOffset = reducedMotion
         ? 0
-        : Math.sin(elapsedSeconds * bobFrequency + phase) * config.bobAmplitudeKm
+        : (pausedMotion?.bobProgress ?? animatedBobProgress) * config.bobAmplitudeKm
       const rotation = reducedMotion
         ? phase
-        : elapsedSeconds * config.rotationSpeedRad + phase
+        : pausedMotion?.rotation ?? animatedRotation
 
       instancePosition.set(
         point.position[0],
@@ -446,11 +486,22 @@ export function updateProtectAreaPointAnimation(
         2 * Math.tan((camera.fov * Math.PI) / 360) * distance
       ) / viewportHeight
       const isSelected = point.id === sceneGraph.selectedPointId
-      const bobProgress = reducedMotion || isSelected
+      const isHovered = point.id === sceneGraph.hoveredPointId
+      const shouldPauseMotion = isHovered || isSelected
+      const animatedBobProgress = Math.sin(elapsedSeconds * bobFrequency + phase)
+      const pausedMotion = shouldPauseMotion
+        ? getPointMotionPause(
+            sceneGraph,
+            point.id,
+            animatedBobProgress,
+            elapsedSeconds * config.rotationSpeedRad + phase,
+          )
+        : null
+      const bobProgress = reducedMotion
         ? 0
-        : Math.sin(elapsedSeconds * bobFrequency + phase)
+        : pausedMotion?.bobProgress ?? animatedBobProgress
       const shadowSize = config.shadowSizePx * worldUnitsPerPixel * (
-        reducedMotion || isSelected
+        reducedMotion
           ? 1
           : 1 + ((bobProgress + 1) / 2) * config.shadowBobScale
       )
@@ -474,6 +525,7 @@ export function disposeProtectAreaPointSceneGraph(
   for (const state of sceneGraph.hoverScaleByPointId.values()) {
     gsap.killTweensOf(state)
   }
+  sceneGraph.hoverMotionPauseByPointId.clear()
   sceneGraph.hoverScaleByPointId.clear()
   sceneGraph.geometry.dispose()
   for (const material of sceneGraph.materials.values()) material.dispose()

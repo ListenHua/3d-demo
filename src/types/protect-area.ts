@@ -91,9 +91,15 @@ export interface ProtectAreaPointSource {
   longitude: number
   latitude: number
   species: string[]
+  description: string
+  habitat: string
+  monitoringMethod: string
   plantingAreaHa: number
   plantCount: number
   growthStatus: PointGrowthStatus
+  riskNote: string
+  speciesImageUrl: string
+  speciesImageUrls: string[]
   surveyDate: string
   source: 'mock'
 }

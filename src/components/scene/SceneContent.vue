@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useLoop, useTresContext } from '@tresjs/core'
+import { gsap } from 'gsap'
 import {
   ClampToEdgeWrapping,
   LinearFilter,
@@ -113,6 +114,7 @@ const { cameraPosition, cameraRef } = sceneCamera
 
 let pointAnimationFrame: number | null = null
 let lastPointAnimationAt = 0
+let areaVisualSwitchCall: gsap.core.Tween | null = null
 
 function getFeatureScaleY(featureId: string): number {
   return featureVisualById.get(featureId)?.group.scale.y ?? 1
@@ -132,6 +134,18 @@ function updatePointMarkers(timestamp = performance.now()): void {
   )) {
     renderer.invalidate()
   }
+}
+
+function switchVisibleArea(areaId: string): void {
+  setProtectAreaPointVisibility(pointSceneGraph, areaId)
+  setProtectAreaPointSelection(
+    pointSceneGraph,
+    props.selectedFeatureSelection?.kind === 'point'
+      ? props.selectedFeatureSelection.pointId
+      : null,
+  )
+  updatePointMarkers()
+  featureInteraction.applyAreaVisuals(areaId)
 }
 
 function runPointAnimation(timestamp: number): void {
@@ -197,6 +211,9 @@ watch(
     () => props.selectedFeatureSelection,
   ],
   ([areaId, selection], [previousAreaId, previousSelection]) => {
+    areaVisualSwitchCall?.kill()
+    areaVisualSwitchCall = null
+
     const cameraAction = getSelectionCameraAction({
       areaId,
       previousAreaId,
@@ -206,7 +223,16 @@ watch(
       selectionId: getSceneSelectionId(selection),
     })
     const immediate = !props.animateSelection
-    setProtectAreaPointVisibility(pointSceneGraph, areaId)
+    const shouldDeferAreaVisuals = (
+      cameraAction === 'area' &&
+      props.animateSelection &&
+      !reducedMotion.matches &&
+      previousAreaId !== undefined &&
+      previousAreaId !== areaId
+    )
+    const visibleAreaId = shouldDeferAreaVisuals ? previousAreaId : areaId
+
+    setProtectAreaPointVisibility(pointSceneGraph, visibleAreaId)
     setProtectAreaPointSelection(
       pointSceneGraph,
       selection?.kind === 'point' ? selection.pointId : null,
@@ -223,7 +249,7 @@ watch(
     featureInteraction.syncSelectionVisuals(
       previousSelection,
       selection,
-      areaId,
+      visibleAreaId,
       immediate,
     )
     if (!isMounted) return
@@ -231,6 +257,17 @@ watch(
     sceneCamera.cancelIntro()
 
     if (cameraAction === 'feature' && selection) {
+      if (selection.kind === 'point') {
+        featureInteraction.hideFeatureCard(true)
+        sceneCamera.focusFeature(
+          selection,
+          previousSelection,
+          props.animateSelection,
+          () => {},
+        )
+        return
+      }
+
       if (!featureInteraction.updateFeatureCard(selection)) return
       featureInteraction.hideFeatureCard(true)
       sceneCamera.focusFeature(
@@ -244,7 +281,23 @@ watch(
 
     if (cameraAction === 'area') {
       featureInteraction.hideFeatureCard()
-      sceneCamera.focusArea(areaId, props.animateSelection, previousAreaId)
+      if (shouldDeferAreaVisuals) {
+        areaVisualSwitchCall = gsap.delayedCall(
+          SCENE_CONFIG.flight.areaVisualSwitchDelaySeconds,
+          () => {
+            areaVisualSwitchCall = null
+            if (props.activeAreaId !== areaId) return
+            switchVisibleArea(areaId)
+          },
+        )
+      }
+      sceneCamera.focusArea(areaId, props.animateSelection, previousAreaId, () => {
+        if (!shouldDeferAreaVisuals || props.activeAreaId !== areaId) return
+        if (!areaVisualSwitchCall) return
+        areaVisualSwitchCall?.kill()
+        areaVisualSwitchCall = null
+        switchVisibleArea(areaId)
+      })
       return
     }
 
@@ -285,6 +338,7 @@ onMounted(() => {
 
 onBeforeUnmount(() => {
   isMounted = false
+  areaVisualSwitchCall?.kill()
   stopPointAnimation()
   reducedMotion.removeEventListener('change', handleReducedMotionChange)
   sceneCamera.dispose()

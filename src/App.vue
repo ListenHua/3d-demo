@@ -12,6 +12,7 @@ import {
   watch,
 } from 'vue'
 import AreaStepper from './components/AreaStepper.vue'
+import MonitoringPointPanel from './components/MonitoringPointPanel.vue'
 import {
   PROTECT_AREA_TYPES,
   PROTECT_AREA_TYPE_DEFINITIONS,
@@ -30,7 +31,7 @@ const orbitalScenePromise = import('./components/scene/OrbitalScene.vue')
 const OrbitalScene = defineAsyncComponent(() => orbitalScenePromise)
 
 const appShell = ref<HTMLElement | null>(null)
-const areaReadout = ref<HTMLElement | null>(null)
+const areaTitle = ref<HTMLElement | null>(null)
 const dataset = shallowRef<ProtectAreaDataset | null>(null)
 const dataError = ref<string | null>(null)
 const isLoading = ref(true)
@@ -71,9 +72,32 @@ const activeArea = computed(() => {
   return areas[activeIndex.value] ?? areas[0] ?? null
 })
 
+const selectedPointContext = computed(() => {
+  const currentDataset = dataset.value
+  const selection = selectedFeatureSelection.value
+  if (!currentDataset || selection?.kind !== 'point') return null
+
+  const point = currentDataset.points.find((item) => item.id === selection.pointId)
+  const area = currentDataset.areas.find((item) => item.id === selection.areaId)
+  const feature = currentDataset.features.find((item) => item.id === selection.featureId)
+  if (!point || !area || !feature) return null
+
+  const featureDefinition = PROTECT_AREA_TYPE_DEFINITIONS[feature.type]
+  const statusDefinition = PROTECT_POINT_STATUS_DEFINITIONS[point.growthStatus]
+
+  return {
+    areaName: area.name,
+    featureLabel: featureDefinition.label,
+    point,
+    statusColor: statusDefinition.color,
+    statusLabel: statusDefinition.label,
+  }
+})
+
 let dataAbortController: AbortController | null = null
-let areaReadoutTween: gsap.core.Tween | null = null
+let areaTitleTween: gsap.core.Tween | null = null
 let introContext: gsap.Context | null = null
+let monitoringPointPanelTween: gsap.core.Tween | null = null
 
 async function loadDataset(): Promise<void> {
   dataAbortController?.abort()
@@ -126,6 +150,69 @@ function clearFeatureSelection(): void {
   selectedFeatureSelection.value = null
 }
 
+function prefersReducedMotion(): boolean {
+  return window.matchMedia('(prefers-reduced-motion: reduce)').matches
+}
+
+function beforeEnterMonitoringPointPanel(element: Element): void {
+  const panel = element as HTMLElement
+  monitoringPointPanelTween?.kill()
+  panel.style.willChange = 'transform, opacity'
+  gsap.set(panel, {
+    autoAlpha: 0,
+    x: prefersReducedMotion() ? 0 : 32,
+  })
+}
+
+function enterMonitoringPointPanel(element: Element, done: () => void): void {
+  const panel = element as HTMLElement
+  monitoringPointPanelTween?.kill()
+
+  if (prefersReducedMotion()) {
+    gsap.set(panel, { autoAlpha: 1, x: 0 })
+    panel.style.willChange = 'auto'
+    done()
+    return
+  }
+
+  monitoringPointPanelTween = gsap.to(panel, {
+    autoAlpha: 1,
+    duration: 0.9,
+    ease: 'power1.out',
+    onComplete: () => {
+      panel.style.willChange = 'auto'
+      monitoringPointPanelTween = null
+      done()
+    },
+    x: 0,
+  })
+}
+
+function leaveMonitoringPointPanel(element: Element, done: () => void): void {
+  const panel = element as HTMLElement
+  monitoringPointPanelTween?.kill()
+  panel.style.willChange = 'transform, opacity'
+
+  if (prefersReducedMotion()) {
+    gsap.set(panel, { autoAlpha: 0, x: 0 })
+    panel.style.willChange = 'auto'
+    done()
+    return
+  }
+
+  monitoringPointPanelTween = gsap.to(panel, {
+    autoAlpha: 0,
+    duration: 0.42,
+    ease: 'power2.in',
+    onComplete: () => {
+      panel.style.willChange = 'auto'
+      monitoringPointPanelTween = null
+      done()
+    },
+    x: 32,
+  })
+}
+
 function playIntro(): void {
   introContext?.revert()
   introContext = gsap.context(() => {
@@ -149,43 +236,32 @@ function playIntro(): void {
   }, appShell.value ?? undefined)
 }
 
-function playAreaReadout(): void {
-  const elements = areaReadout.value?.querySelectorAll<HTMLElement>('[data-area-text]')
-  if (!elements?.length) return
+function playAreaTitle(): void {
+  const title = areaTitle.value
+  if (!title) return
 
-  areaReadoutTween?.kill()
-  gsap.killTweensOf(elements)
+  areaTitleTween?.kill()
+  gsap.killTweensOf(title)
+  title.style.willChange = 'transform, opacity'
 
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reducedMotion) {
-    areaReadoutTween = gsap.fromTo(
-      elements,
-      { opacity: 0 },
-      {
-        clearProps: 'opacity',
-        duration: 0.12,
-        ease: 'power2.out',
-        opacity: 1,
-        onComplete: () => {
-          areaReadoutTween = null
-        },
-      },
-    )
+  if (prefersReducedMotion()) {
+    gsap.set(title, { autoAlpha: 1, x: 0 })
+    title.style.willChange = 'auto'
     return
   }
 
-  areaReadoutTween = gsap.fromTo(
-    elements,
-    { clipPath: 'inset(0 100% 0 0)' },
+  areaTitleTween = gsap.fromTo(
+    title,
+    { autoAlpha: 0, x: -18 },
     {
-      clearProps: 'clipPath',
-      clipPath: 'inset(0 0% 0 0)',
-      duration: 1,
-      ease: 'power2.inOut',
-      stagger: 0.035,
+      autoAlpha: 1,
+      duration: 0.72,
+      ease: 'power3.out',
       onComplete: () => {
-        areaReadoutTween = null
+        title.style.willChange = 'auto'
+        areaTitleTween = null
       },
+      x: 0,
     },
   )
 }
@@ -199,7 +275,7 @@ watch(dataset, async (value) => {
 watch(
   () => activeArea.value?.id,
   (areaId) => {
-    if (areaId) playAreaReadout()
+    if (areaId) playAreaTitle()
   },
   { flush: 'post' },
 )
@@ -210,8 +286,9 @@ onMounted(() => {
 
 onBeforeUnmount(() => {
   dataAbortController?.abort()
-  areaReadoutTween?.kill()
+  areaTitleTween?.kill()
   introContext?.revert()
+  monitoringPointPanelTween?.kill()
 })
 </script>
 
@@ -233,38 +310,25 @@ onBeforeUnmount(() => {
       </div>
       <div class="scene-edge-shade" aria-hidden="true"></div>
 
-      <section
-        ref="areaReadout"
-        class="area-readout"
-        aria-atomic="true"
-        aria-live="polite"
+      <Transition
+        :css="false"
+        @before-enter="beforeEnterMonitoringPointPanel"
+        @enter="enterMonitoringPointPanel"
+        @leave="leaveMonitoringPointPanel"
       >
-        <div class="readout-index" data-area-text>
-          <span>{{ String(activeIndex + 1).padStart(2, '0') }}</span>
-          <i></i>
-          <span>{{ activeArea.city }}</span>
-        </div>
+        <MonitoringPointPanel
+          v-if="selectedPointContext"
+          :area-name="selectedPointContext.areaName"
+          :feature-label="selectedPointContext.featureLabel"
+          :point="selectedPointContext.point"
+          :status-color="selectedPointContext.statusColor"
+          :status-label="selectedPointContext.statusLabel"
+          @close="clearFeatureSelection"
+        />
+      </Transition>
 
-        <h1 data-area-text>{{ activeArea.name }}</h1>
-
-        <dl class="area-metadata" data-area-text>
-          <div>
-            <dt>保护对象</dt>
-            <dd>{{ activeArea.species || '未标注' }}</dd>
-          </div>
-          <div>
-            <dt>行政区</dt>
-            <dd>{{ activeArea.county || activeArea.city }}</dd>
-          </div>
-          <div>
-            <dt>功能区面积</dt>
-            <dd>{{ activeArea.totalArea.toFixed(2) }} <small>ha</small></dd>
-          </div>
-          <div>
-            <dt>保护区编码</dt>
-            <dd class="metadata-code">{{ activeArea.id }}</dd>
-          </div>
-        </dl>
+      <section class="area-readout" aria-atomic="true" aria-live="polite">
+        <h1 ref="areaTitle" class="area-title">{{ activeArea.name }}</h1>
       </section>
 
       <aside class="area-legend" data-intro aria-label="地图图例">
@@ -347,15 +411,12 @@ onBeforeUnmount(() => {
     inset 0 -170px 150px rgba(4, 7, 6, 0.58);
 }
 
-.readout-index,
 .area-legend li {
   display: flex;
   align-items: center;
 }
 
-.area-legend p,
-.readout-index,
-.area-metadata dt {
+.area-legend p {
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 0;
@@ -379,69 +440,22 @@ onBeforeUnmount(() => {
   z-index: 2;
   top: 30px;
   left: 30px;
-  width: min(460px, calc(100vw - 60px));
+  width: min(1020px, calc(100vw - 60px));
   padding-left: 18px;
   border-left: 1px solid rgba(185, 213, 106, 0.62);
   pointer-events: none;
 }
 
-.readout-index {
-  gap: 9px;
-  color: var(--lime);
-  font-size: 10px;
-  font-weight: 700;
-}
-
-.readout-index i {
-  width: 28px;
-  height: 1px;
-  background: currentColor;
-}
-
-.area-readout h1 {
-  max-width: 430px;
-  margin: 14px 0 0;
-  color: var(--paper);
-  font-family: "Songti SC", "STSong", Georgia, serif;
-  font-size: clamp(25px, 2.4vw, 38px);
-  font-weight: 500;
-  line-height: 1.28;
+.area-title {
+  margin: 0;
+  overflow-wrap: anywhere;
+  color: #ffffff;
+  font-family: "Ma Shan Zheng";
+  font-size: clamp(34px, 4vw, 62px);
+  font-weight: bold;
+  line-height: 1.12;
   letter-spacing: 0;
   text-wrap: balance;
-}
-
-.area-metadata {
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-  gap: 14px 24px;
-  margin: 22px 0 0;
-}
-
-.area-metadata div {
-  min-width: 0;
-}
-
-.area-metadata dt {
-  color: var(--faint);
-  font-size: 9px;
-}
-
-.area-metadata dd {
-  margin: 5px 0 0;
-  overflow-wrap: anywhere;
-  color: rgba(241, 238, 228, 0.82);
-  font-size: 12px;
-  line-height: 1.4;
-}
-
-.area-metadata small {
-  color: var(--faint);
-  font-size: 9px;
-  font-weight: 500;
-}
-
-.metadata-code {
-  font-variant-numeric: tabular-nums;
 }
 
 .area-legend {
@@ -551,22 +565,9 @@ onBeforeUnmount(() => {
     padding-left: 13px;
   }
 
-  .area-readout h1 {
-    max-width: calc(100vw - 58px);
-    margin-top: 10px;
-    font-size: clamp(22px, 7vw, 29px);
-    line-height: 1.25;
-  }
-
-  .area-metadata {
-    max-width: calc(100vw - 56px);
-    gap: 10px 18px;
-    margin-top: 16px;
-  }
-
-  .area-metadata dd {
-    margin-top: 3px;
-    font-size: 11px;
+  .area-title {
+    font-size: clamp(27px, 8vw, 42px);
+    line-height: 1.14;
   }
 
   .area-legend {
@@ -601,8 +602,8 @@ onBeforeUnmount(() => {
 }
 
 @media (max-height: 690px) {
-  .area-metadata {
-    display: none;
+  .area-title {
+    font-size: clamp(26px, 6vw, 44px);
   }
 
   .area-legend {

@@ -220,9 +220,18 @@ function assertPointSources(value: unknown): asserts value is ProtectAreaPointSo
       typeof point.longitude !== 'number' ||
       typeof point.latitude !== 'number' ||
       !Array.isArray(point.species) ||
+      typeof point.description !== 'string' ||
+      typeof point.habitat !== 'string' ||
+      typeof point.monitoringMethod !== 'string' ||
       typeof point.plantingAreaHa !== 'number' ||
       typeof point.plantCount !== 'number' ||
       !POINT_GROWTH_STATUSES.has(point.growthStatus as PointGrowthStatus) ||
+      typeof point.riskNote !== 'string' ||
+      typeof point.speciesImageUrl !== 'string' ||
+      !Array.isArray(point.speciesImageUrls) ||
+      point.speciesImageUrls.length < 5 ||
+      point.speciesImageUrls.length > 10 ||
+      point.speciesImageUrls.some((url) => typeof url !== 'string') ||
       typeof point.surveyDate !== 'string' ||
       point.source !== 'mock'
     ) {

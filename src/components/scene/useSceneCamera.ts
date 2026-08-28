@@ -367,6 +367,7 @@ export function useSceneCamera({
     areaId: string,
     shouldAnimate: boolean,
     previousAreaId: string | null = null,
+    onArrive?: () => void,
   ): void {
     const area = areaById.get(areaId)
     if (!area) return
@@ -387,6 +388,7 @@ export function useSceneCamera({
 
     moveCameraTo(destination, shouldAnimate, createFlightCurve, {
       durationSeconds: SCENE_CONFIG.flight.durationSeconds,
+      onArrive,
       style,
     })
   }

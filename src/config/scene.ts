@@ -133,6 +133,8 @@ export const SCENE_CONFIG = {
     },
     /** 跨保护区域飞行的总时长，单位为秒。 */
     durationSeconds: 1,
+    /** 跨保护区域飞行开始后切换贴图和区域可见性的延迟，单位为秒。 */
+    areaVisualSwitchDelaySeconds: 0.34,
     /** 两个地区或功能区中心低于该距离时改用匀速过渡，单位为千米。 */
     uniformDistanceThresholdKm: 10,
     /** 近距离切换的匀速缓动名称。 */

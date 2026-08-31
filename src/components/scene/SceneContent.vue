@@ -7,13 +7,13 @@ import {
   LinearMipmapLinearFilter,
   SRGBColorSpace,
   TextureLoader,
-  Vector3,
 } from 'three'
 import type { WebGLRenderer } from 'three'
 import { markRaw, onBeforeUnmount, onMounted, watch } from 'vue'
 import plotTextureUrl from '../../assets/images/plot.png'
 import { SCENE_CONFIG } from '../../config/scene'
 import type {
+  ProjectedBounds,
   ProtectAreaDataset,
   ProtectSceneSelection,
 } from '../../types/protect-area'
@@ -24,7 +24,12 @@ import { getSceneSelectionId } from '../../utils/sceneSelection'
 import {
   createProtectAreaSceneGraph,
   disposeProtectAreaSceneGraph,
+  updateProtectAreaTerrainUvs,
 } from '../../utils/protectAreaScene'
+import {
+  createRasterTileGround,
+  disposeRasterTileGround,
+} from '../../utils/rasterTileGround'
 import {
   createProtectAreaPointSceneGraph,
   disposeProtectAreaPointSceneGraph,
@@ -46,6 +51,7 @@ const emit = defineEmits<{
   selectFeature: [selection: ProtectSceneSelection]
   clearFeatureSelection: []
   flightState: [isFlying: boolean]
+  openPointDetail: [pointId: string]
   terrainHoverState: [isHovered: boolean]
   userCameraInteraction: []
 }>()
@@ -54,6 +60,33 @@ const { renderer, sizes } = useTresContext()
 const { onBeforeRender } = useLoop()
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
 const webglRenderer = renderer.instance as WebGLRenderer
+const groundSize = Math.max(
+  props.dataset.bounds.width,
+  props.dataset.bounds.depth,
+) * SCENE_CONFIG.ground.sizeFactor
+const rasterTileConfig = SCENE_CONFIG.ground.rasterTiles
+const rasterTileElevationY = SCENE_CONFIG.feature.elevationKm + rasterTileConfig.elevationOffsetKm
+const rasterTileGround = markRaw(createRasterTileGround({
+  anisotropy: webglRenderer.capabilities.getMaxAnisotropy(),
+  center: props.dataset.bounds.center,
+  elevationY: rasterTileElevationY,
+  enabled: rasterTileConfig.enabled,
+  fallbackColor: rasterTileConfig.fallbackColor,
+  fallbackOpacity: rasterTileConfig.fallbackOpacity,
+  groundSize,
+  invalidate: renderer.invalidate,
+  level: rasterTileConfig.level,
+  maxLevel: rasterTileConfig.maxLevel,
+  maxTextureSize: webglRenderer.capabilities.maxTextureSize,
+  maxTileCount: rasterTileConfig.maxTileCount,
+  minLevel: rasterTileConfig.minLevel,
+  opacity: rasterTileConfig.opacity,
+  origin: props.dataset.origin,
+  subdomains: rasterTileConfig.subdomains,
+  targetTilesAcrossView: rasterTileConfig.targetTilesAcrossView,
+  urlTemplate: rasterTileConfig.urlTemplate,
+  viewPaddingRatio: rasterTileConfig.viewPaddingRatio,
+}))
 const terrainTexture = markRaw(new TextureLoader().load(
   plotTextureUrl,
   () => renderer.invalidate(),
@@ -69,11 +102,14 @@ terrainTexture.anisotropy = Math.min(
 )
 const sceneGraph = markRaw(createProtectAreaSceneGraph(
   props.dataset.areas,
-  terrainTexture,
+  rasterTileGround.featureTexture ?? terrainTexture,
+  rasterTileGround.textureBounds ?? undefined,
 ))
 const featureVisualById = new Map(
   sceneGraph.visuals.map((visual) => [visual.featureId, visual]),
 )
+const areaById = new Map(props.dataset.areas.map((area) => [area.id, area]))
+const featureById = new Map(props.dataset.features.map((feature) => [feature.id, feature]))
 const pointSceneGraph = markRaw(createProtectAreaPointSceneGraph(props.dataset.points))
 sceneGraph.group.add(pointSceneGraph.group)
 setProtectAreaPointVisibility(pointSceneGraph, props.activeAreaId)
@@ -83,16 +119,6 @@ setProtectAreaPointSelection(
     ? props.selectedFeatureSelection.pointId
     : null,
 )
-const groundSize = Math.max(
-  props.dataset.bounds.width,
-  props.dataset.bounds.depth,
-) * SCENE_CONFIG.ground.sizeFactor
-const groundPosition = new Vector3(
-  props.dataset.bounds.center[0],
-  -SCENE_CONFIG.feature.depthKm,
-  props.dataset.bounds.center[1],
-)
-
 let clearHoveredFeature = (): void => {}
 let hasHoveredFeature = (): boolean => false
 let refreshPointerHover = (): void => {}
@@ -115,6 +141,124 @@ const { cameraPosition, cameraRef } = sceneCamera
 let pointAnimationFrame: number | null = null
 let lastPointAnimationAt = 0
 let areaVisualSwitchCall: gsap.core.Tween | null = null
+let lastRasterTileViewState: {
+  distance: number
+  intentKey: string
+  targetX: number
+  targetZ: number
+} | null = null
+
+function mergeProjectedBounds(bounds: ProjectedBounds[]): ProjectedBounds {
+  const minX = Math.min(...bounds.map((item) => item.minX))
+  const minZ = Math.min(...bounds.map((item) => item.minZ))
+  const maxX = Math.max(...bounds.map((item) => item.maxX))
+  const maxZ = Math.max(...bounds.map((item) => item.maxZ))
+
+  return {
+    minX,
+    minZ,
+    maxX,
+    maxZ,
+    width: maxX - minX,
+    depth: maxZ - minZ,
+    center: [(minX + maxX) / 2, (minZ + maxZ) / 2],
+  }
+}
+
+function getRasterTileBounds(): ProjectedBounds | null {
+  const activeAreaBounds = areaById.get(props.activeAreaId)?.bounds
+  const selectedFeatureBounds = props.selectedFeatureSelection
+    ? featureById.get(props.selectedFeatureSelection.featureId)?.bounds
+    : null
+
+  const bounds: ProjectedBounds[] = []
+  if (activeAreaBounds) bounds.push(activeAreaBounds)
+  if (selectedFeatureBounds) bounds.push(selectedFeatureBounds)
+
+  return bounds.length > 0 ? mergeProjectedBounds(bounds) : null
+}
+
+function getRasterTileIntentKey(): string {
+  return [
+    props.activeAreaId,
+    props.selectedFeatureSelection?.featureId ?? '',
+    props.selectedFeatureSelection?.kind ?? '',
+    sizes.width.value,
+    sizes.height.value,
+  ].join(':')
+}
+
+function getRasterTilePriorityCenter(): [number, number] | undefined {
+  const selectedFeatureCenter = props.selectedFeatureSelection
+    ? featureById.get(props.selectedFeatureSelection.featureId)?.bounds.center
+    : null
+  const activeAreaCenter = areaById.get(props.activeAreaId)?.bounds.center
+
+  return selectedFeatureCenter ?? activeAreaCenter ?? undefined
+}
+
+function shouldUpdateRasterTilesForCamera(force = false): boolean {
+  const camera = cameraRef.value
+  if (!camera) return false
+  if (force) return true
+
+  const distance = camera.position.distanceTo(sceneCamera.currentTarget)
+  const intentKey = getRasterTileIntentKey()
+  const targetX = sceneCamera.currentTarget.x
+  const targetZ = sceneCamera.currentTarget.z
+  const viewSizeHint = Math.max(distance, 0.1)
+  const distanceDeltaRatio = lastRasterTileViewState
+    ? Math.abs(distance - lastRasterTileViewState.distance) / Math.max(lastRasterTileViewState.distance, 0.1)
+    : Number.POSITIVE_INFINITY
+  const targetDelta = lastRasterTileViewState
+    ? Math.hypot(
+      targetX - lastRasterTileViewState.targetX,
+      targetZ - lastRasterTileViewState.targetZ,
+    )
+    : Number.POSITIVE_INFINITY
+  const shouldUpdate = (
+    lastRasterTileViewState?.intentKey !== intentKey ||
+    distanceDeltaRatio > 0.12 ||
+    targetDelta > viewSizeHint * 0.18
+  )
+
+  if (shouldUpdate) {
+    lastRasterTileViewState = { distance, intentKey, targetX, targetZ }
+  }
+
+  return shouldUpdate
+}
+
+function updateRasterTilesForCamera(force = false): void {
+  if (!shouldUpdateRasterTilesForCamera(force)) return
+
+  const bounds = getRasterTileBounds()
+  if (!bounds) return
+
+  const didUpdateTiles = rasterTileGround.updateView(
+    bounds,
+    getRasterTilePriorityCenter(),
+    force,
+  )
+  if (didUpdateTiles && rasterTileGround.textureBounds) {
+    updateProtectAreaTerrainUvs(
+      sceneGraph,
+      rasterTileGround.textureBounds,
+    )
+  }
+
+  if (force) {
+    const camera = cameraRef.value
+    if (!camera) return
+
+    lastRasterTileViewState = {
+      distance: camera.position.distanceTo(sceneCamera.currentTarget),
+      intentKey: getRasterTileIntentKey(),
+      targetX: sceneCamera.currentTarget.x,
+      targetZ: sceneCamera.currentTarget.z,
+    }
+  }
+}
 
 function getFeatureScaleY(featureId: string): number {
   return featureVisualById.get(featureId)?.group.scale.y ?? 1
@@ -192,6 +336,7 @@ const featureInteraction = useFeatureInteraction({
     sceneCamera.updateControlCursor()
     emit('terrainHoverState', isHovered)
   },
+  onOpenPointDetail: (pointId) => emit('openPointDetail', pointId),
   onPointStateChange: () => updatePointMarkers(),
   onSelectFeature: (selection) => emit('selectFeature', selection),
   reducedMotion,
@@ -255,15 +400,17 @@ watch(
     if (!isMounted) return
 
     sceneCamera.cancelIntro()
+    updateRasterTilesForCamera(true)
 
     if (cameraAction === 'feature' && selection) {
       if (selection.kind === 'point') {
+        if (!featureInteraction.updateFeatureCard(selection)) return
         featureInteraction.hideFeatureCard(true)
         sceneCamera.focusFeature(
           selection,
           previousSelection,
           props.animateSelection,
-          () => {},
+          featureInteraction.showFeatureCard,
         )
         return
       }
@@ -320,10 +467,12 @@ watch([sizes.width, sizes.height], ([width, height]) => {
     props.activeAreaId,
     props.selectedFeatureSelection !== null,
   )
+  updateRasterTilesForCamera(true)
 })
 
 onBeforeRender(() => {
   sceneCamera.beforeRender()
+  updateRasterTilesForCamera()
   featureInteraction.beforeRender()
 })
 
@@ -331,6 +480,7 @@ onMounted(() => {
   isMounted = true
   featureInteraction.mount()
   sceneCamera.mount(props.activeAreaId)
+  updateRasterTilesForCamera(true)
   updatePointMarkers()
   startPointAnimation()
   reducedMotion.addEventListener('change', handleReducedMotionChange)
@@ -345,6 +495,7 @@ onBeforeUnmount(() => {
   featureInteraction.dispose()
   disposeProtectAreaPointSceneGraph(pointSceneGraph)
   disposeProtectAreaSceneGraph(sceneGraph)
+  disposeRasterTileGround(rasterTileGround)
   terrainTexture.dispose()
 })
 </script>
@@ -357,14 +508,6 @@ onBeforeUnmount(() => {
     :near="SCENE_CONFIG.camera.near"
     :position="cameraPosition"
   />
-  <TresFog
-    :args="[
-      SCENE_CONFIG.ground.color,
-      SCENE_CONFIG.fog.nearKm,
-      SCENE_CONFIG.fog.farKm,
-    ]"
-  />
-
   <TresHemisphereLight
     :args="[
       SCENE_CONFIG.light.skyColor,
@@ -373,13 +516,6 @@ onBeforeUnmount(() => {
     ]"
   />
 
-  <TresMesh :position="groundPosition" :rotation="[-Math.PI / 2, 0, 0]" receive-shadow>
-    <TresPlaneGeometry :args="[groundSize, groundSize]" />
-    <TresMeshStandardMaterial
-      :color="SCENE_CONFIG.ground.color"
-      :metalness="SCENE_CONFIG.ground.metalness"
-      :roughness="SCENE_CONFIG.ground.roughness"
-    />
-  </TresMesh>
+  <primitive :object="rasterTileGround.group" />
   <primitive :object="sceneGraph.group" />
 </template>

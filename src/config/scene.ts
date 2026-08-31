@@ -38,13 +38,13 @@ export const SCENE_CONFIG = {
   controls: {
     /** 阻尼响应系数；数值越大，拖动惯性越快停止。 */
     dampingFactor: 0.085,
-    /** 镜头距控制目标的最大距离，单位为千米。 */
-    maxDistanceKm: 50,
-    /** 最大极角占 PI 的比例；0.5 表示镜头可接近水平视角。 */
+    /** 镜头距控制目标的最大距离，单位为千米；Infinity 表示不限制远距离缩放。 */
+    maxDistanceKm: Number.POSITIVE_INFINITY,
+    /** 最大极角占 PI 的比例；限制镜头不翻到地面下方。 */
     maxPolarAngleRatio: 0.47,
-    /** 镜头距控制目标的最小距离，单位为千米。 */
-    minDistanceKm: 1,
-    /** 最小极角占 PI 的比例；限制镜头从正上方观察。 */
+    /** 镜头距控制目标的最小距离，单位为千米；0 表示不限制近距离缩放。 */
+    minDistanceKm: 0,
+    /** 最小极角占 PI 的比例；限制镜头不贴到完全垂直俯视。 */
     minPolarAngleRatio: 0.12,
     /** 平移灵敏度倍率。 */
     panSpeed: 0.72,
@@ -195,23 +195,45 @@ export const SCENE_CONFIG = {
       ease: 'sine.inOut',
     },
   },
-  /** 与地图底色一致的线性雾参数。 */
-  fog: {
-    /** 完全被雾遮蔽的距离，单位为千米。 */
-    farKm: 20,
-    /** 开始出现雾效的距离，单位为千米。 */
-    nearKm: 10,
-  },
   /** 承载地图的地面平面与材质参数。 */
   ground: {
-    /** 地面、画布清屏和雾共用的背景色。 */
-    color: '#000000',
+    /** 地面与画布清屏共用的背景色。 */
+    color: '#101813',
     /** 地面材质金属度，取值范围通常为 0–1。 */
     metalness: 0.04,
     /** 地面材质粗糙度，取值范围通常为 0–1。 */
     roughness: 0.94,
     /** 地面尺寸相对数据包围盒最大边长的倍率。 */
     sizeFactor: 1.25,
+    /** 高德 Web Mercator 影像瓦片参数。 */
+    rasterTiles: {
+      /** 是否启用远程影像瓦片；加载失败时会显示本地地表兜底。 */
+      enabled: true,
+      /** 瓦片与保护区挤出底面之间的距离，单位为千米。 */
+      elevationOffsetKm: 0,
+      /** 初始瓦片级别；进入场景时先以该级别加载全局底图。 */
+      level: 8,
+      /** 放大后允许加载的最高瓦片级别。 */
+      maxLevel: 18,
+      /** 自动降级时允许的最低瓦片级别。 */
+      minLevel: 7,
+      /** 一次性绘制的最大瓦片数量。 */
+      maxTileCount: 2048,
+      /** 视野最长边倾向覆盖的瓦片数量，用于根据镜头距离自动估算 zoom。 */
+      targetTilesAcrossView: 8,
+      /** 视野范围外扩比例，提前加载边缘瓦片。 */
+      viewPaddingRatio: 4,
+      /** 影像层整体透明度。 */
+      opacity: 1,
+      /** 瓦片未配置或加载前显示的本地地表底色。 */
+      fallbackColor: '#1f3127',
+      /** 本地兜底地表的透明度。 */
+      fallbackOpacity: 0.58,
+      /** 高德影像服务子域；urlTemplate 未使用 {s} 时会直接忽略。 */
+      subdomains: ['01', '02', '03', '04'] as const,
+      /** 高德影像瓦片地址，style=6 为影像底图。 */
+      urlTemplate: 'https://webst{s}.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}',
+    },
   },
   /** 模拟监测点在地图中的显示和命中参数。 */
   monitoringPoint: {

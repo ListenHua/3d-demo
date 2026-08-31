@@ -7,6 +7,8 @@ import { SCENE_CONFIG } from '../config/scene'
 
 export interface FeatureCardContent {
   color: string
+  detailButtonLabel?: string
+  detailPointId?: string
   eyebrow: string
   kind: 'feature' | 'point'
   rows: Array<{
@@ -19,7 +21,12 @@ export interface FeatureCardContent {
 export interface FeatureCard3D {
   card: HTMLElement
   closeButton: HTMLButtonElement
+  detailButton: HTMLButtonElement
   onClose: () => void
+  onCloseClick: (event: MouseEvent) => void
+  onDetailClick: (event: MouseEvent) => void
+  onDetailPointerDown: (event: PointerEvent) => void
+  onOpenDetail: (pointId: string) => void
   onPointerDown: (event: PointerEvent) => void
   renderer: CSS3DRenderer
   scene: Scene
@@ -27,6 +34,7 @@ export interface FeatureCard3D {
   sprite: CSS3DSprite
   fields: {
     details: HTMLElement
+    footer: HTMLElement
     eyebrow: HTMLElement
     swatch: HTMLElement
     title: HTMLElement
@@ -56,6 +64,7 @@ export function createFeatureCard3D(
   width: number,
   height: number,
   onClose: () => void,
+  onOpenDetail: (pointId: string) => void,
 ): FeatureCard3D {
   const renderer = new CSS3DRenderer()
   renderer.setSize(width, height)
@@ -80,14 +89,35 @@ export function createFeatureCard3D(
   closeButton.title = '关闭功能区信息'
   closeButton.setAttribute('aria-label', '关闭功能区信息')
   const onPointerDown = (event: PointerEvent) => event.stopPropagation()
+  const onCloseClick = (event: MouseEvent) => {
+    event.stopPropagation()
+    onClose()
+  }
   closeButton.addEventListener('pointerdown', onPointerDown)
-  closeButton.addEventListener('click', onClose)
+  closeButton.addEventListener('click', onCloseClick)
   eyebrow.textContent = '功能区'
   heading.append(eyebrow, title)
   header.append(swatch, heading, closeButton)
 
   const details = createElement('dl', 'feature-card-data')
-  card.append(header, details)
+  const footer = createElement('footer', 'feature-card-footer')
+  const detailButton = createElement('button', 'feature-card-detail')
+  const onDetailPointerDown = (event: PointerEvent) => event.stopPropagation()
+  const onDetailClick = (event: MouseEvent) => {
+    event.stopPropagation()
+    const pointId = detailButton.dataset.pointId
+    if (pointId) onOpenDetail(pointId)
+  }
+  detailButton.type = 'button'
+  detailButton.style.pointerEvents = 'auto'
+  detailButton.textContent = '查看详情'
+  detailButton.title = '查看监测点详情'
+  detailButton.setAttribute('aria-label', '查看监测点详情')
+  detailButton.hidden = true
+  detailButton.addEventListener('pointerdown', onDetailPointerDown)
+  detailButton.addEventListener('click', onDetailClick)
+  footer.appendChild(detailButton)
+  card.append(header, details, footer)
   shell.appendChild(card)
   anchor.appendChild(shell)
 
@@ -101,7 +131,12 @@ export function createFeatureCard3D(
   return {
     card,
     closeButton,
+    detailButton,
     onClose,
+    onCloseClick,
+    onDetailClick,
+    onDetailPointerDown,
+    onOpenDetail,
     onPointerDown,
     renderer,
     scene,
@@ -109,6 +144,7 @@ export function createFeatureCard3D(
     sprite,
     fields: {
       details,
+      footer,
       eyebrow,
       swatch,
       title,
@@ -130,7 +166,19 @@ export function updateFeatureCard3D(
   handle.fields.eyebrow.textContent = content.eyebrow
   handle.fields.title.textContent = content.title
   handle.fields.swatch.style.backgroundColor = content.color
+  handle.card.setAttribute(
+    'aria-label',
+    content.kind === 'point' ? '监测点三维信息卡片' : '功能区三维信息卡片',
+  )
   handle.shell.classList.toggle('feature-card-shell--point', content.kind === 'point')
+  handle.fields.footer.hidden = !content.detailPointId
+  handle.detailButton.hidden = !content.detailPointId
+  handle.detailButton.textContent = content.detailButtonLabel ?? '查看详情'
+  if (content.detailPointId) {
+    handle.detailButton.dataset.pointId = content.detailPointId
+  } else {
+    delete handle.detailButton.dataset.pointId
+  }
   handle.sprite.position.copy(position)
 }
 
@@ -148,7 +196,9 @@ export function renderFeatureCard3D(handle: FeatureCard3D, camera: Camera): void
 
 export function disposeFeatureCard3D(handle: FeatureCard3D): void {
   handle.closeButton.removeEventListener('pointerdown', handle.onPointerDown)
-  handle.closeButton.removeEventListener('click', handle.onClose)
+  handle.closeButton.removeEventListener('click', handle.onCloseClick)
+  handle.detailButton.removeEventListener('pointerdown', handle.onDetailPointerDown)
+  handle.detailButton.removeEventListener('click', handle.onDetailClick)
   handle.scene.remove(handle.sprite)
   handle.renderer.domElement.remove()
 }

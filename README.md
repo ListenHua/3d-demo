@@ -14,6 +14,8 @@
 
 当前项目为兼容本机 Node.js 18 使用 Vite 6。建议 Node.js `18.20+`，后续升级到 Node.js 20.19 或 22.12 以上时可同步升级 Vite。
 
+地面和功能区顶面使用高德 Web Mercator 影像瓦片，瓦片加载失败时会使用本地非黑地表兜底。
+
 ```bash
 pnpm install
 pnpm dev
@@ -39,6 +41,7 @@ pnpm preview
 - `src/utils/protectAreaData.ts`：保护区和点位统一转换入口
 - `src/utils/`：数据投影、几何裁剪、镜头计算和场景图构建
 - `src/utils/protectAreaPointScene.ts`：模拟监测点倒三角实例、动画与区域可见性
+- `src/utils/rasterTileGround.ts`：高德影像瓦片地面与区域顶面合成纹理
 - `src/styles/feature-card.css`：CSS3D 动态信息卡全局样式
 
 页面布局和入场动画位于 `src/App.vue`；组件样式跟随各自的 Vue 单文件组件维护。

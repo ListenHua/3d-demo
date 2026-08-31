@@ -125,6 +125,11 @@ export function constrainMapTarget(
   targetY = 0.04,
   paddingRatio = SCENE_CONFIG.controls.targetPaddingRatio,
 ): void {
+  if (paddingRatio === null) {
+    target.y = targetY
+    return
+  }
+
   const padding = Math.max(bounds.width, bounds.depth) * paddingRatio
 
   target.set(

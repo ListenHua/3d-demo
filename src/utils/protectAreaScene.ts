@@ -59,6 +59,8 @@ export interface ProtectAreaSceneGraph {
   visuals: FeatureVisual[]
 }
 
+export type TerrainUvProjector = (x: number, z: number) => [number, number]
+
 const TERRAIN_TEXTURE_BRIGHTNESS = 1.85
 const TERRAIN_OVERLAY_ELEVATION_OFFSET_KM = 0.0005
 const FEATURE_TINT_ELEVATION_OFFSET_KM = 0.0005
@@ -104,6 +106,7 @@ function createShape(polygon: ProjectedPolygon): Shape {
 function createTerrainMaterial(terrainTexture: Texture): MeshBasicMaterial {
   const material = new MeshBasicMaterial({
     color: '#ffffff',
+    fog: false,
     map: terrainTexture,
     transparent: true,
   })
@@ -122,7 +125,11 @@ function createTerrainMaterial(terrainTexture: Texture): MeshBasicMaterial {
   return material
 }
 
-function applyFeatureTerrainUV(geometry: ShapeGeometry, bounds: ProjectedBounds): void {
+function applyFeatureTerrainUV(
+  geometry: BufferGeometry,
+  bounds: ProjectedBounds,
+  projectUv?: TerrainUvProjector,
+): void {
   const position = geometry.getAttribute('position')
   const width = bounds.width || 1
   const depth = bounds.depth || 1
@@ -130,12 +137,16 @@ function applyFeatureTerrainUV(geometry: ShapeGeometry, bounds: ProjectedBounds)
 
   for (let index = 0; index < position.count; index += 1) {
     const x = position.getX(index)
-    const z = -position.getY(index)
+    const z = position.getZ(index) === 0 ? -position.getY(index) : position.getZ(index)
 
-    uv.push(
-      (x - bounds.minX) / width,
-      1 - (z - bounds.minZ) / depth,
-    )
+    if (projectUv) {
+      uv.push(...projectUv(x, z))
+    } else {
+      uv.push(
+        (x - bounds.minX) / width,
+        1 - (z - bounds.minZ) / depth,
+      )
+    }
   }
 
   geometry.setAttribute('uv', new Float32BufferAttribute(uv, 2))
@@ -150,9 +161,10 @@ function createFeatureTerrainOverlay(
   terrainTexture: Texture,
   shapes: Shape[],
   bounds: ProjectedBounds,
+  projectUv?: TerrainUvProjector,
 ): Mesh {
   const geometry = createFeatureOverlayGeometry(shapes)
-  applyFeatureTerrainUV(geometry, bounds)
+  applyFeatureTerrainUV(geometry, bounds, projectUv)
   geometry.rotateX(-Math.PI / 2)
 
   const mesh = new Mesh(geometry, createTerrainMaterial(terrainTexture))
@@ -245,6 +257,8 @@ function createFeatureBorderOverlay(
 export function createProtectAreaSceneGraph(
   areas: ProtectAreaGroup[],
   terrainTexture: Texture,
+  terrainTextureBounds?: ProjectedBounds,
+  projectTerrainUv?: TerrainUvProjector,
 ): ProtectAreaSceneGraph {
   const group = new Group()
   const visuals: FeatureVisual[] = []
@@ -293,7 +307,12 @@ export function createProtectAreaSceneGraph(
       mesh.userData.featureId = feature.id
       mesh.renderOrder = elevation * 100
       featureGroup.add(mesh)
-      featureGroup.add(createFeatureTerrainOverlay(terrainTexture, shapes, feature.bounds))
+      featureGroup.add(createFeatureTerrainOverlay(
+        terrainTexture,
+        shapes,
+        terrainTextureBounds ?? feature.bounds,
+        projectTerrainUv,
+      ))
       const tint = createFeatureTintMaterial(color)
       featureGroup.add(createFeatureTintOverlay(shapes, tint))
       const border = createFeatureBorderMaterial(color)
@@ -330,5 +349,19 @@ export function disposeProtectAreaSceneGraph(sceneGraph: ProtectAreaSceneGraph):
         object.material.dispose()
       }
     }
+  })
+}
+
+export function updateProtectAreaTerrainUvs(
+  sceneGraph: ProtectAreaSceneGraph,
+  bounds: ProjectedBounds,
+  projectUv?: TerrainUvProjector,
+): void {
+  sceneGraph.group.traverse((object) => {
+    if (!(object instanceof Mesh)) return
+    if (object.name !== 'feature-terrain-image-overlay') return
+
+    applyFeatureTerrainUV(object.geometry, bounds, projectUv)
+    object.geometry.getAttribute('uv').needsUpdate = true
   })
 }

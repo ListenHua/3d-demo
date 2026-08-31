@@ -19,6 +19,7 @@ const emit = defineEmits<{
   selectFeature: [selection: ProtectSceneSelection]
   clearFeatureSelection: []
   flightState: [isFlying: boolean]
+  openPointDetail: [pointId: string]
   terrainHoverState: [isHovered: boolean]
   userCameraInteraction: []
 }>()
@@ -42,6 +43,7 @@ const emit = defineEmits<{
       :selected-feature-selection="selectedFeatureSelection"
       @clear-feature-selection="emit('clearFeatureSelection')"
       @flight-state="emit('flightState', $event)"
+      @open-point-detail="emit('openPointDetail', $event)"
       @select-feature="emit('selectFeature', $event)"
       @terrain-hover-state="emit('terrainHoverState', $event)"
       @user-camera-interaction="emit('userCameraInteraction')"

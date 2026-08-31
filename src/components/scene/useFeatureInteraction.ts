@@ -55,6 +55,7 @@ interface FeatureInteractionOptions {
   mapGesture: MapGestureState
   onClearSelection: () => void
   onHoverChange: (isHovered: boolean) => void
+  onOpenPointDetail: (pointId: string) => void
   onPointStateChange: () => void
   onSelectFeature: (selection: ProtectSceneSelection) => void
   pointSceneGraph: ProtectAreaPointSceneGraph
@@ -76,6 +77,7 @@ export function useFeatureInteraction({
   mapGesture,
   onClearSelection,
   onHoverChange,
+  onOpenPointDetail,
   onPointStateChange,
   onSelectFeature,
   pointSceneGraph,
@@ -438,6 +440,7 @@ export function useFeatureInteraction({
       viewport.width,
       viewport.height,
       onClearSelection,
+      onOpenPointDetail,
     )
   }
 
@@ -457,6 +460,8 @@ export function useFeatureInteraction({
 
           return {
             color: pointStatus.color,
+            detailButtonLabel: '查看详情',
+            detailPointId: point.id,
             eyebrow: '模拟监测点',
             kind: 'point' as const,
             title: point.name,

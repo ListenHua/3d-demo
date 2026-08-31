@@ -12,7 +12,7 @@ import {
   watch,
 } from 'vue'
 import AreaStepper from './components/AreaStepper.vue'
-import MonitoringPointPanel from './components/MonitoringPointPanel.vue'
+import MonitoringPointDetail from './components/MonitoringPointDetail.vue'
 import {
   PROTECT_AREA_TYPES,
   PROTECT_AREA_TYPE_DEFINITIONS,
@@ -32,9 +32,11 @@ const OrbitalScene = defineAsyncComponent(() => orbitalScenePromise)
 
 const appShell = ref<HTMLElement | null>(null)
 const areaTitle = ref<HTMLElement | null>(null)
+const routeTransitionOverlay = ref<HTMLElement | null>(null)
 const dataset = shallowRef<ProtectAreaDataset | null>(null)
 const dataError = ref<string | null>(null)
 const isLoading = ref(true)
+const currentPath = ref(window.location.pathname)
 const selectedFeatureSelection = ref<ProtectSceneSelection | null>(null)
 const areaTypeEntries = PROTECT_AREA_TYPES.map((type) => ({
   color: PROTECT_AREA_TYPE_DEFINITIONS[type].color,
@@ -72,14 +74,20 @@ const activeArea = computed(() => {
   return areas[activeIndex.value] ?? areas[0] ?? null
 })
 
-const selectedPointContext = computed(() => {
-  const currentDataset = dataset.value
-  const selection = selectedFeatureSelection.value
-  if (!currentDataset || selection?.kind !== 'point') return null
+const detailPointId = computed(() => getMonitoringPointIdFromPath(currentPath.value))
 
-  const point = currentDataset.points.find((item) => item.id === selection.pointId)
-  const area = currentDataset.areas.find((item) => item.id === selection.areaId)
-  const feature = currentDataset.features.find((item) => item.id === selection.featureId)
+const detailPointContext = computed(() => {
+  const currentDataset = dataset.value
+  const pointId = detailPointId.value
+  if (!currentDataset || !pointId) return null
+
+  const point = currentDataset.points.find((item) => item.id === pointId)
+  const area = point
+    ? currentDataset.areas.find((item) => item.id === point.areaId)
+    : null
+  const feature = point
+    ? currentDataset.features.find((item) => item.id === point.featureId)
+    : null
   if (!point || !area || !feature) return null
 
   const featureDefinition = PROTECT_AREA_TYPE_DEFINITIONS[feature.type]
@@ -97,7 +105,12 @@ const selectedPointContext = computed(() => {
 let dataAbortController: AbortController | null = null
 let areaTitleTween: gsap.core.Tween | null = null
 let introContext: gsap.Context | null = null
-let monitoringPointPanelTween: gsap.core.Tween | null = null
+let routeTransitionTween: gsap.core.Timeline | null = null
+
+function getMonitoringPointIdFromPath(path: string): string | null {
+  const match = path.match(/^\/monitoring-points\/([^/]+)\/?$/)
+  return match ? decodeURIComponent(match[1]) : null
+}
 
 async function loadDataset(): Promise<void> {
   dataAbortController?.abort()
@@ -154,65 +167,6 @@ function prefersReducedMotion(): boolean {
   return window.matchMedia('(prefers-reduced-motion: reduce)').matches
 }
 
-function beforeEnterMonitoringPointPanel(element: Element): void {
-  const panel = element as HTMLElement
-  monitoringPointPanelTween?.kill()
-  panel.style.willChange = 'transform, opacity'
-  gsap.set(panel, {
-    autoAlpha: 0,
-    x: prefersReducedMotion() ? 0 : 32,
-  })
-}
-
-function enterMonitoringPointPanel(element: Element, done: () => void): void {
-  const panel = element as HTMLElement
-  monitoringPointPanelTween?.kill()
-
-  if (prefersReducedMotion()) {
-    gsap.set(panel, { autoAlpha: 1, x: 0 })
-    panel.style.willChange = 'auto'
-    done()
-    return
-  }
-
-  monitoringPointPanelTween = gsap.to(panel, {
-    autoAlpha: 1,
-    duration: 0.9,
-    ease: 'power1.out',
-    onComplete: () => {
-      panel.style.willChange = 'auto'
-      monitoringPointPanelTween = null
-      done()
-    },
-    x: 0,
-  })
-}
-
-function leaveMonitoringPointPanel(element: Element, done: () => void): void {
-  const panel = element as HTMLElement
-  monitoringPointPanelTween?.kill()
-  panel.style.willChange = 'transform, opacity'
-
-  if (prefersReducedMotion()) {
-    gsap.set(panel, { autoAlpha: 0, x: 0 })
-    panel.style.willChange = 'auto'
-    done()
-    return
-  }
-
-  monitoringPointPanelTween = gsap.to(panel, {
-    autoAlpha: 0,
-    duration: 0.42,
-    ease: 'power2.in',
-    onComplete: () => {
-      panel.style.willChange = 'auto'
-      monitoringPointPanelTween = null
-      done()
-    },
-    x: 32,
-  })
-}
-
 function playIntro(): void {
   introContext?.revert()
   introContext = gsap.context(() => {
@@ -267,6 +221,74 @@ function playAreaTitle(): void {
   )
 }
 
+function pushPath(path: string): void {
+  if (window.location.pathname === path) {
+    currentPath.value = path
+    return
+  }
+  window.history.pushState({}, '', path)
+  currentPath.value = window.location.pathname
+}
+
+function syncCurrentPath(): void {
+  currentPath.value = window.location.pathname
+}
+
+function playRouteTransition(onCovered: () => void): void {
+  routeTransitionTween?.kill()
+
+  const overlay = routeTransitionOverlay.value
+  if (!overlay || prefersReducedMotion()) {
+    onCovered()
+    return
+  }
+
+  overlay.style.pointerEvents = 'auto'
+  overlay.style.willChange = 'transform, opacity'
+  gsap.set(overlay, {
+    autoAlpha: 0,
+    scaleY: 0.06,
+    transformOrigin: '50% 50%',
+  })
+
+  routeTransitionTween = gsap.timeline({
+    onComplete: () => {
+      gsap.set(overlay, { autoAlpha: 0, scaleY: 1 })
+      overlay.style.pointerEvents = 'none'
+      overlay.style.willChange = 'auto'
+      routeTransitionTween = null
+    },
+  })
+
+  routeTransitionTween
+    .to(overlay, {
+      autoAlpha: 1,
+      duration: 0.34,
+      ease: 'power3.inOut',
+      scaleY: 1,
+    })
+    .add(onCovered)
+    .to(overlay, {
+      autoAlpha: 0,
+      duration: 0.28,
+      ease: 'power2.out',
+    })
+}
+
+function openPointDetail(pointId: string): void {
+  stopPlayback()
+  playRouteTransition(() => {
+    selectedFeatureSelection.value = null
+    pushPath(`/monitoring-points/${encodeURIComponent(pointId)}`)
+  })
+}
+
+function returnToMap(): void {
+  playRouteTransition(() => {
+    pushPath('/')
+  })
+}
+
 watch(dataset, async (value) => {
   if (!value) return
   await nextTick()
@@ -282,20 +304,22 @@ watch(
 )
 
 onMounted(() => {
+  window.addEventListener('popstate', syncCurrentPath)
   void loadDataset()
 })
 
 onBeforeUnmount(() => {
+  window.removeEventListener('popstate', syncCurrentPath)
   dataAbortController?.abort()
   areaTitleTween?.kill()
   introContext?.revert()
-  monitoringPointPanelTween?.kill()
+  routeTransitionTween?.kill()
 })
 </script>
 
 <template>
   <main ref="appShell" class="protect-explorer">
-    <template v-if="dataset && activeArea">
+    <template v-if="dataset && activeArea && !detailPointId">
       <div class="scene-layer" aria-hidden="true">
         <OrbitalScene
           :active-area-id="activeArea.id"
@@ -304,29 +328,13 @@ onBeforeUnmount(() => {
           :selected-feature-selection="selectedFeatureSelection"
           @clear-feature-selection="clearFeatureSelection"
           @flight-state="handleFlightState"
+          @open-point-detail="openPointDetail"
           @select-feature="selectFeature"
           @terrain-hover-state="setPlaybackHold('terrain-hover', $event)"
           @user-camera-interaction="stopPlayback"
         />
       </div>
       <div class="scene-edge-shade" aria-hidden="true"></div>
-
-      <Transition
-        :css="false"
-        @before-enter="beforeEnterMonitoringPointPanel"
-        @enter="enterMonitoringPointPanel"
-        @leave="leaveMonitoringPointPanel"
-      >
-        <MonitoringPointPanel
-          v-if="selectedPointContext"
-          :area-name="selectedPointContext.areaName"
-          :feature-label="selectedPointContext.featureLabel"
-          :point="selectedPointContext.point"
-          :status-color="selectedPointContext.statusColor"
-          :status-label="selectedPointContext.statusLabel"
-          @close="clearFeatureSelection"
-        />
-      </Transition>
 
       <section class="area-readout" aria-atomic="true" aria-live="polite">
         <h1 ref="areaTitle" class="area-title">{{ activeArea.name }}</h1>
@@ -370,15 +378,31 @@ onBeforeUnmount(() => {
       </div>
     </template>
 
+    <MonitoringPointDetail
+      v-else-if="dataset && detailPointContext"
+      :area-name="detailPointContext.areaName"
+      :feature-label="detailPointContext.featureLabel"
+      :point="detailPointContext.point"
+      :status-color="detailPointContext.statusColor"
+      :status-label="detailPointContext.statusLabel"
+      @back="returnToMap"
+    />
+
     <section v-else class="scene-loading" role="status" aria-live="polite">
       <span class="status-dot" aria-hidden="true"></span>
       <p v-if="isLoading">正在加载保护区数据</p>
+      <template v-else-if="detailPointId">
+        <p>未找到该监测点详情</p>
+        <button type="button" @click="returnToMap">返回地图</button>
+      </template>
       <template v-else>
         <p>保护区数据加载失败</p>
         <button type="button" @click="loadDataset">重试</button>
         <small>{{ dataError }}</small>
       </template>
     </section>
+
+    <div ref="routeTransitionOverlay" class="route-transition-overlay" aria-hidden="true"></div>
   </main>
 </template>
 
@@ -401,6 +425,18 @@ onBeforeUnmount(() => {
 
 .scene-layer {
   z-index: 0;
+}
+
+.route-transition-overlay {
+  position: absolute;
+  z-index: 9;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(185, 213, 106, 0.22), transparent 22%),
+    rgba(4, 8, 7, 0.96);
+  opacity: 0;
+  pointer-events: none;
+  transform: scaleY(1);
 }
 
 .scene-edge-shade {
